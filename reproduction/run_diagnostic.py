@@ -6,7 +6,7 @@ def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument('--manifest',type=Path,required=True);p.add_argument('--model',type=Path,required=True)
  p.add_argument('--revision',required=True);p.add_argument('--output-dir',type=Path,required=True)
- p.add_argument('--count',type=int,default=1);p.add_argument('--frames',type=int,default=4)
+ p.add_argument('--count',type=int,default=1);p.add_argument('--frames',type=int,default=4);p.add_argument('--max-new-tokens',type=int,default=1024)
  args=p.parse_args()
  data=json.loads(args.manifest.read_text(encoding='utf-8'))
  if not 1<=args.count<=len(data['samples']):p.error('Count exceeds manifest')
@@ -20,7 +20,7 @@ def main():
   path=Path(sample['video_path'])
   if hashlib.sha256(path.read_bytes()).hexdigest()!=sample['video_sha256']:raise ValueError('Input video hash changed')
   out=args.output_dir/(str(index)+'_'+sample['video_name'])
-  cmd=[sys.executable,str(Path(__file__).with_name('infer_cuda.py')),'--model',str(args.model),'--revision',args.revision,'--video',str(path),'--prompt',sample['prompt'],'--frames',str(args.frames),'--max-side','224','--max-new-tokens','256','--output-dir',str(out),'--local-files-only']
+  cmd=[sys.executable,str(Path(__file__).with_name('infer_cuda.py')),'--model',str(args.model),'--revision',args.revision,'--video',str(path),'--prompt',sample['prompt'],'--frames',str(args.frames),'--max-side','224','--max-new-tokens',str(args.max_new_tokens),'--output-dir',str(out),'--local-files-only']
   # Ground-truth scores and teacher explanations are never passed to the model.
   with (args.output_dir/(sample['video_name']+'.log')).open('w',encoding='utf-8') as log:
    proc=subprocess.run(cmd,env=env,stdout=log,stderr=subprocess.STDOUT)

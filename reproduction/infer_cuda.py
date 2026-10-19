@@ -14,11 +14,22 @@ def digest(path):
     return h.hexdigest()
 
 def parse_scores(text):
+    if re.search(r'<think>', text, re.I):
+        if not re.search(r'</think>', text, re.I):
+            return {'scores': {label: None for label in LABELS}, 'valid': False}
+        text = re.split(r'</think>', text, flags=re.I)[-1]
     scores = {}
     for label in LABELS:
         found = re.findall(re.escape(label) + r'\s*:\s*(\d+(?:\.\d+)?)', text, re.I)
         scores[label] = int(found[0]) if len(found) == 1 and found[0] in ('1','2','3','4','5') else None
     return {'scores': scores, 'valid': all(v is not None for v in scores.values())}
+
+def classify_output(text, eos_reached):
+    parsed = parse_scores(text)
+    parsed['scores_valid'] = parsed['valid']
+    parsed['valid'] = parsed['valid'] and eos_reached
+    parsed['status'] = 'truncated_output' if not eos_reached else ('completed' if parsed['valid'] else 'invalid_output')
+    return parsed
 
 def official_prompt(prompt):
     source = ROOT / 'vs2_inference.py'
@@ -58,7 +69,7 @@ def main():
     p.add_argument('--prompt',required=True,help='Original text-to-video generation prompt')
     p.add_argument('--frames',type=int,default=4)
     p.add_argument('--max-side',type=int,default=224)
-    p.add_argument('--max-new-tokens',type=int,default=256)
+    p.add_argument('--max-new-tokens',type=int,default=1024)
     p.add_argument('--cache-dir',type=Path,default=Path('D:/career-projects/cache/huggingface/hub'))
     p.add_argument('--output-dir',type=Path,required=True)
     p.add_argument('--local-files-only',action='store_true')
@@ -113,10 +124,9 @@ def main():
         ids=generated[0,inputs['input_ids'].shape[1]:].tolist()
         raw=processor.tokenizer.decode(ids,skip_special_tokens=True,clean_up_tokenization_spaces=False)
         (out/'raw_output.txt').write_text(raw,encoding='utf-8')
-        result.update(parse_scores(raw))
         result['generated_token_ids']=ids
         result['eos_reached']=bool(ids and ids[-1] in ([model.generation_config.eos_token_id] if isinstance(model.generation_config.eos_token_id,int) else model.generation_config.eos_token_id or []))
-        result['status']='completed' if result['valid'] else 'invalid_output'
+        result.update(classify_output(raw, result['eos_reached']))
         save()
         print(json.dumps(result,indent=2))
         if not result['valid']: raise SystemExit(2)

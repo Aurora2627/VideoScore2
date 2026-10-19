@@ -1,12 +1,7 @@
 {
   "status": "passed",
-  "checks": {
-    "valid": true,
-    "missing_rejected": true,
-    "range_rejected": true,
-    "duplicate_rejected": true,
-    "decimal_rejected": true,
-    "official_prompt": true
-  },
-  "scope": "Parser and prompt only; no model inference"
+  "test_count": 10,
+  "scope": "Score parsing, complete reasoning blocks, EOS completion and official prompt; no model metric",
+  "command": "python reproduction/test_protocol.py",
+  "source_sha256": "23cc6a95beeb88daa62b5510218edc15b2124cacb5af0edf40fb5194f28fad16"
 }

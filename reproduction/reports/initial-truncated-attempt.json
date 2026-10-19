@@ -1,0 +1,19 @@
+{
+  "status": "invalid_output",
+  "valid": false,
+  "scores": {
+    "visual quality": null,
+    "text-to-video alignment": null,
+    "physical/common-sense consistency": null
+  },
+  "eos_reached": false,
+  "generation_seconds": 76.77382410000428,
+  "load_seconds": 67.60739010001998,
+  "peak_allocated_bytes": 6138424832,
+  "source_sha256": "4552fb27a167e120ba1342929dcbc3ffabe58af1fe080b23ac941f1d8fb54188",
+  "project_commit": "3af0eb8c6d72932ce5a169f7d753f21aa1b3ef23",
+  "upstream_commit": "9e0fcbaeee0283b03efaaf8cd906f6381a808c75",
+  "video_name": "004882_h",
+  "max_new_tokens": 256,
+  "scope": "Initial truncated attempt; no valid score or benchmark claim"
+}
