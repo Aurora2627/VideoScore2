@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "test_count": 10,
-  "scope": "Score parsing, complete reasoning blocks, EOS completion and official prompt; no model metric",
+  "test_count": 12,
+  "scope": "Protocol checks including real expanded-label output and reasoning/EOS completion; no model metric",
   "command": "python reproduction/test_protocol.py",
-  "source_sha256": "23cc6a95beeb88daa62b5510218edc15b2124cacb5af0edf40fb5194f28fad16"
+  "source_sha256": "522e93e6a553bcad14604f6fbe724924f3408c71d4cd82d35bec4d8c3da7f88d"
 }

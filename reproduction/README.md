@@ -21,3 +21,5 @@ Run test_protocol.py for score parsing and prompt extraction tests. Use prepare_
 See provenance.json for pinned sources and PROTOCOL.md for evaluation limits. No successful model inference is claimed until saved outputs have been inspected.
 
 The generation budget now defaults to 1024 tokens, matching the official demo limit. Score parsing uses the final answer after a closed thinking block. Truncated generations are always rejected even if some scores appear. The first truncated attempt remains in reports/initial-truncated-attempt.json; full local run artifacts are preserved separately.
+
+A complete first 1024-token generation reached EOS. Its final labels included explanatory descriptors, which the initial strict parser rejected. The parser now accepts these observed labels, with a real-output regression fixture. reparse_saved.py creates a separately hashed postprocessing record and preserves the original result. It never reruns a model or replaces an unsuccessful historical record.

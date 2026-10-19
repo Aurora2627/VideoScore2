@@ -1,5 +1,6 @@
 """Fast tests for failure-sensitive parsing; no model metrics."""
 import unittest
+from pathlib import Path
 from infer_cuda import parse_scores, official_prompt, classify_output
 class ProtocolTests(unittest.TestCase):
     text='visual quality: 3; text-to-video alignment: 4; physical/common-sense consistency: 5'
@@ -19,4 +20,10 @@ class ProtocolTests(unittest.TestCase):
         self.assertFalse(result['valid'])
         self.assertEqual(result['status'],'truncated_output')
     def test_finished_answer_completed(self): self.assertEqual(classify_output(self.text,True)['status'],'completed')
+    def test_real_expanded_label_answer(self):
+        text=(Path(__file__).parent/'fixtures/expanded-label-answer.txt').read_text(encoding='utf-8')
+        result=classify_output(text,True)
+        self.assertTrue(result['valid'])
+        self.assertEqual(result['scores'],{'visual quality':3,'text-to-video alignment':2,'physical/common-sense consistency':3})
+    def test_non_score_label_narration_rejected(self): self.assertFalse(parse_scores(self.text.replace('quality: 3','quality analysis: 3'))['valid'])
 if __name__=='__main__': unittest.main()

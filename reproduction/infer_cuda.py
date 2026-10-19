@@ -20,7 +20,7 @@ def parse_scores(text):
         text = re.split(r'</think>', text, flags=re.I)[-1]
     scores = {}
     for label in LABELS:
-        found = re.findall(re.escape(label) + r'\s*:\s*(\d+(?:\.\d+)?)', text, re.I)
+        found = re.findall(re.escape(label) + r'(?:\s+[–—-]\s+[^:\n;]{1,160})?\s*:\s*(\d+(?:\.\d+)?)', text, re.I)
         scores[label] = int(found[0]) if len(found) == 1 and found[0] in ('1','2','3','4','5') else None
     return {'scores': scores, 'valid': all(v is not None for v in scores.values())}
 
