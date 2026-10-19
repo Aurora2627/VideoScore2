@@ -4,7 +4,7 @@ The model evaluates visual quality, text-to-video alignment, and physical/common
 
 Start with one of three fixed real benchmark videos. The original generation prompt is the only text input. Ground-truth scores and the metadata thinking field are excluded from model inputs. The diagnostic report compares predictions with labels only after generation. Three samples cannot establish benchmark accuracy or ranking correlation.
 
-The current adapter changes numerical precision (NF4), frame sampling, resolution, generation length and decoding relative to the official demo. It enables generation KV caching and does not retain full-vocabulary per-token logits. It reports validated hard scores. Treat these as implementation differences, not as a reproduction of the paper metrics.
+The current adapter changes numerical precision (NF4), frame sampling, resolution and decoding relative to the official demo; its 1024-token generation cap matches the demo limit. It enables generation KV caching and does not retain full-vocabulary per-token logits. It reports validated hard scores. Treat these as implementation differences, not as a reproduction of the paper metrics.
 
 The official demo floating-score expression is not a calibrated confidence score. This adapter does not claim floating-score equivalence. An audit of the benchmark and floating-score dispatch is required before comparing floating-score metrics.
 

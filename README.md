@@ -1,3 +1,5 @@
+> Fork-specific reproduction: [Windows CUDA setup, actual three-video results and saved evidence](reproduction/README.md). Original model, dataset and training results below belong to the upstream authors.
+
 # VideoScore2
 This is the official repo for our paper: "VideoScore2: Think before You Score in Generative Video Evaluation"
 

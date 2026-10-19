@@ -1,0 +1,18 @@
+{
+  "postprocess_only": true,
+  "model_inference_rerun": false,
+  "original_result_sha256": "5737fefe1fcf936a75c2b46deb88db3288a3bfbfa718f9a8d8e3ef07ea28209d",
+  "raw_output_sha256": "da21f5990097c76ad53dadc06e6c5e6bc4e6acd0ed94d145e2abb261acd94546",
+  "original_status": "invalid_output",
+  "parser_source_sha256": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+  "parser_commit": "4efb4b85d4258b037b5ddc164ce2a274055c6d10",
+  "eos_reached": true,
+  "scores": {
+    "visual quality": 3,
+    "text-to-video alignment": 2,
+    "physical/common-sense consistency": 3
+  },
+  "valid": true,
+  "scores_valid": true,
+  "status": "completed"
+}

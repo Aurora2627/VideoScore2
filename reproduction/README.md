@@ -1,25 +1,35 @@
-# VideoScore2 Windows CUDA reproduction
+# VideoScore2: Windows CUDA inference reproduction
 
-Upstream: TIGER-AI-Lab/VideoScore2, commit 9e0fcbaeee0283b03efaaf8cd906f6381a808c75. Original authors retain credit. Upstream scripts remain unchanged.
+This fork preserves TIGER-AI-Lab's VideoScore2 implementation and attribution. Upstream commit: 9e0fcbaeee0283b03efaaf8cd906f6381a808c75. The model, training method, dataset and paper results belong to their original authors.
 
-Status: dedicated Windows virtual environment, CUDA/NF4 kernel, and three real input videos validated. Official model weights are downloaded and SHA256 validated. The initial 256-token attempt was truncated before final scores; no successful complete score or benchmark result yet.
+## What this reproduction adds
 
-The additional infer_cuda.py is an experimental 8 GB GPU adaptation: 4-bit NF4, double quantization, SDPA, uniform capped frames, reduced resolution, greedy generation. It extracts the original demo prompt without importing the upstream script. It reports hard 1-5 scores only, with strict validation. These changes do not reproduce the paper's full evaluation or floating-score protocol. No claim of numerical equivalence is made.
+- Dedicated Python 3.11 / PyTorch 2.6.0+cu124 environment with pinned dependencies and a real NF4 CUDA kernel check.
+- An 8 GB GPU inference path using 4-bit NF4 double quantization, BF16 computation, SDPA, four uniformly sampled frames and a 224-pixel longest side.
+- Original demo prompt extraction, greedy generation with a 1024-token cap, EOS validation, and parsing of three integer scores after the thinking block.
+- Fixed official inputs with model/video hashes, source snapshots, environment, raw outputs, token IDs, latency and allocated/reserved GPU memory saved per run.
+- Three real diagnostic videos. See [results](reports/diagnostic-three/RESULTS.md) and [machine-readable evidence](reports/diagnostic-three/summary.json).
 
-Use Python 3.11 in a dedicated environment. Install torch and torchvision from the official cu124 index, then the remaining pinned dependencies. Run infer_cuda.py --help for parameters. A fixed model commit, real input video, its generation prompt, and a new output directory are mandatory. The output contains source snapshots, input hash, sampling indices, environment, raw generation, token IDs, timing and GPU memory. Weights and private videos must remain outside Git.
+These are inference and reproducibility contributions. No SFT, GRPO training or full paper benchmark reproduction was performed. Reduced frames, resolution, quantization and hard-score parsing differ from the paper's evaluation; no numerical equivalence is claimed. Valid output means complete, parseable output, not a correct prediction.
 
-Training and full benchmark reproduction are out of scope for this initial inference validation.
+## Environment
 
-## Installation and verification
+Create a dedicated Python 3.11 virtual environment. Use its Python executable for every command, including package installation. Install requirements-torch-cu124.txt first, then requirements-windows.txt. requirements-lock-windows.txt records the environment actually tested. Do not install these packages into a shared Conda base environment.
 
-Create a dedicated Python 3.11 virtual environment. Always invoke its Python executable, including for pip. Install requirements-torch-cu124.txt first, then requirements-windows.txt. Run check_cuda.py with an output JSON path, followed by pip check. The CUDA check executes a real NF4 kernel; it does not load the VideoScore2 model.
+Run check_cuda.py with an output JSON path and run pip check. CUDA validation executes a real bitsandbytes NF4 kernel. Run test_protocol.py for the twelve parsing/prompt checks. check_inputs.py and check_processor.py verify the actual videos and Transformers processor. Consult each script's --help for its arguments.
 
-The local VS Code workspace outside this repository points to the dedicated interpreter. The integrated shell may still display an inherited Conda base prompt; sys.executable and sys.prefix are the evidence for which interpreter runs a command.
+The local VideoScore2.code-workspace selects the dedicated virtual environment and provides a CUDA debug configuration. In an integrated shell an inherited base prompt can remain visible; sys.executable and sys.prefix identify the actual interpreter. Always use a new experiment output directory when debugging or rerunning.
 
-Run test_protocol.py for score parsing and prompt extraction tests. Use prepare_subset.py only with pinned official metadata and metadata-provenance.json. Use run_diagnostic.py with subset.json, the local model snapshot, immutable model revision, and a new output directory. Weight download and GPU validation must finish first. All model inputs exclude labels and teacher explanations.
+## Inputs and inference
 
-See provenance.json for pinned sources and PROTOCOL.md for evaluation limits. No successful model inference is claimed until saved outputs have been inspected.
+Use prepare_subset.py with pinned official metadata and metadata-provenance.json. The fixed manifest includes the first three samples; there is no quality-based selection. Labels and teacher explanations are never passed to the model. Weights and video files remain outside Git.
 
-The generation budget now defaults to 1024 tokens, matching the official demo limit. Score parsing uses the final answer after a closed thinking block. Truncated generations are always rejected even if some scores appear. The first truncated attempt remains in reports/initial-truncated-attempt.json; full local run artifacts are preserved separately.
+Use run_diagnostic.py with --manifest, --model (local snapshot), --revision (immutable model commit), --output-dir (new directory), --count 3, --frames 4 and --max-new-tokens 1024. It invokes infer_cuda.py using the same interpreter. Run infer_cuda.py directly for a single video, supplying its original generation prompt. Both scripts refuse to overwrite experiment directories. The diagnostic uses local/offline weights.
 
-A complete first 1024-token generation reached EOS. Its final labels included explanatory descriptors, which the initial strict parser rejected. The parser now accepts these observed labels, with a real-output regression fixture. reparse_saved.py creates a separately hashed postprocessing record and preserves the original result. It never reruns a model or replaces an unsuccessful historical record.
+Model revision: 09a2732cb64fa566a1f332f978368292ce5c295c. All four official weight shards were checked against published SHA256 hashes; see reports/model-snapshot.json. See provenance.json and PROTOCOL.md for source and protocol details.
+
+## Observed issues and audit trail
+
+The initial 256-token attempt ended inside the thinking block and was rejected. Its record is preserved in reports/initial-truncated-attempt.json. At 1024 tokens, the first video reached EOS but added descriptors to its score labels. A regression fixture and parser repair address that format. reparse_saved.py wrote a separate, hashed parser-only result without rerunning the model or changing the original unsuccessful result. The other two videos used the repaired parser.
+
+The saved result for the first video therefore retains its original invalid_output status; reparsed-v013.json and the combined summary explicitly record the repair. No failed artifact is overwritten and no model result is invented.

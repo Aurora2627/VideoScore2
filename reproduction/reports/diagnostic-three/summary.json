@@ -1,0 +1,166 @@
+{
+  "scope": "Three fixed diagnostic videos, not full benchmark or training reproduction",
+  "samples": [
+    {
+      "project_commit": "6d89726131a3255b565f8489df7578720b9506f5",
+      "source_sha256": "6e91fb035fe4b79fee6795bf2981e8f4bf865ab171626ae9ee05a2f1e7e126bd",
+      "video_sha256": "530e239a25d7ee7fdafb5fe72e7ce921efc1f20ec77c570622fcd8911c3c93c8",
+      "load_seconds": 66.70365509999101,
+      "generation_seconds": 140.8158068000048,
+      "peak_allocated_bytes": 6138424832,
+      "peak_reserved_bytes": 6362759168,
+      "environment": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.53.2",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.48.1",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.12.0.88"
+      },
+      "video_sampling": {
+        "frame_indices": [
+          0,
+          5,
+          10,
+          15
+        ],
+        "source_fps": 8.0,
+        "total_frames": 16,
+        "effective_fps": 1.6
+      },
+      "video_name": "004882_h",
+      "scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 1
+      },
+      "eos_reached": true,
+      "valid": true,
+      "postprocess_only_repair": true,
+      "original_status": "invalid_output",
+      "generated_tokens": 481,
+      "raw_output_sha256": "da21f5990097c76ad53dadc06e6c5e6bc4e6acd0ed94d145e2abb261acd94546",
+      "absolute_error": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 2.0
+      }
+    },
+    {
+      "project_commit": "4efb4b85d4258b037b5ddc164ce2a274055c6d10",
+      "source_sha256": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+      "video_sha256": "2c41289429c90a5e997fe0edba082fdf649063226db5689eb0909d386731cd1b",
+      "load_seconds": 62.084534699999494,
+      "generation_seconds": 104.70185370001127,
+      "peak_allocated_bytes": 6133701632,
+      "peak_reserved_bytes": 6343884800,
+      "environment": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.53.2",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.48.1",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.12.0.88"
+      },
+      "video_sampling": {
+        "frame_indices": [
+          0,
+          13,
+          26,
+          39
+        ],
+        "source_fps": 8.0,
+        "total_frames": 40,
+        "effective_fps": 0.6153846153846154
+      },
+      "video_name": "001033_p",
+      "scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "eos_reached": true,
+      "valid": true,
+      "postprocess_only_repair": false,
+      "original_status": "completed",
+      "generated_tokens": 364,
+      "raw_output_sha256": "61f92229f1899199f7cebeb014a3503a0054d41537cf0d019718f0144e19d021",
+      "absolute_error": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 0.0
+      }
+    },
+    {
+      "project_commit": "4efb4b85d4258b037b5ddc164ce2a274055c6d10",
+      "source_sha256": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+      "video_sha256": "34f2b6932c89ccc70a538ce4735abfcc920b0d2d39cd7d8dd8fbe14bd4166f54",
+      "load_seconds": 63.23566109998501,
+      "generation_seconds": 99.29263440001523,
+      "peak_allocated_bytes": 6142639616,
+      "peak_reserved_bytes": 6343884800,
+      "environment": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.53.2",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.48.1",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.12.0.88"
+      },
+      "video_sampling": {
+        "frame_indices": [
+          0,
+          7,
+          15,
+          23
+        ],
+        "source_fps": 10.0,
+        "total_frames": 24,
+        "effective_fps": 1.3043478260869565
+      },
+      "video_name": "002314_j",
+      "scores": {
+        "visual quality": 1,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 2
+      },
+      "ground_truth": {
+        "visual quality": 1,
+        "text-to-video alignment": 1,
+        "physical/common-sense consistency": 1
+      },
+      "eos_reached": true,
+      "valid": true,
+      "postprocess_only_repair": false,
+      "original_status": "completed",
+      "generated_tokens": 340,
+      "raw_output_sha256": "30b22f202688138cdc38d782e24646a4572d2a3138eacf8e8c3f46f66bbdfad9",
+      "absolute_error": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 2.0,
+        "physical/common-sense consistency": 1.0
+      }
+    }
+  ],
+  "valid_outputs": 3,
+  "accuracy_claim": false,
+  "protocol": {
+    "frames": 4,
+    "max_side": 224,
+    "max_new_tokens": 1024,
+    "quantization": "NF4 4-bit double quantization",
+    "decoding": "greedy",
+    "model_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+    "labels_and_teacher_reasoning_in_model_input": false
+  }
+}
