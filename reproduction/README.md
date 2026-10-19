@@ -2,7 +2,7 @@
 
 Upstream: TIGER-AI-Lab/VideoScore2, commit 9e0fcbaeee0283b03efaaf8cd906f6381a808c75. Original authors retain credit. Upstream scripts remain unchanged.
 
-Status: environment preparation; no successful model inference or benchmark result yet.
+Status: dedicated Windows virtual environment, CUDA/NF4 kernel, and three real input videos validated. Model weights are still downloading. No successful model inference or benchmark result yet.
 
 The additional infer_cuda.py is an experimental 8 GB GPU adaptation: 4-bit NF4, double quantization, SDPA, uniform capped frames, reduced resolution, greedy generation. It extracts the original demo prompt without importing the upstream script. It reports hard 1-5 scores only, with strict validation. These changes do not reproduce the paper's full evaluation or floating-score protocol. No claim of numerical equivalence is made.
 

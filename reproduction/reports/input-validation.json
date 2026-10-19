@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "scope": "input decoding and uniform sampling only; no model inference",
+  "samples": [
+    {
+      "video_name": "004882_h",
+      "video_sha256": "530e239a25d7ee7fdafb5fe72e7ce921efc1f20ec77c570622fcd8911c3c93c8",
+      "frame_shape": [
+        4,
+        140,
+        224,
+        3
+      ],
+      "sampling": {
+        "frame_indices": [
+          0,
+          5,
+          10,
+          15
+        ],
+        "source_fps": 8.0,
+        "total_frames": 16,
+        "effective_fps": 1.6
+      }
+    },
+    {
+      "video_name": "001033_p",
+      "video_sha256": "2c41289429c90a5e997fe0edba082fdf649063226db5689eb0909d386731cd1b",
+      "frame_shape": [
+        4,
+        126,
+        224,
+        3
+      ],
+      "sampling": {
+        "frame_indices": [
+          0,
+          13,
+          26,
+          39
+        ],
+        "source_fps": 8.0,
+        "total_frames": 40,
+        "effective_fps": 0.6153846153846154
+      }
+    },
+    {
+      "video_name": "002314_j",
+      "video_sha256": "34f2b6932c89ccc70a538ce4735abfcc920b0d2d39cd7d8dd8fbe14bd4166f54",
+      "frame_shape": [
+        4,
+        224,
+        224,
+        3
+      ],
+      "sampling": {
+        "frame_indices": [
+          0,
+          7,
+          15,
+          23
+        ],
+        "source_fps": 10.0,
+        "total_frames": 24,
+        "effective_fps": 1.3043478260869565
+      }
+    }
+  ]
+}
