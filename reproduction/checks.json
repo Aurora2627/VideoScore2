@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": {
+    "valid": true,
+    "missing_rejected": true,
+    "range_rejected": true,
+    "duplicate_rejected": true,
+    "decimal_rejected": true,
+    "official_prompt": true
+  },
+  "scope": "Parser and prompt only; no model inference"
+}

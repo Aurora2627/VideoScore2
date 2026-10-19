@@ -1,0 +1,18 @@
+{
+  "upstream_repository": "https://github.com/TIGER-AI-Lab/VideoScore2",
+  "upstream_commit": "9e0fcbaeee0283b03efaaf8cd906f6381a808c75",
+  "model_repository": "TIGER-Lab/VideoScore2",
+  "model_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+  "dataset": {
+    "dataset": "TIGER-Lab/VideoFeedback2",
+    "revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+    "url": "https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/resolve/99b9935b00a205756c25b0555f2dcdc071281327/data_27k_test%20%28VideoScoreBench-v2%29.json",
+    "sha256": "279a9e5f1bd5a818a2054a5b2079c1eeb217968ccb17310669c70191a1538114"
+  },
+  "diagnostic_sample_ids": [
+    "004882_h",
+    "001033_p",
+    "002314_j"
+  ],
+  "attribution": "Original model, training method, dataset, and upstream code are the authors work; reproduction/ contains additional validation and adaptation code."
+}
