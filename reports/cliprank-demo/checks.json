@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "source": "test_selection.py",
+      "returncode": 0,
+      "source_sha256": "cbfe784e22eaf66934e1644077b75270a8eb455b8af8aa055fda0be63e8f6b66",
+      "output": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.004s\n\nOK\n"
+    },
+    {
+      "source": "test_review.py",
+      "returncode": 0,
+      "source_sha256": "e091c5e03fe7908db5a147924a1d8aa744fa7a803af762ffd42f3e0afefdd11d",
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.019s\n\nOK\n"
+    }
+  ],
+  "completed_selection_decisions_preserved": true,
+  "render_source_sha256": "1bcf6e3ca43425ed93789da8bd0bc59058f9cc8a0a325005db9b5a60d7b86efe",
+  "business_manifest_smoke": "passed; original two candidate files, no labels",
+  "export_tests": "2 passed; unlabeled input and failed-candidate export",
+  "browser_checks": {
+    "search": "passed",
+    "shortlist_filter": "passed",
+    "video_playback": {
+      "readyState": 4,
+      "duration_seconds": 1,
+      "error": null
+    }
+  }
+}

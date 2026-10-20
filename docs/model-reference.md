@@ -15,9 +15,9 @@ This is the official repo for our paper: "VideoScore2: Think before You Score in
 <img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Models-red?style=flat"></a>
 <a target="_blank" href="https://x.com/DongfuJiang/status/1973465380028031463">
 <a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/VideoScore2">
-<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Space-blue?style=flat"></a> 
+<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Space-blue?style=flat"></a>
 <a target="_blank" href="https://huggingface.co/datasets/hexuan21/VideoScore2_video_cache">
-<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Video_50k_cahce-red?style=flat"></a> 
+<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Video_50k_cahce-red?style=flat"></a>
 <img style="height:22pt" src="https://img.shields.io/badge/-Post-black?style=flat&logo=x&logoColor=white"></a>
 <br>
 
@@ -37,7 +37,7 @@ Recent advances in text-to-video generation have produced increasingly realistic
 
 
 ## Inference
-For running inference of VideoScore2, firstly install: 
+For running inference of VideoScore2, firstly install:
 ```
 pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0
 pip install transformers==4.53.2
@@ -50,7 +50,7 @@ pip install numpy==2.2.6
 
 Run inference on one video:
 ```
-python vs2_inference.py \ 
+python vs2_inference.py \
   --video_path=<path of your video> \
   --t2v_prompt=<corresponding text prompt for your video>
 ```
@@ -61,8 +61,8 @@ VideoScore2 is trained in two stages, SFT and RL, where the SFT checkpoint is us
 For details, please check [training/README.md](training/README.md)
 
 ## Evaluation
-We test VideoScore2 and many other baselines on our test set [VideoScore-Bench-v2](https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/tree/main) and other Out-Of-Domain (OOD) benchmarks: 
-- VideoGen-Reward-Bench (pairwise preference benchmark), 
+We test VideoScore2 and many other baselines on our test set [VideoScore-Bench-v2](https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/tree/main) and other Out-Of-Domain (OOD) benchmarks:
+- VideoGen-Reward-Bench (pairwise preference benchmark),
 - T2VQA-DB (we convert it to a pairwise preference benchmark)
 - MJ-Bench-Video (point score)
 - Video-Phy2-test (point score)
@@ -79,13 +79,13 @@ Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
 
 ```bibtex
 @misc{he2025videoscore2thinkscoregenerative,
-      title={VideoScore2: Think before You Score in Generative Video Evaluation}, 
+      title={VideoScore2: Think before You Score in Generative Video Evaluation},
       author={Xuan He and Dongfu Jiang and Ping Nie and Minghao Liu and Zhengxuan Jiang and Mingyi Su and Wentao Ma and Junru Lin and Chun Ye and Yi Lu and Keming Wu and Benjamin Schneider and Quy Duc Do and Zhuofeng Li and Yiming Jia and Yuxuan Zhang and Guo Cheng and Haozhe Wang and Wangchunshu Zhou and Qunshu Lin and Yuanxing Zhang and Ge Zhang and Wenhao Huang and Wenhu Chen},
       year={2025},
       eprint={2509.22799},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2509.22799}, 
+      url={https://arxiv.org/abs/2509.22799},
 }
 
 ```

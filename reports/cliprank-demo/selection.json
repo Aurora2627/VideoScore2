@@ -1,0 +1,130 @@
+{
+  "policy": {
+    "weights": {
+      "visual quality": 0.3,
+      "text-to-video alignment": 0.4,
+      "physical/common-sense consistency": 0.3
+    },
+    "minimum_scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "top_k": 1,
+    "policy_status": "heuristic_not_calibrated"
+  },
+  "groups": [
+    {
+      "prompt": "Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer",
+      "prompt_sha256": "12d3849cdbc1aa35baacfdb1b7a727fc1dc3d5af6e3c530186124018adbab907",
+      "candidates": [
+        {
+          "video_name": "004882_h",
+          "scores": {
+            "visual quality": 3,
+            "text-to-video alignment": 2,
+            "physical/common-sense consistency": 3
+          },
+          "rank": null,
+          "selected": false,
+          "valid": true,
+          "weighted_score": 2.6,
+          "review_reasons": [
+            "text-to-video alignment below minimum"
+          ],
+          "decision": "manual_review"
+        }
+      ],
+      "comparison_available": false,
+      "note": "Ties share rank and may expand the shortlist. Shortlists require human approval."
+    },
+    {
+      "prompt": "The race starts with a swift and energetic rabbit named Robbie dashing ahead, leaving a slow but determined turtle named Timmy behind in a lush and sprawling meadow with swaying wildflowers and tall grass",
+      "prompt_sha256": "cd4f863dcdf13fd26852d11cd5a6f5c74b12adb7a84b6b252adaba79ed97b8ba",
+      "candidates": [
+        {
+          "video_name": "001033_p",
+          "scores": {
+            "visual quality": 3,
+            "text-to-video alignment": 3,
+            "physical/common-sense consistency": 3
+          },
+          "rank": null,
+          "selected": false,
+          "valid": true,
+          "weighted_score": 3.0,
+          "review_reasons": [],
+          "decision": "single_candidate_review"
+        }
+      ],
+      "comparison_available": false,
+      "note": "Ties share rank and may expand the shortlist. Shortlists require human approval."
+    },
+    {
+      "prompt": "Cartoonizing a group of people approaching a fight scene, holding swords, with their mouths open shouting to go to fight in an open field with their opponent",
+      "prompt_sha256": "23f91ec93e358e788e4afde5d0b2ceb906f0c1861a95fd95cddd1f217479c6a2",
+      "candidates": [
+        {
+          "video_name": "002314_j",
+          "scores": {
+            "visual quality": 1,
+            "text-to-video alignment": 3,
+            "physical/common-sense consistency": 2
+          },
+          "rank": null,
+          "selected": false,
+          "valid": true,
+          "weighted_score": 2.1,
+          "review_reasons": [
+            "visual quality below minimum",
+            "physical/common-sense consistency below minimum"
+          ],
+          "decision": "manual_review"
+        }
+      ],
+      "comparison_available": false,
+      "note": "Ties share rank and may expand the shortlist. Shortlists require human approval."
+    },
+    {
+      "prompt": "A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body",
+      "prompt_sha256": "b962414a2ced2f90cd387ef78f3b716f6fb88344825682f7c6ab56d61d3664d8",
+      "candidates": [
+        {
+          "video_name": "001468_m",
+          "scores": {
+            "visual quality": 3,
+            "text-to-video alignment": 3,
+            "physical/common-sense consistency": 3
+          },
+          "rank": 1,
+          "selected": true,
+          "valid": true,
+          "weighted_score": 3.0,
+          "review_reasons": [],
+          "decision": "shortlist"
+        },
+        {
+          "video_name": "001468_p",
+          "scores": {
+            "visual quality": 1,
+            "text-to-video alignment": 2,
+            "physical/common-sense consistency": 1
+          },
+          "rank": null,
+          "selected": false,
+          "valid": true,
+          "weighted_score": 1.4,
+          "review_reasons": [
+            "visual quality below minimum",
+            "text-to-video alignment below minimum",
+            "physical/common-sense consistency below minimum"
+          ],
+          "decision": "manual_review"
+        }
+      ],
+      "comparison_available": true,
+      "note": "Ties share rank and may expand the shortlist. Shortlists require human approval."
+    }
+  ],
+  "automatic_publication": false
+}

@@ -67,7 +67,7 @@
           "--revision",
           "09a2732cb64fa566a1f332f978368292ce5c295c",
           "--output-dir",
-          "${input:outputDir}"
+          "${input:cliprankOutputDir}"
         ],
         "env": {
           "PYTHONUTF8": "1",
@@ -94,6 +94,12 @@
         "type": "promptString",
         "description": "New results folder (must not exist)",
         "default": "D:/career-projects/runs/VideoScore2/debug_run_001"
+      },
+      {
+        "id": "cliprankOutputDir",
+        "type": "promptString",
+        "description": "New ClipRank report directory (must not exist)",
+        "default": "D:/career-projects/runs/ClipRank/debug_run_001"
       }
     ]
   }

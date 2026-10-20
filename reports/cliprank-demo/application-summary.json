@@ -1,0 +1,98 @@
+{
+  "valid_outputs": 5,
+  "prompt_groups": 4,
+  "model_load_count": 1,
+  "model_load_seconds": 66.62238010001602,
+  "batch_wall_seconds": 682.351601900009,
+  "samples": [
+    {
+      "video_name": "004882_h",
+      "scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 1
+      },
+      "generation_seconds": 136.04062659997726,
+      "peak_allocated_gib": 5.716853618621826
+    },
+    {
+      "video_name": "001033_p",
+      "scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "generation_seconds": 101.34537100000307,
+      "peak_allocated_gib": 5.712454795837402
+    },
+    {
+      "video_name": "002314_j",
+      "scores": {
+        "visual quality": 1,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 2
+      },
+      "ground_truth": {
+        "visual quality": 1,
+        "text-to-video alignment": 1,
+        "physical/common-sense consistency": 1
+      },
+      "generation_seconds": 93.28122870001243,
+      "peak_allocated_gib": 5.720778942108154
+    },
+    {
+      "video_name": "001468_m",
+      "scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 5
+      },
+      "generation_seconds": 95.75768380000954,
+      "peak_allocated_gib": 5.715017318725586
+    },
+    {
+      "video_name": "001468_p",
+      "scores": {
+        "visual quality": 1,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 1
+      },
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 5
+      },
+      "generation_seconds": 124.26888129999861,
+      "peak_allocated_gib": 5.708654403686523
+    }
+  ],
+  "mae": {
+    "visual quality": 0.6,
+    "text-to-video alignment": 1.2,
+    "physical/common-sense consistency": 1.8
+  },
+  "shortlist": [
+    "001468_m"
+  ],
+  "manual_review": [
+    "004882_h",
+    "002314_j",
+    "001468_p"
+  ],
+  "scope": "Five diagnostic samples including one real same-prompt pair. No business acceptance, model improvement or full benchmark claim."
+}

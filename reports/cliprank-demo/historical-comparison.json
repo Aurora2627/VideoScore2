@@ -1,0 +1,59 @@
+{
+  "scope": "Same three videos and inference settings across historical runs; not a controlled speed benchmark",
+  "samples": [
+    {
+      "video_name": "004882_h",
+      "scores_equal": true,
+      "tokens_equal": true,
+      "old_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "new_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "old_generation_seconds": 140.8158068000048,
+      "new_generation_seconds": 136.04062659997726,
+      "same_video_hash": true
+    },
+    {
+      "video_name": "001033_p",
+      "scores_equal": true,
+      "tokens_equal": true,
+      "old_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "new_scores": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "old_generation_seconds": 104.70185370001127,
+      "new_generation_seconds": 101.34537100000307,
+      "same_video_hash": true
+    },
+    {
+      "video_name": "002314_j",
+      "scores_equal": true,
+      "tokens_equal": true,
+      "old_scores": {
+        "visual quality": 1,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 2
+      },
+      "new_scores": {
+        "visual quality": 1,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 2
+      },
+      "old_generation_seconds": 99.29263440001523,
+      "new_generation_seconds": 93.28122870001243,
+      "same_video_hash": true
+    }
+  ]
+}

@@ -201,3 +201,5 @@ eval/eval_methods/utils_dover/pretrained_weights/*
 
 
 *.slurm
+
+/reports/**/media/

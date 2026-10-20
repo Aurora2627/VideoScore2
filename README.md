@@ -1,91 +1,63 @@
-> Fork-specific reproduction: [Windows CUDA setup, actual three-video results and saved evidence](reproduction/README.md). Original model, dataset and training results below belong to the upstream authors.
+# ClipRank：基于多模态大模型的 AIGC 短视频质量评估与候选筛选系统
 
-# VideoScore2
-This is the official repo for our paper: "VideoScore2: Think before You Score in Generative Video Evaluation"
+面向短视频创作团队的素材初筛场景：同一条创意提示词生成多个视频后，逐条观看和检查动作、画面缺陷需要时间。ClipRank 对视频进行多维分析，给出候选清单和待复核原因，帮助创作者集中检查更合适的素材。
 
-<a target="_blank" href="https://arxiv.org/abs/2509.22799">
-<img style="height:22pt" src="https://img.shields.io/badge/-Paper-red?style=flat&logo=arxiv"></a>
-<a target="_blank" href="https://github.com/TIGER-AI-Lab/VideoScore2">
-<img style="height:22pt" src="https://img.shields.io/badge/-Code-green?style=flat&logo=github"></a>
-<a target="_blank" href="https://tiger-ai-lab.github.io/VideoScore2/">
-<img style="height:22pt" src="https://img.shields.io/badge/-🌐%20Website-blue?style=flat"></a>
-<a target="_blank" href="https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2">
-<img style="height:22pt" src="https://img.shields.io/badge/-🛢️%20Dataset-red?style=flat"></a>
-<a target="_blank" href="https://huggingface.co/TIGER-Lab/VideoScore2">
-<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Models-red?style=flat"></a>
-<a target="_blank" href="https://x.com/DongfuJiang/status/1973465380028031463">
-<a target="_blank" href="https://huggingface.co/spaces/TIGER-Lab/VideoScore2">
-<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Space-blue?style=flat"></a> 
-<a target="_blank" href="https://huggingface.co/datasets/hexuan21/VideoScore2_video_cache">
-<img style="height:22pt" src="https://img.shields.io/badge/-🤗%20Video_50k_cahce-red?style=flat"></a> 
-<img style="height:22pt" src="https://img.shields.io/badge/-Post-black?style=flat&logo=x&logoColor=white"></a>
-<br>
+## 输入与产出
 
-## VideoScore (v1 and v1.1)
-"VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation" (EMNLP 2024)
+输入清单包含视频名称、本地路径、原始生成提示词和文件 SHA256。系统输出每条视频的分析、三个维度的 1–5 分、同提示词下的候选排序和人工复核清单。HTML 报告可直接在浏览器打开，原始回答可从报告中的链接查看。系统不会自动发布视频。
 
-[Paper](https://arxiv.org/abs/2406.15252)
+三个维度分别是视觉质量、文本匹配和物理/常识一致性。例如“人物拿起杯子喝水”的素材，会检查画面缺陷、是否符合动作描述、手与杯子的交互是否合理。
 
-[Github Repo](https://github.com/TIGER-AI-Lab/VideoScore)
+## 处理流程
 
-## News/TODO
-- [x] Support 11 baselines: `AIGVE-MACS`, `DeQA-Score`, `Dover`, `ImageReward`, `Q-Align`, `Q-Insight`, `UnifiedReward`, `VideoPhy2-auto-eval`, `VideoReward`, `VisionReward`, `VideoScore1`. Some are not reported in the paper due to length contraint.
-- [x] Support 5 benchmarks: in-domain: VideoScore-Bench-v2, out-of-domain: VideoGenReward-Bench,  T2VQA-DB (converted to preference version), MJ-Bench-Video, VideoPhy2-test.
+视频清单与哈希检查 → 常驻 CUDA 模型 → 逐视频采样及多模态推理 → EOS 与评分校验 → 按提示词分组 → 规则筛选与并列排名 → HTML/JSON 报告。
 
-## Introduction
-Recent advances in text-to-video generation have produced increasingly realistic and diverse content, yet evaluating such videos remains a fundamental challenge due to their multi-faceted nature encompassing visual quality, semantic alignment, and physical consistency. Existing evaluators and reward models are limited to single opaque scores, lack interpretability, or provide only coarse analysis, making them insufficient for capturing the comprehensive nature of video quality assessment. We present VideoScore2, a multi-dimensional, interpretable, and human-aligned framework that explicitly evaluates visual quality, text-to-video alignment, and physical/common-sense consistency while producing detailed chain-of-thought rationales. Our model is trained on a large-scale dataset VideoFeedback2 containing 27,168 human-annotated videos with both scores and reasoning traces across three dimensions, using a two-stage pipeline of supervised fine-tuning followed by reinforcement learning with Group Relative Policy Optimization (GRPO) to enhance analytical robustness. Extensive experiments demonstrate that VideoScore2 achieves superior performance with 44.35 (+5.94) accuracy on our in-domain benchmark VideoScore-Bench-v2 and 50.37 (+4.32) average performance across four out-of-domain benchmarks (VideoGenReward-Bench, VideoPhy2, etc), while providing interpretable assessments that bridge the gap between evaluation and controllable generation through effective reward modeling for Best-of-N sampling.
+模型只加载一次，逐个处理视频，控制 8GB 显卡的显存开销。当前默认 4 帧、最长边 224 像素、NF4 4-bit 双重量化、BF16（硬件支持时）、SDPA 与贪心解码，生成上限 1024 token。
+
+## 筛选规则
+
+- 只比较提示词完全一致的视频；每组至少有两个有效输出才进行排名。
+- 默认总分为画质×0.3＋文本匹配×0.4＋物理合理性×0.3。
+- 任一维度低于 3 分，或推理/解析失败，进入人工复核，不进入候选短名单。
+- 默认保留每组第一名，并列时全部保留，报告明确显示并列。
+- 只有一个有效候选时只提供评估，不宣称它优于其他素材。
+
+这些权重和阈值是可配置的初始业务规则，尚未经过业务数据校准，不代表真实采用率、概率或最优方案。调整前应建立独立验证集；最终测试集不用于选择规则。
+
+## Windows 与 VS Code
+
+使用 videoscore2-cuda 独立虚拟环境。打开根目录 VideoScore2.code-workspace，新建 VideoScore2 CUDA 终端。调试选择 ClipRank | videoscore2-cuda | batch evaluation，输出目录必须尚不存在。首次运行前须准备本地模型和候选清单。
+
+命令行入口为 application/run_batch.py，必填参数是 --manifest、--model、--revision 和 --output-dir；可通过 --frames、--max-side、--max-new-tokens、--policy 配置输入与策略。
+
+## 报告与源码
+
+- application/run_batch.py：常驻模型、顺序批处理、异常记录、评分与 HTML 报告。
+- application/selection.py 和 policy.json：按提示词分组、维度门槛、排序、并列和人工复核规则。
+- application/prepare_demo.py：从固定来源准备诊断输入，不按标签挑选样本。
+- application/test_selection.py：分组隔离、失败排除、阈值、并列、文件校验等检查。
+- reports/cliprank-demo：五视频实测记录与评审页面。
+
+每次运行保存清单、输入哈希、策略、代码版本与源码快照，以及原始回答、token、分数、耗时和显存。标签只用于生成后的离线误差统计，不送入模型。
+
+## 当前边界
+
+当前是本地辅助选片工具，尚未完成大规模效果评测、业务阈值校准、训练微调或线上服务接入。低分及失败项需要人工检查；增加抽帧数量和分辨率能否改善结果，需要对照实验验证。
+
+模型后端使用 VideoScore2 公开权重，基础架构为 Qwen2.5-VL。模型、数据和依赖来源见 [MODEL_SOURCES.md](MODEL_SOURCES.md)，保留原项目许可与引用。
 
 
-## Inference
-For running inference of VideoScore2, firstly install: 
-```
-pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0
-pip install transformers==4.53.2
-pip install qwen-vl-utils
-pip install accelerate
-pip install opencv-python-headless
-pip install scipy
-pip install numpy==2.2.6
-```
+## 本轮验证结果
 
-Run inference on one video:
-```
-python vs2_inference.py \ 
-  --video_path=<path of your video> \
-  --t2v_prompt=<corresponding text prompt for your video>
-```
+五个视频全部完整输出，覆盖四组提示词，其中一组含两个真实候选；模型加载一次，加载约 66.6 秒，整批约 682.4 秒，峰值已分配显存约 5.72 GiB。原三个样本的分数及生成 token 与历史记录完全一致。
 
-## Training
-VideoScore2 is trained in two stages, SFT and RL, where the SFT checkpoint is used to initialize the RL stage.
+当前规则产生一个短名单候选、三个待复核项、一个单素材待确认项。新增候选对的推荐方向与标签不一致，因此当前系统仅适合作为需要人工确认的评估工具，不能宣称已经改善选片准确率。详情见 [实测报告](reports/cliprank-demo/RESULTS.md)。本地 review.html 支持搜索、按状态筛选、查看分析与视频回看；示例视频仅保存在本地 media 目录，不提交 Git。
 
-For details, please check [training/README.md](training/README.md)
 
-## Evaluation
-We test VideoScore2 and many other baselines on our test set [VideoScore-Bench-v2](https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/tree/main) and other Out-Of-Domain (OOD) benchmarks: 
-- VideoGen-Reward-Bench (pairwise preference benchmark), 
-- T2VQA-DB (we convert it to a pairwise preference benchmark)
-- MJ-Bench-Video (point score)
-- Video-Phy2-test (point score)
+## 使用自己的创意候选
 
-For details, please check [eval/README.md](eval/README.md)
+先使用 application/build_manifest.py，为同一提示词生成的视频创建清单。输入不需要人工标签：--prompt 指定原始提示词，重复使用 --video 指定候选视频路径，--output 指定一个新的 JSON 文件。脚本会生成安全的视频编号并计算文件哈希。
 
-## Acknowledgement
-This project builds upon several open-source frameworks:
-- Thanks [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for the SFT framework and codebase!
-- Thanks [Video-R1](https://github.com/tulerfeng/Video-R1) for the Video RL framework and codebase!
+随后使用 application/run_batch.py 进行评估。完成后用 application/export_run.py --run-dir 实验目录 --output-dir 新的报告目录，导出中文评审页面；--previous-report 仅在需要历史诊断对照时提供。失败或无标签的素材也可导出，失败项进入人工复核。输出目录必须尚不存在。
 
-## Citation
-Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff). The BibTeX below cites the [arXiv preprint](https://arxiv.org/abs/2509.22799).
-
-```bibtex
-@misc{he2025videoscore2thinkscoregenerative,
-      title={VideoScore2: Think before You Score in Generative Video Evaluation}, 
-      author={Xuan He and Dongfu Jiang and Ping Nie and Minghao Liu and Zhengxuan Jiang and Mingyi Su and Wentao Ma and Junru Lin and Chun Ye and Yi Lu and Keming Wu and Benjamin Schneider and Quy Duc Do and Zhuofeng Li and Yiming Jia and Yuxuan Zhang and Guo Cheng and Haozhe Wang and Wangchunshu Zhou and Qunshu Lin and Yuanxing Zhang and Ge Zhang and Wenhao Huang and Wenhu Chen},
-      year={2025},
-      eprint={2509.22799},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2509.22799}, 
-}
-
-```
+使用 python application/serve_review.py --directory 报告目录，在本机打开终端显示的地址。Mac 通过 VS Code Remote SSH 使用 Windows 时，需要保持对应端口转发；Windows 环境负责实际推理，浏览器只查看结果。

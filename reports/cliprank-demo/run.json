@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "started": "2026-10-20T14:27:58.225961",
+  "project_commit": "fb54b24c3b92846f02cc58763179e1b37a56da40",
+  "git_status": "",
+  "configuration": {
+    "manifest": "D:\\career-projects\\data\\ClipRank-demo-20261020\\manifest.json",
+    "model": "D:\\career-projects\\models\\VideoScore2\\09a2732cb64fa566a1f332f978368292ce5c295c",
+    "output_dir": "D:\\career-projects\\runs\\ClipRank\\20261020_142758",
+    "revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+    "frames": 4,
+    "max_side": 224,
+    "max_new_tokens": 1024,
+    "policy": "D:\\career-projects\\VideoScore2\\application\\policy.json"
+  },
+  "source_sha256": {
+    "infer_cuda.py": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+    "prepare_demo.py": "16650d09bae0651bf1c349984c8f7ae27527e5768490b2e9c549bbb9a81d0e10",
+    "run_batch.py": "2a9f5b17b32f075798a364fd274280408971ff99f1683f860d13a9952a0df35c",
+    "selection.py": "d42ef4eb2aec5691e80dcc1e3b0dd45c15d2e8666f1cfc0459c8a9f2aeb19a88",
+    "test_selection.py": "ef8ffaf7c1639d0b01e1e5d471d64919a73a0b9522217f74f5819cf9adf2cbc5",
+    "vs2_inference.py": "acf8fdd53b3302d5b7e32babfa915055e468e3f6d8590eb2b7c2ba1058173f75"
+  },
+  "model_load_count": 1,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "compute_dtype": "torch.bfloat16",
+  "model_load_seconds": 66.62238010001602,
+  "device_map": {
+    "": "cuda:0"
+  },
+  "environment": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.2",
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.48.1",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88"
+  },
+  "finished": "2026-10-20T14:39:20.640694",
+  "wall_seconds": 682.351601900009
+}

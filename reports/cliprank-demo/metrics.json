@@ -1,0 +1,17 @@
+{
+  "attempted": 5,
+  "manifest_count": 5,
+  "valid_outputs": 5,
+  "valid_output_rate": 1.0,
+  "mae": {
+    "visual quality": 0.6,
+    "text-to-video alignment": 1.2,
+    "physical/common-sense consistency": 1.8
+  },
+  "labeled_counts": {
+    "visual quality": 5,
+    "text-to-video alignment": 5,
+    "physical/common-sense consistency": 5
+  },
+  "scope": "diagnostic only; no held-out model-quality or production claim"
+}

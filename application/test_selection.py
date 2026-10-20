@@ -34,4 +34,12 @@ class SelectionTests(unittest.TestCase):
   with tempfile.TemporaryDirectory() as tmp:
    p=Path(tmp)/'clip';p.write_bytes(b'x');item={'video_name':'clip','prompt':'a','video_path':str(p),'video_sha256':hashlib.sha256(b'x').hexdigest()}
    with self.assertRaises(ValueError):preflight({'samples':[item,item]})
+class PendingStateTests(unittest.TestCase):
+ def test_unprocessed_is_pending(self):
+  g=select_candidates([{'video_name':'a','prompt':'same'}],{},DEFAULT)['groups'][0]
+  self.assertEqual(g['candidates'][0]['decision'],'pending')
+ def test_waits_for_last_candidate(self):
+  g=select_candidates([{'video_name':n,'prompt':'same'} for n in 'abc'],{'a':result(),'b':result()},DEFAULT)['groups'][0]
+  self.assertFalse(g['comparison_available']);self.assertFalse(any(r['selected'] for r in g['candidates']))
+  self.assertEqual(g['candidates'][0]['decision'],'comparison_pending')
 if __name__=='__main__':unittest.main()

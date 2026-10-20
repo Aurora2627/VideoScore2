@@ -1,0 +1,11 @@
+{
+  "renderer_sha256": "1bcf6e3ca43425ed93789da8bd0bc59058f9cc8a0a325005db9b5a60d7b86efe",
+  "review_html_sha256": "e15c955862b0ba63e4c00ef019c9bb86b0943563dbbf89226990d358a4c3ce3f",
+  "original_review_preserved": "review-initial.html",
+  "model_raw_hashes_rechecked": true,
+  "browser_checks": [
+    "search by video ID",
+    "shortlist filter",
+    "video playback: readyState 4, no error"
+  ]
+}

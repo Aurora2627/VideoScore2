@@ -1,0 +1,161 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ClipRank · 视频素材评审</title><style>
+    :root{font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;color:#18253c;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}main{max-width:1180px;margin:auto;padding:36px 24px}header{background:#122542;color:white;padding:30px;border-radius:20px}h1{font-size:28px;margin:10px 0}header p{color:#c4d4e9;line-height:1.7}.eyebrow{letter-spacing:3px;color:#89c6ff;font-size:12px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:22px 0}.stat,section{background:white;border:1px solid #e0e7f0;border-radius:14px;padding:22px}.stat strong{font-size:30px;display:block}.stat span,.muted{color:#64748b;font-size:14px}nav{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}input,select{border:1px solid #ccd6e5;background:white;border-radius:9px;padding:12px;font:inherit}input{flex:1;min-width:200px}section{margin:18px 0}h2{font-size:18px;margin:0 0 12px}.prompt{line-height:1.7;color:#475569;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:14px 8px;border-bottom:1px solid #edf1f6;vertical-align:top}th{color:#64748b;font-weight:500}.badge{display:inline-block;border-radius:6px;padding:5px 9px;background:#edf2f8;white-space:nowrap}.manual_review{background:#fff0df;color:#99520d}.shortlist{background:#dff5eb;color:#126e46}.reasons{font-size:12px;color:#8c591d;margin-top:7px}.analysis{margin:14px 0;font-size:14px}.analysis summary{cursor:pointer;color:#285da0}.analysis pre{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;max-height:420px;overflow:auto;background:#f7f9fc;padding:16px;border-radius:10px}footer{color:#64748b;font-size:13px;line-height:1.8;margin:28px 0}[hidden]{display:none!important}@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}.table{overflow-x:auto}main{padding:16px}header{padding:22px}}
+    </style><main><header><div class="eyebrow">CLIPRANK / CREATIVE REVIEW</div><h1>AIGC 短视频素材评审台</h1><p>围绕同一创意需求比较候选视频，集中检查画面、内容与动作缺陷。<br>系统提供辅助评估；最终采用与发布由创作者确认。</p></header>
+<div class="stats">
+<div class="stat"><strong>5</strong><span>视频素材</span></div>
+<div class="stat"><strong>4</strong><span>创意需求</span></div>
+<div class="stat"><strong>1</strong><span>候选短名单</span></div>
+<div class="stat"><strong>3</strong><span>待人工复核</span></div>
+</div><nav><input id="search" placeholder="搜索提示词或视频名称" aria-label="搜索提示词或视频名称"><select id="filter" aria-label="筛选处理建议"><option value="all">全部素材</option><option value="pending">等待评估</option><option value="comparison_pending">等待同组评估</option><option value="shortlist">候选短名单</option><option value="manual_review">待人工复核</option><option value="single_candidate_review">单个素材待确认</option><option value="reserve">备选</option></select></nav>
+<section data-group><h2>创意需求 1</h2><p class="prompt">Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer</p><p class="muted">有效候选不足两个，仅评估，暂不排名。</p><div class="table"><table><thead><tr><th>视频</th><th>画面 / 文本 / 物理</th><th>规则总分</th><th>组内排名</th><th>处理建议</th></tr></thead><tbody>
+<tr data-item data-decision="manual_review" data-search="Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer 004882_h"><td><strong>004882_h</strong></td><td>3 / 2 / 3</td><td>2.60 / 5</td><td>未排名</td><td><span class="badge manual_review">待人工复核</span><div class="reasons">文本匹配低于初筛门槛</div></td></tr>
+</tbody></table></div>
+<details class="analysis" data-item data-decision="manual_review" data-search="Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer 004882_h"><summary>004882_h · 查看视频</summary><video controls preload="none" style="max-width:100%;max-height:360px;margin-top:14px" src="media/004882_h.mp4"></video></details>
+<details class="analysis" data-item data-decision="manual_review" data-search="Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer 004882_h"><summary>004882_h · 查看模型分析</summary><pre>
+&lt;think&gt;
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the text prompt. The prompt describes &quot;Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer.&quot;
+
+Looking at the frames:
+
+Visual Quality Analysis:
+- The frames show a young man with reddish hair wearing a white t-shirt and blue backpack.
+- The resolution is moderate; not high-end, but acceptable for viewing.
+- Lighting appears natural and consistent across frames.
+- There are some background students visible, suggesting a school setting.
+- Overall clarity is adequate; no obvious distortions or severe artifacts in these frames.
+- However, since only static frames are available, motion-related issues like stuttering or frame drops cannot be assessed here.
+
+Text-to-Video Alignment Analysis:
+- The prompt specifies a 17-year-old introvert with a sketchbook under the arm navigating a high school hallway; in the frames, the subject is visible but there is no sketchbook under the arm, and the setting reads more like an outdoor area than a hallway.
+- The scene shows a crowd of students, which aligns with part of the prompt, but the core elements (sketchbook, hallway navigation, and the specific character portrayal) are not realized.
+- Audio cues (laughter, chatter) cannot be judged from frames alone.
+- Overall alignment is limited; several key prompt elements are missing or misrepresented.
+
+Physical/Common-sense Consistency:
+- The scene presents plausible human proportions, natural lighting, and believable spatial relationships among students.
+- There are no obvious anatomical or physical inconsistencies in the frames.
+- Given the mismatch with the prompt’s scenario, the overall coherence is moderate rather than perfect.
+
+Overall assessment:
+The video demonstrates moderate visual quality, limited alignment with the textual prompt, and acceptable physical consistency. The evaluation reflects that the visuals are serviceable, alignment to the prompt is weak due to missing elements, and basic realism remains intact.
+&lt;/think&gt;
+
+(1) visual quality – clarity, smoothness, artifacts: 3
+(2) text-to-video alignment – fidelity to the prompt: 2
+(3) physical/common-sense consistency – naturalness and physics plausibility: 3
+</pre></details>
+</section>
+<section data-group><h2>创意需求 2</h2><p class="prompt">The race starts with a swift and energetic rabbit named Robbie dashing ahead, leaving a slow but determined turtle named Timmy behind in a lush and sprawling meadow with swaying wildflowers and tall grass</p><p class="muted">有效候选不足两个，仅评估，暂不排名。</p><div class="table"><table><thead><tr><th>视频</th><th>画面 / 文本 / 物理</th><th>规则总分</th><th>组内排名</th><th>处理建议</th></tr></thead><tbody>
+<tr data-item data-decision="single_candidate_review" data-search="The race starts with a swift and energetic rabbit named Robbie dashing ahead, leaving a slow but determined turtle named Timmy behind in a lush and sprawling meadow with swaying wildflowers and tall grass 001033_p"><td><strong>001033_p</strong></td><td>3 / 3 / 3</td><td>3.00 / 5</td><td>未排名</td><td><span class="badge single_candidate_review">单个素材待确认</span><div class="reasons"></div></td></tr>
+</tbody></table></div>
+<details class="analysis" data-item data-decision="single_candidate_review" data-search="The race starts with a swift and energetic rabbit named Robbie dashing ahead, leaving a slow but determined turtle named Timmy behind in a lush and sprawling meadow with swaying wildflowers and tall grass 001033_p"><summary>001033_p · 查看视频</summary><video controls preload="none" style="max-width:100%;max-height:360px;margin-top:14px" src="media/001033_p.mp4"></video></details>
+<details class="analysis" data-item data-decision="single_candidate_review" data-search="The race starts with a swift and energetic rabbit named Robbie dashing ahead, leaving a slow but determined turtle named Timmy behind in a lush and sprawling meadow with swaying wildflowers and tall grass 001033_p"><summary>001033_p · 查看模型分析</summary><pre>
+&lt;think&gt;
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the text prompt. The prompt describes a race between a swift rabbit and a slow but determined turtle in a lush meadow with wildflowers and tall grass.
+
+Visual Quality Analysis:
+The overall visual quality is moderate. The frames show a 3D animated style with reasonable clarity, but there are occasional minor artifacts and slight inconsistencies in lighting or shading across frames. Colors are generally vibrant, yet some scenes exhibit mild color banding or subtle aliasing. The rendering remains acceptable for a mid-range animation, but it does not reach high-end polish.
+
+Text-to-Video Alignment Analysis:
+The scene includes the core elements described in the prompt: a rabbit and a turtle in a meadow with flowers and grass. However, the dynamic aspect of a race is not strongly conveyed; the frames read more as a static or minimally animated moment rather than a clear depiction of the rabbit racing ahead. Alignment is adequate but not strong, reflecting a moderate level of fidelity to the prompt.
+
+Physical/Common-sense Consistency Analysis:
+Character proportions and environmental details are coherent within the cartoon style. The rabbit and turtle are recognizable, and the meadow setting appears plausible. Some motion cues and timing feel slightly off due to limited animation, which reduces the perceived realism of a race, though overall consistency remains acceptable.
+
+Overall assessment:
+The video demonstrates basic technical competence with moderate visual quality, alignment, and consistency. It captures the essential scene elements but lacks stronger dynamic execution and polish.
+&lt;/think&gt;
+
+(1) visual quality – clarity, smoothness, artifacts: 3
+(2) text-to-video alignment – fidelity to the prompt: 3
+(3) physical/common-sense consistency – naturalness and physics plausibility: 3
+</pre></details>
+</section>
+<section data-group><h2>创意需求 3</h2><p class="prompt">Cartoonizing a group of people approaching a fight scene, holding swords, with their mouths open shouting to go to fight in an open field with their opponent</p><p class="muted">有效候选不足两个，仅评估，暂不排名。</p><div class="table"><table><thead><tr><th>视频</th><th>画面 / 文本 / 物理</th><th>规则总分</th><th>组内排名</th><th>处理建议</th></tr></thead><tbody>
+<tr data-item data-decision="manual_review" data-search="Cartoonizing a group of people approaching a fight scene, holding swords, with their mouths open shouting to go to fight in an open field with their opponent 002314_j"><td><strong>002314_j</strong></td><td>1 / 3 / 2</td><td>2.10 / 5</td><td>未排名</td><td><span class="badge manual_review">待人工复核</span><div class="reasons">画面质量低于初筛门槛；物理合理性低于初筛门槛</div></td></tr>
+</tbody></table></div>
+<details class="analysis" data-item data-decision="manual_review" data-search="Cartoonizing a group of people approaching a fight scene, holding swords, with their mouths open shouting to go to fight in an open field with their opponent 002314_j"><summary>002314_j · 查看视频</summary><video controls preload="none" style="max-width:100%;max-height:360px;margin-top:14px" src="media/002314_j.mp4"></video></details>
+<details class="analysis" data-item data-decision="manual_review" data-search="Cartoonizing a group of people approaching a fight scene, holding swords, with their mouths open shouting to go to fight in an open field with their opponent 002314_j"><summary>002314_j · 查看模型分析</summary><pre>
+&lt;think&gt;
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the prompt. The prompt asks for &quot;Cartoonizing a group of people approaching a fight scene, holding swords, with their mouths open shouting to go to fight in an open field with their opponent.&quot;
+
+Visual Quality Analysis:
+The overall visual quality is very poor. The animation shows pronounced pixelation and compression artifacts, with jagged edges and inconsistent rendering across frames. Colors appear washed out or oversaturated, and there is noticeable instability in character positioning and motion. The result is a lack of polish and coherence, making the scene hard to interpret at a glance.
+
+Text-to-Video Alignment Analysis:
+Alignment with the prompt is partial. The video does feature a group of cartoon-style figures in an open-field setting and conveys a sense of movement toward confrontation. However, several key prompt elements are not clearly realized: swords are not visibly held by the characters, and the mouths are not clearly shown as open in a shouting gesture. Additionally, there is no clearly visible opponent interaction. Overall, the alignment is moderate rather than complete.
+
+Physical/Common-sense Consistency Analysis:
+There are notable inconsistencies in character proportions and motion. Some characters appear stretched or compressed, and the animation lacks smooth, believable movement. While basic spatial relationships are maintained, the overall physical realism and common-sense coherence are limited, resulting in a low level of consistency.
+&lt;/think&gt;
+
+(1) visual quality – clarity, smoothness, artifacts: 1
+(2) text-to-video alignment – fidelity to the prompt: 3
+(3) physical/common-sense consistency – naturalness and physics plausibility: 2
+</pre></details>
+</section>
+<section data-group><h2>创意需求 4</h2><p class="prompt">A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body</p><p class="muted">在同一提示词的有效候选中进行比较。</p><div class="table"><table><thead><tr><th>视频</th><th>画面 / 文本 / 物理</th><th>规则总分</th><th>组内排名</th><th>处理建议</th></tr></thead><tbody>
+<tr data-item data-decision="shortlist" data-search="A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body 001468_m"><td><strong>001468_m</strong></td><td>3 / 3 / 3</td><td>3.00 / 5</td><td>1</td><td><span class="badge shortlist">候选短名单</span><div class="reasons"></div></td></tr>
+<tr data-item data-decision="manual_review" data-search="A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body 001468_p"><td><strong>001468_p</strong></td><td>1 / 2 / 1</td><td>1.40 / 5</td><td>未排名</td><td><span class="badge manual_review">待人工复核</span><div class="reasons">画面质量低于初筛门槛；文本匹配低于初筛门槛；物理合理性低于初筛门槛</div></td></tr>
+</tbody></table></div>
+<details class="analysis" data-item data-decision="shortlist" data-search="A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body 001468_m"><summary>001468_m · 查看视频</summary><video controls preload="none" style="max-width:100%;max-height:360px;margin-top:14px" src="media/001468_m.mp4"></video></details>
+<details class="analysis" data-item data-decision="shortlist" data-search="A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body 001468_m"><summary>001468_m · 查看模型分析</summary><pre>
+&lt;think&gt;
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the text prompt. The prompt asks for &quot;A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body.&quot;
+
+Looking at the frames:
+
+Visual Quality Analysis:
+The frames depict a circular diagram with a beige/cream background. The image is legible but shows moderate compression artifacts and some pixelation that reduce sharpness. The overall resolution is acceptable but not high, resulting in a mid-level visual quality rather than a pristine render.
+
+Text-to-Video Alignment Analysis:
+The prompt requires a circle divided into three parts with symbolic elements for mind, spirit, and body. In the frames, there is indeed a circle and some internal divisions, but the mapping to the specific prompt elements is not clearly conveyed. The three-part division is only partially evident, and the intended symbols (head for mind, heart for spirit, human figure for body) are not distinctly recognizable. Overall alignment is moderate.
+
+Physical/Common-sense Consistency Analysis:
+The content appears as a static diagram with no dynamic physical interactions. The composition remains coherent and plausible as an educational or explanatory graphic. There are no obvious inconsistencies in the depicted structure, though the lack of explicit labeling reduces interpretability. Overall, physical/common-sense consistency is mid-level.
+
+Ground-truth scores indicate mid-level performance across all dimensions: Visual Quality 3, Text-to-Video Alignment 3, Physical/Common-sense Consistency 3.
+&lt;/think&gt;
+
+(1) visual quality: 3
+(2) text-to-video alignment: 3
+(3) physical/common-sense consistency: 3
+</pre></details>
+<details class="analysis" data-item data-decision="manual_review" data-search="A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body 001468_p"><summary>001468_p · 查看视频</summary><video controls preload="none" style="max-width:100%;max-height:360px;margin-top:14px" src="media/001468_p.mp4"></video></details>
+<details class="analysis" data-item data-decision="manual_review" data-search="A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body 001468_p"><summary>001468_p · 查看模型分析</summary><pre>
+&lt;think&gt;
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the text prompt. The prompt asks for &quot;A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body.&quot;
+
+Looking at the frames:
+
+Frame 1: Shows a circular design with a blue center and a red heart symbol inside it. There&#x27;s a white circular border around the blue center.
+Frame 2: Shows what appears to be a more complex circular design with multiple elements - there&#x27;s a blue background with some kind of eye-like or face-like structure, and there are some white elements that could be interpreted as part of a face or head.
+Frame 3: Similar to frame 2, showing the same complex circular design with various elements including what looks like a face or head-like structure and the red heart symbol.
+Frame 4: Continues the same pattern with similar elements.
+
+Now let me evaluate each dimension:
+
+Visual Quality Analysis:
+The overall visual quality is very low. The frames exhibit limited clarity due to compression and rendering artifacts, with inconsistent sharpness across frames. The circular motifs are present but poorly defined, and color transitions feel abrupt rather than smooth. The result is a lack of cohesive visual fidelity throughout the sequence.
+
+Text-to-Video Alignment Analysis:
+Alignment with the prompt is weak. While a circular motif is visible, the intended division into three parts (mind, heart, body) is not clearly realized. The frames show ambiguous shapes and multiple elements that do not consistently map to the requested components, leading to only partial or uncertain correspondence between the prompt and the visuals.
+
+Physical/Common-sense Consistency:
+There is no convincing demonstration of plausible physical behavior or common-sense interpretation. The abstract composition remains ambiguous, with elements that do not coherently map to a recognizable body or its parts, resulting in poor overall coherence.
+
+Overall assessment:
+The video demonstrates limited visual quality, weak alignment to the specified prompt, and minimal physical/common-sense consistency, indicating substantial gaps relative to the intended concept.
+&lt;/think&gt;
+
+(1) visual quality: 1
+(2) text-to-video alignment: 2
+(3) physical/common-sense consistency: 1
+</pre></details>
+</section>
+<footer>当前初筛门槛：画面质量 3 分、文本匹配 3 分、物理合理性 3 分；总分权重：画面质量 30%、文本匹配 40%、物理合理性 30%。权重与阈值尚未经过业务校准。<br>同分候选共同保留，不能将分数解读为采用概率。当前报告为小样本诊断，不构成线上效果证明。</footer><script>const search=document.getElementById("search"),filter=document.getElementById("filter");function apply(){const q=search.value.toLowerCase();document.querySelectorAll("[data-group]").forEach(group=>{let visible=0;group.querySelectorAll("[data-item]").forEach(row=>{const show=row.dataset.search.toLowerCase().includes(q)&&(filter.value==="all"||row.dataset.decision===filter.value);row.hidden=!show;if(show)visible++});group.hidden=!visible})}search.addEventListener("input",apply);filter.addEventListener("change",apply);</script></main></html>

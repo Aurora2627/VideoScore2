@@ -17,14 +17,16 @@ def select_candidates(samples,results,policy):
         group=groups.setdefault(key,{'prompt':prompt,'prompt_sha256':key,'candidates':[]})
         result=results.get(sample['video_name'],{});scores=result.get('scores',{})
         valid=result.get('status')=='completed' and result.get('eos_reached') is True and result.get('valid') is True and isinstance(scores,dict) and set(scores)==set(LABELS) and all(type(v)==int and 1<=v<=5 for v in scores.values())
-        row={'video_name':sample['video_name'],'scores':scores,'rank':None,'selected':False,'valid':valid}
+        row={'pending':sample['video_name'] not in results,'video_name':sample['video_name'],'scores':scores,'rank':None,'selected':False,'valid':valid}
         if valid:
             row['weighted_score']=round(sum(scores[k]*policy['weights'][k] for k in LABELS),6)
             row['review_reasons']=[k+' below minimum' for k in LABELS if scores[k]<policy['minimum_scores'][k]]
         else:row.update(weighted_score=None,review_reasons=['Incomplete or invalid model output'])
         group['candidates'].append(row)
     for group in groups.values():
-        comparable=sum(r['valid'] for r in group['candidates'])>=2
+        processing=any(r['pending'] for r in group['candidates'])
+        group['processing']=processing
+        comparable=not processing and sum(r['valid'] for r in group['candidates'])>=2
         group['comparison_available']=comparable
         eligible=sorted((r for r in group['candidates'] if r['valid'] and not r['review_reasons']),key=lambda r:(-r['weighted_score'],r['video_name']))
         previous=None;rank=0
@@ -32,6 +34,6 @@ def select_candidates(samples,results,policy):
             if row['weighted_score']!=previous:rank=position;previous=row['weighted_score']
             if comparable:row['rank']=rank;row['selected']=rank<=policy['top_k']
         for row in group['candidates']:
-            row['decision']='manual_review' if row['review_reasons'] else ('single_candidate_review' if not comparable else ('shortlist' if row['selected'] else 'reserve'))
+            row['decision']='pending' if row['pending'] else ('comparison_pending' if processing and row['valid'] and not row['review_reasons'] else ('manual_review' if row['review_reasons'] else ('single_candidate_review' if not comparable else ('shortlist' if row['selected'] else 'reserve'))))
         group['note']='Ties share rank and may expand the shortlist. Shortlists require human approval.'
     return {'policy':policy,'groups':list(groups.values()),'automatic_publication':False}
