@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "display_name": "videoscore2-cuda",
+  "python": "D:\\career-projects\\envs\\videoscore2\\Scripts\\python.exe",
+  "prefix": "D:\\career-projects\\envs\\videoscore2",
+  "base_prefix": "D:\\career-projects\\runtimes\\python311",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "cuda_matmul_value": 4.0,
+  "scope": "environment and small CUDA operation only; no model rerun"
+}

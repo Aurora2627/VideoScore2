@@ -1,0 +1,9 @@
+{
+  "display_name": "videoscore2-cuda",
+  "kind": "python-venv",
+  "python_version": "3.11",
+  "default_windows_path": "D:/career-projects/envs/videoscore2",
+  "activation_script": "reproduction/activate.ps1",
+  "cuda_torch": "2.6.0+cu124",
+  "path_relocation": false
+}

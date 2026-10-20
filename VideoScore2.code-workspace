@@ -1,0 +1,76 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+    "python.terminal.activateEnvironment": false,
+    "terminal.integrated.profiles.windows": {
+      "VideoScore2 CUDA": {
+        "path": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+        "args": [
+          "-NoLogo",
+          "-NoProfile",
+          "-NoExit",
+          "-Command",
+          ". 'D:/career-projects/VideoScore2/reproduction/activate.ps1'"
+        ],
+        "overrideName": true
+      }
+    },
+    "terminal.integrated.defaultProfile.windows": "VideoScore2 CUDA"
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "VideoScore2 | videoscore2-cuda | inference",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/reproduction/infer_cuda.py",
+        "console": "integratedTerminal",
+        "args": [
+          "--model",
+          "D:/career-projects/models/VideoScore2/09a2732cb64fa566a1f332f978368292ce5c295c",
+          "--revision",
+          "09a2732cb64fa566a1f332f978368292ce5c295c",
+          "--video",
+          "${input:videoPath}",
+          "--prompt",
+          "${input:videoPrompt}",
+          "--output-dir",
+          "${input:outputDir}",
+          "--local-files-only"
+        ],
+        "python": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+        "env": {
+          "PYTHONUTF8": "1",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1"
+        }
+      }
+    ],
+    "inputs": [
+      {
+        "id": "videoPath",
+        "type": "promptString",
+        "description": "Input video path",
+        "default": "D:\\career-projects\\data\\VideoScoreBench-v2\\videos\\004882_h.mp4"
+      },
+      {
+        "id": "videoPrompt",
+        "type": "promptString",
+        "description": "Original video generation prompt",
+        "default": "Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer"
+      },
+      {
+        "id": "outputDir",
+        "type": "promptString",
+        "description": "New results folder (must not exist)",
+        "default": "D:/career-projects/runs/VideoScore2/debug_run_001"
+      }
+    ]
+  }
+}

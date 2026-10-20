@@ -33,3 +33,10 @@ Model revision: 09a2732cb64fa566a1f332f978368292ce5c295c. All four official weig
 The initial 256-token attempt ended inside the thinking block and was rejected. Its record is preserved in reports/initial-truncated-attempt.json. At 1024 tokens, the first video reached EOS but added descriptors to its score labels. A regression fixture and parser repair address that format. reparse_saved.py wrote a separate, hashed parser-only result without rerunning the model or changing the original unsuccessful result. The other two videos used the repaired parser.
 
 The saved result for the first video therefore retains its original invalid_output status; reparsed-v013.json and the combined summary explicitly record the repair. No failed artifact is overwritten and no model result is invented.
+
+
+## Named project environment
+
+The environment display name is videoscore2-cuda. Its existing installation stays at D:/career-projects/envs/videoscore2 to preserve installed entry points. Open the repository VideoScore2.code-workspace and create a new VideoScore2 CUDA terminal. The profile uses PowerShell without user startup profiles and runs reproduction/activate.ps1; it does not change global Conda configuration. The debugger uses the same dedicated interpreter. Run check_environment.py with a new --output JSON path to verify the activated interpreter and a small CUDA operation.
+
+See [Chinese project guide](README.zh-CN.md) for the pipeline, measured results and reproduction boundaries.
