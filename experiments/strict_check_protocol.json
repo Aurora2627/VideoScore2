@@ -1,0 +1,10 @@
+{
+ "reason": "Original fresh pair has tied weighted annotations, so its pair direction is unassessable; retain it and add an explicitly labeled supplementary check.",
+ "candidate_fixed_before_test": {"frames": 4, "max_side": 448},
+ "baseline": {"frames": 4, "max_side": 224},
+ "data_eligibility": "First unused prompt pair in pinned metadata order with nonzero fixed-weight label margin. Exclude all previously used prompts and video hashes. Do not use model scores for selection.",
+ "selection_weights": [0.3,0.4,0.3],
+ "no_new_configuration_search": true,
+ "default_v2_gate": "All outputs complete; development strict pair correct; regression macro MAE not worse; both fresh pairs individually not worse in MAE; combined fresh MAE strictly lower; supplementary strict pair correct. Original v1 gates remain recorded, not overwritten.",
+ "scope": "Four fresh videos across two prompts remain a small diagnostic, not proof of business adoption or broad generalization."
+}
