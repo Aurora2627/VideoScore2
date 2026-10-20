@@ -1,0 +1,475 @@
+[
+  {
+    "phase": "development_more_frames",
+    "split": "development",
+    "video_name": "001468_m",
+    "configuration": {
+      "frames": 8,
+      "max_side": 224
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 5
+    },
+    "generation_seconds": 115.24587340001017,
+    "peak_allocated_bytes": 6147835904,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        312
+      ],
+      "attention_mask": [
+        1,
+        312
+      ],
+      "pixel_values_videos": [
+        640,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "development_more_frames",
+    "split": "development",
+    "video_name": "001468_p",
+    "configuration": {
+      "frames": 8,
+      "max_side": 224
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 2
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 4,
+      "physical/common-sense consistency": 5
+    },
+    "generation_seconds": 116.90718380000908,
+    "peak_allocated_bytes": 6142100992,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        280
+      ],
+      "attention_mask": [
+        1,
+        280
+      ],
+      "pixel_values_videos": [
+        512,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "development_more_detail",
+    "split": "development",
+    "video_name": "001468_m",
+    "configuration": {
+      "frames": 4,
+      "max_side": 448
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 5
+    },
+    "generation_seconds": 114.51430590002565,
+    "peak_allocated_bytes": 6175159296,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        440
+      ],
+      "attention_mask": [
+        1,
+        440
+      ],
+      "pixel_values_videos": [
+        1152,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "development_more_detail",
+    "split": "development",
+    "video_name": "001468_p",
+    "configuration": {
+      "frames": 4,
+      "max_side": 448
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 4,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 4,
+      "physical/common-sense consistency": 5
+    },
+    "generation_seconds": 126.6401748000062,
+    "peak_allocated_bytes": 6175159296,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        440
+      ],
+      "attention_mask": [
+        1,
+        440
+      ],
+      "pixel_values_videos": [
+        1152,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "regression_more_detail",
+    "split": "regression",
+    "video_name": "004882_h",
+    "configuration": {
+      "frames": 4,
+      "max_side": 448
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 4,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 4,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 1
+    },
+    "generation_seconds": 133.6425278999959,
+    "peak_allocated_bytes": 6184355328,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        494
+      ],
+      "attention_mask": [
+        1,
+        494
+      ],
+      "pixel_values_videos": [
+        1280,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "regression_more_detail",
+    "split": "regression",
+    "video_name": "001033_p",
+    "configuration": {
+      "frames": 4,
+      "max_side": 448
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 4,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 3
+    },
+    "generation_seconds": 99.99271359998966,
+    "peak_allocated_bytes": 6178136576,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        454
+      ],
+      "attention_mask": [
+        1,
+        454
+      ],
+      "pixel_values_videos": [
+        1152,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "regression_more_detail",
+    "split": "regression",
+    "video_name": "002314_j",
+    "configuration": {
+      "frames": 4,
+      "max_side": 448
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 1,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 1
+    },
+    "ground_truth": {
+      "visual quality": 1,
+      "text-to-video alignment": 1,
+      "physical/common-sense consistency": 1
+    },
+    "generation_seconds": 112.51575199997751,
+    "peak_allocated_bytes": 6149584896,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        318
+      ],
+      "attention_mask": [
+        1,
+        318
+      ],
+      "pixel_values_videos": [
+        648,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "fresh_baseline",
+    "split": "untouched-check",
+    "video_name": "004983_f",
+    "configuration": {
+      "frames": 4,
+      "max_side": 224
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 2,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 2
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "generation_seconds": 112.8684457000345,
+    "peak_allocated_bytes": 6140388352,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        271
+      ],
+      "attention_mask": [
+        1,
+        271
+      ],
+      "pixel_values_videos": [
+        320,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "fresh_baseline",
+    "split": "untouched-check",
+    "video_name": "004983_z",
+    "configuration": {
+      "frames": 4,
+      "max_side": 224
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "generation_seconds": 109.13810800004285,
+    "peak_allocated_bytes": 6140388352,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        271
+      ],
+      "attention_mask": [
+        1,
+        271
+      ],
+      "pixel_values_videos": [
+        320,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "fresh_more_detail",
+    "split": "untouched-check",
+    "video_name": "004983_f",
+    "configuration": {
+      "frames": 4,
+      "max_side": 448
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "generation_seconds": 122.25548910000362,
+    "peak_allocated_bytes": 6191789056,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        543
+      ],
+      "attention_mask": [
+        1,
+        543
+      ],
+      "pixel_values_videos": [
+        1408,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  },
+  {
+    "phase": "fresh_more_detail",
+    "split": "untouched-check",
+    "video_name": "004983_z",
+    "configuration": {
+      "frames": 4,
+      "max_side": 448
+    },
+    "status": "completed",
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 4,
+      "physical/common-sense consistency": 3
+    },
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "generation_seconds": 139.49391899997136,
+    "peak_allocated_bytes": 6191789056,
+    "input_shapes": {
+      "input_ids": [
+        1,
+        543
+      ],
+      "attention_mask": [
+        1,
+        543
+      ],
+      "pixel_values_videos": [
+        1408,
+        1176
+      ],
+      "video_grid_thw": [
+        1,
+        3
+      ],
+      "second_per_grid_ts": [
+        1
+      ]
+    }
+  }
+]

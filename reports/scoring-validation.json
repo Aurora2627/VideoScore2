@@ -1,0 +1,10 @@
+{
+  "experiments_tests": 8,
+  "application_tests": 15,
+  "passed": true,
+  "execution": "Windows videoscore2-cuda Python 3.11 / PyTorch CUDA",
+  "input_audit": "reports/quality-ablation/combined-input-audit.json",
+  "new_gpu_inferences": 15,
+  "unique_videos": 9,
+  "unique_prompts": 6
+}

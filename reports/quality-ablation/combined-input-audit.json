@@ -1,0 +1,32 @@
+{
+  "splits": [
+    {
+      "manifest": "D:\\career-projects\\data\\ClipRank-quality-20261020\\development.json",
+      "sha256": "78733737c4b5ec427c31a5d2f30b5cb253be7a167f8ce68c810363e9ca9fb48e",
+      "videos": 2,
+      "prompts": 1
+    },
+    {
+      "manifest": "D:\\career-projects\\data\\ClipRank-quality-20261020\\regression.json",
+      "sha256": "d921075c32c15fae2b6ea8e74ecd9ccf503037816b9e7318580c8deb4f08300e",
+      "videos": 3,
+      "prompts": 3
+    },
+    {
+      "manifest": "D:\\career-projects\\data\\ClipRank-quality-20261020\\untouched-check.json",
+      "sha256": "31d1c22403ea705ddbea1efb996c039bdafd7901fbe3461ededd266f0e995537",
+      "videos": 2,
+      "prompts": 1
+    },
+    {
+      "manifest": "D:\\career-projects\\data\\ClipRank-strict-check-20261020\\manifest.json",
+      "sha256": "25fbe40cc2571cac807387508bf3fa3329d1e4f741760e31a1da80039e0bc165",
+      "videos": 2,
+      "prompts": 1
+    }
+  ],
+  "unique_videos": 9,
+  "unique_prompts": 6,
+  "split_prompt_overlap": false,
+  "duplicate_video_hashes": false
+}

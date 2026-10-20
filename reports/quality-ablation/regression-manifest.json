@@ -1,0 +1,50 @@
+{
+  "samples": [
+    {
+      "video_name": "004882_h",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/lavie_base/004882_h.mp4",
+      "video_path": "D:\\career-projects\\data\\VideoScoreBench-v2\\videos\\004882_h.mp4",
+      "prompt": "Trevor, a 17-year-old introvert with a sketchbook under his arm, navigates the high school hallway, surrounded by a river of students. Their laughter and chatter echo as he moves through the crowd, an enigmatic observer",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 1
+      },
+      "video_sha256": "530e239a25d7ee7fdafb5fe72e7ce921efc1f20ec77c570622fcd8911c3c93c8",
+      "bytes": 955033
+    },
+    {
+      "video_name": "001033_p",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/1000_1499/vchitect2/001033_p.mp4",
+      "video_path": "D:\\career-projects\\data\\VideoScoreBench-v2\\videos\\001033_p.mp4",
+      "prompt": "The race starts with a swift and energetic rabbit named Robbie dashing ahead, leaving a slow but determined turtle named Timmy behind in a lush and sprawling meadow with swaying wildflowers and tall grass",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "video_sha256": "2c41289429c90a5e997fe0edba082fdf649063226db5689eb0909d386731cd1b",
+      "bytes": 712246
+    },
+    {
+      "video_name": "002314_j",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/2000_2499/zeroscope/002314_j.mp4",
+      "video_path": "D:\\career-projects\\data\\VideoScoreBench-v2\\videos\\002314_j.mp4",
+      "prompt": "Cartoonizing a group of people approaching a fight scene, holding swords, with their mouths open shouting to go to fight in an open field with their opponent",
+      "ground_truth": {
+        "visual quality": 1,
+        "text-to-video alignment": 1,
+        "physical/common-sense consistency": 1
+      },
+      "video_sha256": "34f2b6932c89ccc70a538ce4735abfcc920b0d2d39cd7d8dd8fbe14bd4166f54",
+      "bytes": 168644
+    }
+  ],
+  "purpose": "Previous three diagnostic videos; no new independence claimed",
+  "metadata_provenance": {
+    "dataset": "TIGER-Lab/VideoFeedback2",
+    "revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+    "url": "https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/resolve/99b9935b00a205756c25b0555f2dcdc071281327/data_27k_test%20%28VideoScoreBench-v2%29.json",
+    "sha256": "279a9e5f1bd5a818a2054a5b2079c1eeb217968ccb17310669c70191a1538114"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "phase": "baseline",
+    "video_name": "000245_c",
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 2
+    },
+    "scores": {
+      "visual quality": 1,
+      "text-to-video alignment": 1,
+      "physical/common-sense consistency": 1
+    },
+    "status": "completed"
+  },
+  {
+    "phase": "baseline",
+    "video_name": "000245_a",
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 4
+    },
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 4,
+      "physical/common-sense consistency": 3
+    },
+    "status": "completed"
+  },
+  {
+    "phase": "more_detail",
+    "video_name": "000245_c",
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 2
+    },
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "status": "completed"
+  },
+  {
+    "phase": "more_detail",
+    "video_name": "000245_a",
+    "ground_truth": {
+      "visual quality": 3,
+      "text-to-video alignment": 2,
+      "physical/common-sense consistency": 4
+    },
+    "scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 4,
+      "physical/common-sense consistency": 3
+    },
+    "status": "completed"
+  }
+]

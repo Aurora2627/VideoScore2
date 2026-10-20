@@ -1,0 +1,3 @@
+# Preserve hashed raw evidence, including original prompt whitespace.
+/reports/quality-ablation/** -text -whitespace
+/reports/strict-check/** -text -whitespace

@@ -1,0 +1,10 @@
+[
+  {
+    "phase": "baseline",
+    "peak_allocated_gib": 5.719901084899902
+  },
+  {
+    "phase": "more_detail",
+    "peak_allocated_gib": 5.788820743560791
+  }
+]

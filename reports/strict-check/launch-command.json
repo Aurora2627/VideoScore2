@@ -1,0 +1,21 @@
+{
+  "pid": 7672,
+  "started": "2026-10-20T15:24:14.434596",
+  "output_dir": "D:\\career-projects\\runs\\ClipRank-strict\\20261020_152414",
+  "command": [
+    "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "D:\\career-projects\\VideoScore2\\experiments\\check_strict_pair.py",
+    "--manifest",
+    "D:/career-projects/data/ClipRank-strict-check-20261020/manifest.json",
+    "--after-session",
+    "D:/career-projects/runs/ClipRank-quality/20261020_145650/session.json",
+    "--model",
+    "D:/career-projects/models/VideoScore2/09a2732cb64fa566a1f332f978368292ce5c295c",
+    "--revision",
+    "09a2732cb64fa566a1f332f978368292ce5c295c",
+    "--output-dir",
+    "D:\\career-projects\\runs\\ClipRank-strict\\20261020_152414"
+  ]
+}

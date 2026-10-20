@@ -1,0 +1,18 @@
+{
+  "eligible_for_default": true,
+  "recommended_configuration": {
+    "frames": 4,
+    "max_side": 448
+  },
+  "promotion_gates": {
+    "all_outputs_complete": true,
+    "development_pair_correct": true,
+    "regression_not_worse": true,
+    "original_fresh_not_worse": true,
+    "supplement_fresh_not_worse": true,
+    "combined_fresh_strictly_better": true,
+    "supplement_pair_correct": true
+  },
+  "original_gate_preserved": false,
+  "scope": "9 unique diagnostic videos, 6 prompts; 2 development, 3 regression, 4 fresh. No training and no population-level guarantee."
+}

@@ -1,0 +1,31 @@
+{
+  "question": "Do extra frames or higher spatial detail reduce scoring errors without changing prompts, weights or model parameters?",
+  "baseline": {
+    "frames": 4,
+    "max_side": 224
+  },
+  "candidates": {
+    "more_frames": {
+      "frames": 8,
+      "max_side": 224
+    },
+    "more_detail": {
+      "frames": 4,
+      "max_side": 448
+    }
+  },
+  "fixed": {
+    "model_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+    "nf4_double_quantization": true,
+    "seed": 42,
+    "decoding": "greedy",
+    "max_new_tokens": 1024,
+    "selection_weights_unchanged": true,
+    "score_thresholds_unchanged": true
+  },
+  "development": "Two previously observed failure candidates; not an independent test",
+  "selection": "Full valid output coverage required; choose strictly lower development macro MAE, ties favor lower pixel budget; keep baseline if no improvement",
+  "regression": "Previous three diagnostic samples, candidate evaluated only after selection",
+  "fresh_check": "First unused prompt pair in metadata order, disjoint from every previously used prompt; labels only evaluated after selection. Two samples do not establish generalization.",
+  "default_change_gate": "Complete candidate outputs; correct development and fresh-check pair direction; regression MAE not worse; fresh-check MAE strictly better. No score overwriting, label-based prompt changes or threshold tuning."
+}

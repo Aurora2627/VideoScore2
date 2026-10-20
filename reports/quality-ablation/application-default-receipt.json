@@ -1,0 +1,9 @@
+{
+  "changed": false,
+  "before_source_sha256": "3bf238d913a742a3d47d7fcc73701b92c5e708d97f402560051ba71d754177c1",
+  "after_source_sha256": "3bf238d913a742a3d47d7fcc73701b92c5e708d97f402560051ba71d754177c1",
+  "default_configuration": {
+    "frames": 4,
+    "max_side": 224
+  }
+}

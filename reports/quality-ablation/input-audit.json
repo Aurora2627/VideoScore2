@@ -1,0 +1,68 @@
+{
+  "fresh_video_hashes_disjoint": true,
+  "all_input_hashes_match": true,
+  "source_videos": {
+    "development": [
+      {
+        "video_name": "001468_m",
+        "sha256": "3af8d7399aef96387827fed735e4aa78c26d89ab0f6248a3c18e9a06b19e1a18",
+        "width": 672,
+        "height": 384,
+        "frames": 8,
+        "fps": 8.0
+      },
+      {
+        "video_name": "001468_p",
+        "sha256": "aca2542d74b711838867dd2f67b2433e85a666674b4cfe84a3ed4d045c3f9e6b",
+        "width": 768,
+        "height": 432,
+        "frames": 40,
+        "fps": 8.0
+      }
+    ],
+    "regression": [
+      {
+        "video_name": "004882_h",
+        "sha256": "530e239a25d7ee7fdafb5fe72e7ce921efc1f20ec77c570622fcd8911c3c93c8",
+        "width": 512,
+        "height": 320,
+        "frames": 16,
+        "fps": 8.0
+      },
+      {
+        "video_name": "001033_p",
+        "sha256": "2c41289429c90a5e997fe0edba082fdf649063226db5689eb0909d386731cd1b",
+        "width": 768,
+        "height": 432,
+        "frames": 40,
+        "fps": 8.0
+      },
+      {
+        "video_name": "002314_j",
+        "sha256": "34f2b6932c89ccc70a538ce4735abfcc920b0d2d39cd7d8dd8fbe14bd4166f54",
+        "width": 256,
+        "height": 256,
+        "frames": 24,
+        "fps": 10.0
+      }
+    ],
+    "untouched-check": [
+      {
+        "video_name": "004983_f",
+        "sha256": "7fc5ec20aa1d21b2dd19a32fd34a8cdeafa739797510d6dcbf197deec5056e47",
+        "width": 720,
+        "height": 480,
+        "frames": 40,
+        "fps": 10.0
+      },
+      {
+        "video_name": "004983_z",
+        "sha256": "680bc8b4bf1b89a573fddea691f313e6521fff8c3859971e137f97618111ad0c",
+        "width": 704,
+        "height": 480,
+        "frames": 121,
+        "fps": 25.0
+      }
+    ]
+  }
+}

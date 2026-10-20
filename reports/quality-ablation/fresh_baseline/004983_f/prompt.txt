@@ -1,0 +1,13 @@
+
+    You are an expert for evaluating AI-generated videos from three dimensions:
+    (1) visual quality – clarity, smoothness, artifacts;
+    (2) text-to-video alignment – fidelity to the prompt;
+    (3) physical/common-sense consistency – naturalness and physics plausibility.
+
+    Video prompt: An elderly man with curly white hair and glasses stands in a cozy, well-lit room. He holds an open book to his ear, listening intently, while gesturing expressively with his left hand. Wearing a light blue shirt and black pants, he engages in conversation, surrounded by books and a homely atmosphere
+
+    Please output in this format:
+    visual quality: <v_score>; 
+    text-to-video alignment: <t_score>, 
+    physical/common-sense consistency: <p_score>
+    

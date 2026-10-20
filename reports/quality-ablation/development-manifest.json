@@ -1,0 +1,37 @@
+{
+  "samples": [
+    {
+      "video_name": "001468_m",
+      "prompt": "A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/1000_1499/hotshot_xl/001468_m.mp4",
+      "video_path": "D:\\career-projects\\data\\ClipRank-demo-20261020\\videos\\001468_m.mp4",
+      "video_sha256": "3af8d7399aef96387827fed735e4aa78c26d89ab0f6248a3c18e9a06b19e1a18",
+      "bytes": 94207,
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 5
+      }
+    },
+    {
+      "video_name": "001468_p",
+      "prompt": "A circle divided into three parts: the head for the mind, the heart for the spirit, and a human figure for the body",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/1000_1499/vchitect2/001468_p.mp4",
+      "video_path": "D:\\career-projects\\data\\ClipRank-demo-20261020\\videos\\001468_p.mp4",
+      "video_sha256": "aca2542d74b711838867dd2f67b2433e85a666674b4cfe84a3ed4d045c3f9e6b",
+      "bytes": 984772,
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 5
+      }
+    }
+  ],
+  "purpose": "Previously observed failure pair; development diagnosis only",
+  "metadata_provenance": {
+    "dataset": "TIGER-Lab/VideoFeedback2",
+    "revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+    "url": "https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/resolve/99b9935b00a205756c25b0555f2dcdc071281327/data_27k_test%20%28VideoScoreBench-v2%29.json",
+    "sha256": "279a9e5f1bd5a818a2054a5b2079c1eeb217968ccb17310669c70191a1538114"
+  }
+}

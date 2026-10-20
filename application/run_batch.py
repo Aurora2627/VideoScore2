@@ -77,7 +77,7 @@ def reports(out,data,results,policy,run):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     for name in ('manifest','model','output-dir'):p.add_argument('--'+name,type=Path,required=True)
-    p.add_argument('--revision',required=True);p.add_argument('--frames',type=int,default=4);p.add_argument('--max-side',type=int,default=224);p.add_argument('--max-new-tokens',type=int,default=1024);p.add_argument('--policy',type=Path,default=Path(__file__).with_name('policy.json'))
+    p.add_argument('--revision',required=True);p.add_argument('--frames',type=int,default=4);p.add_argument('--max-side',type=int,default=448);p.add_argument('--max-new-tokens',type=int,default=1024);p.add_argument('--policy',type=Path,default=Path(__file__).with_name('policy.json'))
     a=p.parse_args()
     if not re.fullmatch('[0-9a-f]{40}',a.revision):p.error('Pin model revision')
     if a.frames<2 or a.frames%2 or a.max_side<56 or a.max_new_tokens<1:p.error('Invalid input limits')

@@ -1,0 +1,25 @@
+WAITING_FOR_ORIGINAL_EXPERIMENT D:\career-projects\runs\ClipRank-quality\20261020_145650\session.json
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Exception in thread Thread-2 (_readerthread):
+Traceback (most recent call last):
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\career-projects\runtimes\python311\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 7: invalid start byte
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:16<00:49, 16.64s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:36<00:36, 18.26s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:55<00:18, 18.68s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:00<00:00, 13.39s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:00<00:00, 15.12s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STRICT_CHECK_CLIP baseline 1 000245_c completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STRICT_CHECK_CLIP baseline 2 000245_a completed
+STRICT_CHECK_PHASE baseline {"sample_count": 2, "valid_count": 2, "valid_rate": 1.0, "per_dimension_mae": {"visual quality": 1.0, "text-to-video alignment": 1.5, "physical/common-sense consistency": 1.0}, "macro_mae": 1.1666666666666667, "pair_correct": 1, "pair_total": 1, "pair_agreement": 1.0}
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STRICT_CHECK_CLIP more_detail 1 000245_c completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+STRICT_CHECK_CLIP more_detail 2 000245_a completed
+STRICT_CHECK_PHASE more_detail {"sample_count": 2, "valid_count": 2, "valid_rate": 1.0, "per_dimension_mae": {"visual quality": 0.0, "text-to-video alignment": 1.5, "physical/common-sense consistency": 1.0}, "macro_mae": 0.8333333333333334, "pair_correct": 1, "pair_total": 1, "pair_agreement": 1.0}
+STRICT_CHECK_FINISHED D:\career-projects\runs\ClipRank-strict\20261020_152414 completed

@@ -1,0 +1,277 @@
+{
+  "status": "completed",
+  "started": "2026-10-20T14:56:50.344814",
+  "project_commit": "d0535da7bc6ac315269a8a3ec93c7402ef4f548d",
+  "git_status": "",
+  "source_sha256": {
+    "infer_cuda.py": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+    "input_ablation.py": "0d35cd018e4304f5e5612b2f6d22f6ef6d436b58f02e4c9e5b53136aa4b7967b",
+    "prepare_quality_inputs.py": "e46bf448e23228260d5091c2cef808f0266a08115d890b359b12613dfe9b5779",
+    "quality_metrics.py": "24719557aa970f54654947b4f54947c6dba8f77dbbe946ff0af8e80e084368e6",
+    "run_batch.py": "3bf238d913a742a3d47d7fcc73701b92c5e708d97f402560051ba71d754177c1",
+    "selection.py": "228d2e64a4e04ea01443f2960adf3daf5c735d40ecfec92d59f453a1d94e78bb",
+    "test_quality_metrics.py": "3cec9b440a887370602dc7c2d8da4442e811f36bf8933deed2ebb880a1f322bd",
+    "vs2_inference.py": "acf8fdd53b3302d5b7e32babfa915055e468e3f6d8590eb2b7c2ba1058173f75"
+  },
+  "baseline_source_commit": "fb54b24c3b92846f02cc58763179e1b37a56da40",
+  "baseline_result_sha256": {
+    "001468_m": "c1e216dd30a9f4de5104c484bf44a9148cd8b52081d2ceb811799a0ad1026bef",
+    "001468_p": "3d54ba4b0f5c0be8728157d88bd8a0347eeb3ede8f1a498b13a92f49a2f43e37",
+    "004882_h": "34e0f47cc1f50690ce328d4886511fb99918cca560642dcf9ec5a3b908a28805",
+    "001033_p": "19df19c314a4efa4d91bddfc8037da824184330531451fef3a364bdffc7c6619",
+    "002314_j": "711cdbc39cd887212cea6c71975e7358dc0c5e173c10abeaba195daf48ee08c7"
+  },
+  "phases": {
+    "development_more_frames": {
+      "configuration": {
+        "frames": 8,
+        "max_side": 224
+      },
+      "metrics": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.0,
+          "text-to-video alignment": 1.5,
+          "physical/common-sense consistency": 2.5
+        },
+        "macro_mae": 1.3333333333333333,
+        "pair_correct": 0,
+        "pair_total": 1,
+        "pair_agreement": 0.0,
+        "phase_wall_seconds": 233.79335100000026
+      }
+    },
+    "development_more_detail": {
+      "configuration": {
+        "frames": 4,
+        "max_side": 448
+      },
+      "metrics": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.5,
+          "text-to-video alignment": 0.5,
+          "physical/common-sense consistency": 2.0
+        },
+        "macro_mae": 1.0,
+        "pair_correct": 1,
+        "pair_total": 1,
+        "pair_agreement": 1.0,
+        "phase_wall_seconds": 242.44478880002862
+      }
+    },
+    "regression_more_detail": {
+      "configuration": {
+        "frames": 4,
+        "max_side": 448
+      },
+      "metrics": {
+        "sample_count": 3,
+        "valid_count": 3,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.0,
+          "text-to-video alignment": 1.0,
+          "physical/common-sense consistency": 0.6666666666666666
+        },
+        "macro_mae": 0.5555555555555555,
+        "pair_correct": 0,
+        "pair_total": 0,
+        "pair_agreement": null,
+        "phase_wall_seconds": 347.92646669998066
+      }
+    },
+    "fresh_baseline": {
+      "configuration": {
+        "frames": 4,
+        "max_side": 224
+      },
+      "metrics": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.5,
+          "text-to-video alignment": 0.0,
+          "physical/common-sense consistency": 0.5
+        },
+        "macro_mae": 0.3333333333333333,
+        "pair_correct": 0,
+        "pair_total": 0,
+        "pair_agreement": null,
+        "phase_wall_seconds": 223.22999770002207
+      }
+    },
+    "fresh_more_detail": {
+      "configuration": {
+        "frames": 4,
+        "max_side": 448
+      },
+      "metrics": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.0,
+          "text-to-video alignment": 0.5,
+          "physical/common-sense consistency": 0.0
+        },
+        "macro_mae": 0.16666666666666666,
+        "pair_correct": 0,
+        "pair_total": 0,
+        "pair_agreement": null,
+        "phase_wall_seconds": 263.0246664000442
+      }
+    }
+  },
+  "model_load_count": 1,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "compute_dtype": "torch.bfloat16",
+  "model_load_seconds": 65.36364820000017,
+  "device_map": {
+    "": "cuda:0"
+  },
+  "environment": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.2",
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.48.1",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88"
+  },
+  "progress": {
+    "phase": "fresh_more_detail",
+    "completed": 2,
+    "total": 2,
+    "video_name": "004983_z",
+    "status": "completed"
+  },
+  "recommendation": {
+    "chosen_on_development": "more_detail",
+    "baseline_development": {
+      "sample_count": 2,
+      "valid_count": 2,
+      "valid_rate": 1.0,
+      "per_dimension_mae": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.5,
+        "physical/common-sense consistency": 3.0
+      },
+      "macro_mae": 1.8333333333333333,
+      "pair_correct": 0,
+      "pair_total": 1,
+      "pair_agreement": 0.0
+    },
+    "candidate_development": {
+      "more_frames": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.0,
+          "text-to-video alignment": 1.5,
+          "physical/common-sense consistency": 2.5
+        },
+        "macro_mae": 1.3333333333333333,
+        "pair_correct": 0,
+        "pair_total": 1,
+        "pair_agreement": 0.0,
+        "phase_wall_seconds": 233.79335100000026
+      },
+      "more_detail": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.5,
+          "text-to-video alignment": 0.5,
+          "physical/common-sense consistency": 2.0
+        },
+        "macro_mae": 1.0,
+        "pair_correct": 1,
+        "pair_total": 1,
+        "pair_agreement": 1.0,
+        "phase_wall_seconds": 242.44478880002862
+      }
+    },
+    "fresh_labels_used_for_choice": false,
+    "policy_or_weights_changed": false,
+    "regression_baseline": {
+      "sample_count": 3,
+      "valid_count": 3,
+      "valid_rate": 1.0,
+      "per_dimension_mae": {
+        "visual quality": 0.3333333333333333,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 1.0
+      },
+      "macro_mae": 0.7777777777777777,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_agreement": null
+    },
+    "regression_candidate": {
+      "sample_count": 3,
+      "valid_count": 3,
+      "valid_rate": 1.0,
+      "per_dimension_mae": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 0.6666666666666666
+      },
+      "macro_mae": 0.5555555555555555,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_agreement": null,
+      "phase_wall_seconds": 347.92646669998066
+    },
+    "fresh_baseline": {
+      "sample_count": 2,
+      "valid_count": 2,
+      "valid_rate": 1.0,
+      "per_dimension_mae": {
+        "visual quality": 0.5,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 0.5
+      },
+      "macro_mae": 0.3333333333333333,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_agreement": null,
+      "phase_wall_seconds": 223.22999770002207
+    },
+    "fresh_candidate": {
+      "sample_count": 2,
+      "valid_count": 2,
+      "valid_rate": 1.0,
+      "per_dimension_mae": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 0.5,
+        "physical/common-sense consistency": 0.0
+      },
+      "macro_mae": 0.16666666666666666,
+      "pair_correct": 0,
+      "pair_total": 0,
+      "pair_agreement": null,
+      "phase_wall_seconds": 263.0246664000442
+    },
+    "promotion_gates": {
+      "all_outputs_complete": true,
+      "development_pair_correct": true,
+      "regression_mae_not_worse": true,
+      "fresh_check_mae_improved": true,
+      "fresh_check_pair_correct": false
+    },
+    "eligible_for_default": false,
+    "recommended_configuration": {
+      "frames": 4,
+      "max_side": 224
+    }
+  },
+  "finished": "2026-10-20T15:20:16.854919",
+  "wall_seconds": 1406.4386982999858
+}

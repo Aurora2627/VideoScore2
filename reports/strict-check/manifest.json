@@ -1,0 +1,35 @@
+{
+  "samples": [
+    {
+      "video_name": "000245_c",
+      "prompt": "Illustrate the closing scene of the story, where happiness and kindness fill the forest, with all the animals gathered together",
+      "video_path": "D:\\career-projects\\data\\ClipRank-strict-check-20261020\\videos\\000245_c.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0000_0499/mochi1_preview/000245_c.mp4",
+      "video_sha256": "3e45c8eb9be33c3b1e6d037101054df08622e81491ff34518c493525b2b17710",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 2
+      }
+    },
+    {
+      "video_name": "000245_a",
+      "prompt": "Illustrate the closing scene of the story, where happiness and kindness fill the forest, with all the animals gathered together",
+      "video_path": "D:\\career-projects\\data\\ClipRank-strict-check-20261020\\videos\\000245_a.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0000_0499/anidiff/000245_a.mp4",
+      "video_sha256": "835f3dbc3d8e21d075f6725468353355afb818ebebdeddf64346d226628b6f43",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      }
+    }
+  ],
+  "metadata_provenance": {
+    "dataset": "TIGER-Lab/VideoFeedback2",
+    "revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+    "url": "https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/resolve/99b9935b00a205756c25b0555f2dcdc071281327/data_27k_test%20%28VideoScoreBench-v2%29.json",
+    "sha256": "279a9e5f1bd5a818a2054a5b2079c1eeb217968ccb17310669c70191a1538114"
+  },
+  "selection_rule": "First unused prompt pair in metadata order with nonzero fixed .3/.4/.3 label margin; no model predictions used for selection; original tied pair retained."
+}

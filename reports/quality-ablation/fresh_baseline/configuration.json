@@ -1,0 +1,7 @@
+{
+  "frames": 4,
+  "max_side": 224,
+  "max_new_tokens": 1024,
+  "revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+  "shared_model_session": "D:\\career-projects\\runs\\ClipRank-quality\\20261020_145650"
+}

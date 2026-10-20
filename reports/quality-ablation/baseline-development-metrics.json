@@ -1,0 +1,14 @@
+{
+  "sample_count": 2,
+  "valid_count": 2,
+  "valid_rate": 1.0,
+  "per_dimension_mae": {
+    "visual quality": 1.0,
+    "text-to-video alignment": 1.5,
+    "physical/common-sense consistency": 3.0
+  },
+  "macro_mae": 1.8333333333333333,
+  "pair_correct": 0,
+  "pair_total": 1,
+  "pair_agreement": 0.0
+}

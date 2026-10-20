@@ -1,0 +1,80 @@
+{
+  "status": "completed",
+  "started": "2026-10-20T15:24:14.634964",
+  "project_commit": "db2ef1f48ff5a4eb21c99cef467fb8aead33ba00",
+  "source_sha256": {
+    "check_strict_pair.py": "cb3dbc5ce4b112e33f24ba89163ee4d63ec46bcc56bc8e1ce0fa544a732e7259",
+    "infer_cuda.py": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+    "quality_metrics.py": "24719557aa970f54654947b4f54947c6dba8f77dbbe946ff0af8e80e084368e6",
+    "run_batch.py": "3bf238d913a742a3d47d7fcc73701b92c5e708d97f402560051ba71d754177c1",
+    "selection.py": "228d2e64a4e04ea01443f2960adf3daf5c735d40ecfec92d59f453a1d94e78bb",
+    "vs2_inference.py": "acf8fdd53b3302d5b7e32babfa915055e468e3f6d8590eb2b7c2ba1058173f75"
+  },
+  "parent_session_sha256": "00ffce0252c40239e66bed3e76f94d840ef9ee3b849922feb373f11a9bc04f43",
+  "configuration_selection_from_fresh_scores": false,
+  "phases": {
+    "baseline": {
+      "configuration": {
+        "frames": 4,
+        "max_side": 224
+      },
+      "metrics": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 1.0,
+          "text-to-video alignment": 1.5,
+          "physical/common-sense consistency": 1.0
+        },
+        "macro_mae": 1.1666666666666667,
+        "pair_correct": 1,
+        "pair_total": 1,
+        "pair_agreement": 1.0
+      }
+    },
+    "more_detail": {
+      "configuration": {
+        "frames": 4,
+        "max_side": 448
+      },
+      "metrics": {
+        "sample_count": 2,
+        "valid_count": 2,
+        "valid_rate": 1.0,
+        "per_dimension_mae": {
+          "visual quality": 0.0,
+          "text-to-video alignment": 1.5,
+          "physical/common-sense consistency": 1.0
+        },
+        "macro_mae": 0.8333333333333334,
+        "pair_correct": 1,
+        "pair_total": 1,
+        "pair_agreement": 1.0
+      }
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "compute_dtype": "torch.bfloat16",
+  "model_load_count": 1,
+  "model_load_seconds": 65.90418760001194,
+  "device_map": {
+    "": "cuda:0"
+  },
+  "environment": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.2",
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.48.1",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88"
+  },
+  "progress": {
+    "phase": "more_detail",
+    "completed": 2,
+    "total": 2,
+    "video_name": "000245_a"
+  },
+  "finished": "2026-10-20T15:33:03.603636",
+  "wall_seconds": 528.9266601999989
+}

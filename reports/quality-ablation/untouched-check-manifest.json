@@ -1,0 +1,35 @@
+{
+  "samples": [
+    {
+      "video_name": "004983_f",
+      "prompt": "An elderly man with curly white hair and glasses stands in a cozy, well-lit room. He holds an open book to his ear, listening intently, while gesturing expressively with his left hand. Wearing a light blue shirt and black pants, he engages in conversation, surrounded by books and a homely atmosphere",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/cogvideox_5b/004983_f.mp4",
+      "video_path": "D:\\career-projects\\data\\ClipRank-quality-20261020\\videos\\004983_f.mp4",
+      "video_sha256": "7fc5ec20aa1d21b2dd19a32fd34a8cdeafa739797510d6dcbf197deec5056e47",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "004983_z",
+      "prompt": "An elderly man with curly white hair and glasses stands in a cozy, well-lit room. He holds an open book to his ear, listening intently, while gesturing expressively with his left hand. Wearing a light blue shirt and black pants, he engages in conversation, surrounded by books and a homely atmosphere",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/ltx_video_095/004983_z.mp4",
+      "video_path": "D:\\career-projects\\data\\ClipRank-quality-20261020\\videos\\004983_z.mp4",
+      "video_sha256": "680bc8b4bf1b89a573fddea691f313e6521fff8c3859971e137f97618111ad0c",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      }
+    }
+  ],
+  "purpose": "First unused same-prompt pair in pinned metadata order. Not training data or a full held-out benchmark.",
+  "metadata_provenance": {
+    "dataset": "TIGER-Lab/VideoFeedback2",
+    "revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+    "url": "https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/resolve/99b9935b00a205756c25b0555f2dcdc071281327/data_27k_test%20%28VideoScoreBench-v2%29.json",
+    "sha256": "279a9e5f1bd5a818a2054a5b2079c1eeb217968ccb17310669c70191a1538114"
+  }
+}

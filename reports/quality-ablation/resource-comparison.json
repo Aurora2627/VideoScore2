@@ -1,0 +1,42 @@
+[
+  {
+    "phase": "development_more_frames",
+    "generated_count": 2,
+    "mean_generation_seconds": 116.07652860000962,
+    "peak_allocated_gib": 5.725618362426758,
+    "max_input_tokens": 312,
+    "max_video_patch_rows": 640
+  },
+  {
+    "phase": "development_more_detail",
+    "generated_count": 2,
+    "mean_generation_seconds": 120.57724035001593,
+    "peak_allocated_gib": 5.751065254211426,
+    "max_input_tokens": 440,
+    "max_video_patch_rows": 1152
+  },
+  {
+    "phase": "regression_more_detail",
+    "generated_count": 3,
+    "mean_generation_seconds": 115.38366449998769,
+    "peak_allocated_gib": 5.759629726409912,
+    "max_input_tokens": 494,
+    "max_video_patch_rows": 1280
+  },
+  {
+    "phase": "fresh_baseline",
+    "generated_count": 2,
+    "mean_generation_seconds": 111.00327685003867,
+    "peak_allocated_gib": 5.718682289123535,
+    "max_input_tokens": 271,
+    "max_video_patch_rows": 320
+  },
+  {
+    "phase": "fresh_more_detail",
+    "generated_count": 2,
+    "mean_generation_seconds": 130.87470404998749,
+    "peak_allocated_gib": 5.766552925109863,
+    "max_input_tokens": 543,
+    "max_video_patch_rows": 1408
+  }
+]

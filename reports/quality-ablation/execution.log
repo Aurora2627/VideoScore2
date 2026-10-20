@@ -1,0 +1,43 @@
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Exception in thread Thread-2 (_readerthread):
+Traceback (most recent call last):
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\career-projects\runtimes\python311\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 7: invalid start byte
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:16<00:48, 16.12s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:35<00:35, 17.87s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:54<00:18, 18.61s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:59<00:00, 13.22s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:59<00:00, 14.92s/it]
+QUALITY_MODEL_READY {"gpu": "NVIDIA GeForce RTX 4060 Laptop GPU", "compute_dtype": "torch.bfloat16", "model_load_count": 1, "model_load_seconds": 65.36364820000017, "device_map": {"": "cuda:0"}, "environment": {"torch": "2.6.0+cu124", "transformers": "4.53.2", "accelerate": "1.10.1", "bitsandbytes": "0.48.1", "numpy": "2.2.6", "opencv-python-headless": "4.12.0.88"}}
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP development_more_frames 1 2 001468_m completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP development_more_frames 2 2 001468_p completed
+QUALITY_PHASE development_more_frames {"sample_count": 2, "valid_count": 2, "valid_rate": 1.0, "per_dimension_mae": {"visual quality": 0.0, "text-to-video alignment": 1.5, "physical/common-sense consistency": 2.5}, "macro_mae": 1.3333333333333333, "pair_correct": 0, "pair_total": 1, "pair_agreement": 0.0, "phase_wall_seconds": 233.79335100000026}
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP development_more_detail 1 2 001468_m completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP development_more_detail 2 2 001468_p completed
+QUALITY_PHASE development_more_detail {"sample_count": 2, "valid_count": 2, "valid_rate": 1.0, "per_dimension_mae": {"visual quality": 0.5, "text-to-video alignment": 0.5, "physical/common-sense consistency": 2.0}, "macro_mae": 1.0, "pair_correct": 1, "pair_total": 1, "pair_agreement": 1.0, "phase_wall_seconds": 242.44478880002862}
+QUALITY_CHOSEN more_detail
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP regression_more_detail 1 3 004882_h completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP regression_more_detail 2 3 001033_p completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP regression_more_detail 3 3 002314_j completed
+QUALITY_PHASE regression_more_detail {"sample_count": 3, "valid_count": 3, "valid_rate": 1.0, "per_dimension_mae": {"visual quality": 0.0, "text-to-video alignment": 1.0, "physical/common-sense consistency": 0.6666666666666666}, "macro_mae": 0.5555555555555555, "pair_correct": 0, "pair_total": 0, "pair_agreement": null, "phase_wall_seconds": 347.92646669998066}
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP fresh_baseline 1 2 004983_f completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP fresh_baseline 2 2 004983_z completed
+QUALITY_PHASE fresh_baseline {"sample_count": 2, "valid_count": 2, "valid_rate": 1.0, "per_dimension_mae": {"visual quality": 0.5, "text-to-video alignment": 0.0, "physical/common-sense consistency": 0.5}, "macro_mae": 0.3333333333333333, "pair_correct": 0, "pair_total": 0, "pair_agreement": null, "phase_wall_seconds": 223.22999770002207}
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP fresh_more_detail 1 2 004983_f completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+QUALITY_CLIP fresh_more_detail 2 2 004983_z completed
+QUALITY_PHASE fresh_more_detail {"sample_count": 2, "valid_count": 2, "valid_rate": 1.0, "per_dimension_mae": {"visual quality": 0.0, "text-to-video alignment": 0.5, "physical/common-sense consistency": 0.0}, "macro_mae": 0.16666666666666666, "pair_correct": 0, "pair_total": 0, "pair_agreement": null, "phase_wall_seconds": 263.0246664000442}
+QUALITY_FINISHED D:\career-projects\runs\ClipRank-quality\20261020_145650 completed
