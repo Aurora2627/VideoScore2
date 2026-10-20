@@ -1,0 +1,6 @@
+﻿{
+  "weights": {"visual quality": 0.3, "text-to-video alignment": 0.4, "physical/common-sense consistency": 0.3},
+  "minimum_scores": {"visual quality": 3, "text-to-video alignment": 3, "physical/common-sense consistency": 3},
+  "top_k": 1,
+  "policy_status": "heuristic_not_calibrated"
+}

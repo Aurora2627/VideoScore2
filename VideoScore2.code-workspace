@@ -50,6 +50,30 @@
           "HF_HUB_OFFLINE": "1",
           "TRANSFORMERS_OFFLINE": "1"
         }
+      },
+      {
+        "name": "ClipRank | videoscore2-cuda | batch evaluation",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/application/run_batch.py",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "python": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+        "args": [
+          "--manifest",
+          "D:/career-projects/data/ClipRank-demo-20261020/manifest.json",
+          "--model",
+          "D:/career-projects/models/VideoScore2/09a2732cb64fa566a1f332f978368292ce5c295c",
+          "--revision",
+          "09a2732cb64fa566a1f332f978368292ce5c295c",
+          "--output-dir",
+          "${input:outputDir}"
+        ],
+        "env": {
+          "PYTHONUTF8": "1",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1"
+        }
       }
     ],
     "inputs": [
