@@ -1,4 +1,4 @@
-﻿# ClipRank 固定输入扩大评测
+# ClipRank 固定输入扩大评测
 
 2026-10-22：独立选择 10 个未使用提示词，每组前 2 段视频，共 20 段，比较 4 帧 224/448 像素，共 40 次评分。模型、生成参数和选片权重固定，先提交清单后推理，不用本轮结果重新挑参数。
 
@@ -26,3 +26,5 @@
 run_pairwise_development.py 仅在这 4 组已知错误上运行 8 次双视频推理，用于验证格式、显存与顺序一致性。该组由历史错误筛出，不作为独立检验或整体效果提升依据；也不会自动替换当前应用默认评分。第一组两次输出均无效时提前停止并保留原始回答。
 
 本轮结果保存在 D:/career-projects/runs/ClipRank-pairwise-development；完成后由 finish_pairwise_development.py 保存 reports/pairwise-development/RESULTS.md 并尝试提交推送。后续需单独做已正确样例回归和未使用提示词检验。
+
+本轮实际结果：第一组 AB/BA 均返回单视频评分，格式有效 0/2，已提前停止。双视频模块尚未通过可用性验证，不接入默认应用。详见 [失败诊断](../reports/pairwise-development/DIAGNOSIS.zh-CN.md)。
