@@ -1,0 +1,646 @@
+{
+  "overview": {
+    "prompt_groups_improved": 5,
+    "prompt_groups_unchanged": 3,
+    "prompt_groups_regressed": 2,
+    "ranking_fixed": 1,
+    "ranking_regressed": 0,
+    "ranking_wrong_in_both": 4,
+    "ranking_right_in_both": 4
+  },
+  "prompt_groups": [
+    {
+      "videos": [
+        "000244_m",
+        "000244_h"
+      ],
+      "prompt_sha256": "7f6e802f4cec98151ebf36ae02e81c97fa6088e04b4bf1fef82f64557a595155",
+      "mae": {
+        "baseline": 0.6666666666666666,
+        "more_detail": 0.6666666666666666
+      },
+      "detail_minus_baseline_mae": 0.0,
+      "annotation_margin": 0.8999999999999999,
+      "predicted_margin": {
+        "baseline": -0.4,
+        "more_detail": -0.4
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "004856_b",
+        "004856_e"
+      ],
+      "prompt_sha256": "60584558eae910ffaef74950ae34df5e6842eefd6fa809478c23b1fbfa0bc326",
+      "mae": {
+        "baseline": 0.8333333333333334,
+        "more_detail": 0.3333333333333333
+      },
+      "detail_minus_baseline_mae": -0.5,
+      "annotation_margin": -0.5,
+      "predicted_margin": {
+        "baseline": 0.0,
+        "more_detail": -0.4
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": true
+      }
+    },
+    {
+      "videos": [
+        "001058_f",
+        "001058_b"
+      ],
+      "prompt_sha256": "bed1b77befeae4bc62af4345c752ca29c3fdb93a77ff5ac4da1e25146e5d6c7d",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.8333333333333334
+      },
+      "detail_minus_baseline_mae": 0.33333333333333337,
+      "annotation_margin": 0.0,
+      "predicted_margin": {
+        "baseline": 0.3,
+        "more_detail": 0.4
+      },
+      "direction_correct": {
+        "baseline": null,
+        "more_detail": null
+      }
+    },
+    {
+      "videos": [
+        "001047_h",
+        "001047_b"
+      ],
+      "prompt_sha256": "7bac4b962090d2d6acb104e6efe5c967e94ec012f2fa48375aa16a0a9aa5ef9d",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.5
+      },
+      "detail_minus_baseline_mae": 0.0,
+      "annotation_margin": -0.10000000000000003,
+      "predicted_margin": {
+        "baseline": -0.4,
+        "more_detail": -0.4
+      },
+      "direction_correct": {
+        "baseline": true,
+        "more_detail": true
+      }
+    },
+    {
+      "videos": [
+        "004067_j",
+        "004067_u"
+      ],
+      "prompt_sha256": "6ed8ac2c08df80b43b1b70d1700c3ee509f9fc1b9d6b86f3e47a88bfed0b826c",
+      "mae": {
+        "baseline": 0.8333333333333334,
+        "more_detail": 0.6666666666666666
+      },
+      "detail_minus_baseline_mae": -0.16666666666666674,
+      "annotation_margin": -0.49999999999999994,
+      "predicted_margin": {
+        "baseline": -1.7,
+        "more_detail": -1.3
+      },
+      "direction_correct": {
+        "baseline": true,
+        "more_detail": true
+      }
+    },
+    {
+      "videos": [
+        "003028_g",
+        "003028_a"
+      ],
+      "prompt_sha256": "3f2fc8f106ac390d80df7c84e24260c5e12a98a48b006ebe667c11702db15352",
+      "mae": {
+        "baseline": 0.6666666666666666,
+        "more_detail": 0.3333333333333333
+      },
+      "detail_minus_baseline_mae": -0.3333333333333333,
+      "annotation_margin": 1.1,
+      "predicted_margin": {
+        "baseline": 0.3,
+        "more_detail": 0.5
+      },
+      "direction_correct": {
+        "baseline": true,
+        "more_detail": true
+      }
+    },
+    {
+      "videos": [
+        "003996_c",
+        "003996_u"
+      ],
+      "prompt_sha256": "4ebf6707db4d56be5d1279e7d88e3420d4232fdaac957dff3009411e23b27317",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.5
+      },
+      "detail_minus_baseline_mae": 0.0,
+      "annotation_margin": -1.0,
+      "predicted_margin": {
+        "baseline": 0.0,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "000827_c",
+        "000827_r"
+      ],
+      "prompt_sha256": "32ce3aedc7d9d778b1823d743d468ad554b0548dd627ec4a48545a6e44a6b7ed",
+      "mae": {
+        "baseline": 2.3333333333333335,
+        "more_detail": 1.1666666666666667
+      },
+      "detail_minus_baseline_mae": -1.1666666666666667,
+      "annotation_margin": -1.0999999999999999,
+      "predicted_margin": {
+        "baseline": 0.3,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "004764_f",
+        "004764_p"
+      ],
+      "prompt_sha256": "5fe89f301a6eb6a2f7ac08709cadfb04efd3b83c90741a992b6b73b71f78101e",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.8333333333333334
+      },
+      "detail_minus_baseline_mae": 0.33333333333333337,
+      "annotation_margin": 0.8999999999999999,
+      "predicted_margin": {
+        "baseline": 0.0,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "000605_e",
+        "000605_c"
+      ],
+      "prompt_sha256": "5275f1287c5d51b175add0c424bd75a462b3b03ff03dc6c043488edde70b5ff5",
+      "mae": {
+        "baseline": 1.0,
+        "more_detail": 0.6666666666666666
+      },
+      "detail_minus_baseline_mae": -0.33333333333333337,
+      "annotation_margin": -1.6,
+      "predicted_margin": {
+        "baseline": -0.3,
+        "more_detail": -1.0
+      },
+      "direction_correct": {
+        "baseline": true,
+        "more_detail": true
+      }
+    }
+  ],
+  "score_histograms": {
+    "baseline": {
+      "visual quality": {
+        "3": 12,
+        "2": 5,
+        "1": 3
+      },
+      "text-to-video alignment": {
+        "2": 5,
+        "3": 12,
+        "4": 3
+      },
+      "physical/common-sense consistency": {
+        "3": 15,
+        "2": 4,
+        "1": 1
+      }
+    },
+    "more_detail": {
+      "visual quality": {
+        "3": 18,
+        "1": 1,
+        "4": 1
+      },
+      "text-to-video alignment": {
+        "2": 6,
+        "3": 6,
+        "4": 8
+      },
+      "physical/common-sense consistency": {
+        "3": 17,
+        "2": 1,
+        "4": 2
+      }
+    }
+  },
+  "more_detail_samples": [
+    {
+      "video_name": "000244_m",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "000244_h",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 2
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "004856_b",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 1,
+        "physical/common-sense consistency": 3
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 0.0
+      }
+    },
+    {
+      "video_name": "004856_e",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 2
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "001058_f",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 2
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "001058_b",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 2
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 2.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "001047_h",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "001047_b",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 4
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "004067_j",
+      "ground_truth": {
+        "visual quality": 1,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 1
+      },
+      "prediction": {
+        "visual quality": 1,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 2
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "004067_u",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 0.0
+      }
+    },
+    {
+      "video_name": "003028_g",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 0.0
+      }
+    },
+    {
+      "video_name": "003028_a",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "003996_c",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 0.0
+      }
+    },
+    {
+      "video_name": "003996_u",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 0.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "000827_c",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 5
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 2.0
+      }
+    },
+    {
+      "video_name": "000827_r",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "004764_f",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 4
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "004764_p",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 0.0
+      }
+    },
+    {
+      "video_name": "000605_e",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 2
+      },
+      "prediction": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      },
+      "absolute_errors": {
+        "visual quality": 1.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 1.0
+      }
+    },
+    {
+      "video_name": "000605_c",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      },
+      "prediction": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      },
+      "absolute_errors": {
+        "visual quality": 0.0,
+        "text-to-video alignment": 1.0,
+        "physical/common-sense consistency": 0.0
+      }
+    }
+  ],
+  "source_summary_sha256": "802d9c88745e05540f9257cb89835fad3bfa2d74bb6f93ded4cbb426f6a713d7",
+  "ground_truth_histograms": {
+    "visual quality": {
+      "3": 8,
+      "2": 5,
+      "4": 6,
+      "1": 1
+    },
+    "text-to-video alignment": {
+      "2": 5,
+      "1": 1,
+      "3": 7,
+      "4": 5,
+      "5": 2
+    },
+    "physical/common-sense consistency": {
+      "4": 7,
+      "2": 5,
+      "3": 6,
+      "1": 1,
+      "5": 1
+    }
+  },
+  "largest_group_share_of_net_mae_gain": 0.6363636363636364,
+  "mean_mae_difference_without_best_group": -0.07407407407407408
+}
