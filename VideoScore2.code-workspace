@@ -74,6 +74,31 @@
           "HF_HUB_OFFLINE": "1",
           "TRANSFORMERS_OFFLINE": "1"
         }
+      },
+      {
+        "name": "ClipRank | expanded evaluation | resume",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/experiments/run_expanded_evaluation.py",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "python": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+        "args": [
+          "--manifest",
+          "D:/career-projects/data/ClipRank-expanded-20261022/manifest.json",
+          "--model",
+          "D:/career-projects/models/VideoScore2/09a2732cb64fa566a1f332f978368292ce5c295c",
+          "--revision",
+          "09a2732cb64fa566a1f332f978368292ce5c295c",
+          "--output-dir",
+          "D:/career-projects/runs/ClipRank-expanded/20261022_094212",
+          "--resume"
+        ],
+        "env": {
+          "PYTHONUTF8": "1",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1"
+        }
       }
     ],
     "inputs": [

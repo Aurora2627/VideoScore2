@@ -3,3 +3,5 @@
 /reports/strict-check/** -text -whitespace
 
 /reports/expanded-evaluation-plan/** -text -whitespace
+
+/reports/expanded-evaluation/** -text -whitespace
