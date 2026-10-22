@@ -5,3 +5,6 @@
 /reports/expanded-evaluation-plan/** -text -whitespace
 
 /reports/expanded-evaluation/** -text -whitespace
+
+/reports/error-review/** -text -whitespace
+/reports/pairwise-development/** -text -whitespace

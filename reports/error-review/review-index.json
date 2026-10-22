@@ -1,0 +1,91 @@
+{
+  "source_summary_sha256": "802d9c88745e05540f9257cb89835fad3bfa2d74bb6f93ded4cbb426f6a713d7",
+  "groups": [
+    {
+      "videos": [
+        "000244_m",
+        "000244_h"
+      ],
+      "prompt_sha256": "7f6e802f4cec98151ebf36ae02e81c97fa6088e04b4bf1fef82f64557a595155",
+      "mae": {
+        "baseline": 0.6666666666666666,
+        "more_detail": 0.6666666666666666
+      },
+      "detail_minus_baseline_mae": 0.0,
+      "annotation_margin": 0.8999999999999999,
+      "predicted_margin": {
+        "baseline": -0.4,
+        "more_detail": -0.4
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "003996_c",
+        "003996_u"
+      ],
+      "prompt_sha256": "4ebf6707db4d56be5d1279e7d88e3420d4232fdaac957dff3009411e23b27317",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.5
+      },
+      "detail_minus_baseline_mae": 0.0,
+      "annotation_margin": -1.0,
+      "predicted_margin": {
+        "baseline": 0.0,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "000827_c",
+        "000827_r"
+      ],
+      "prompt_sha256": "32ce3aedc7d9d778b1823d743d468ad554b0548dd627ec4a48545a6e44a6b7ed",
+      "mae": {
+        "baseline": 2.3333333333333335,
+        "more_detail": 1.1666666666666667
+      },
+      "detail_minus_baseline_mae": -1.1666666666666667,
+      "annotation_margin": -1.0999999999999999,
+      "predicted_margin": {
+        "baseline": 0.3,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "004764_f",
+        "004764_p"
+      ],
+      "prompt_sha256": "5fe89f301a6eb6a2f7ac08709cadfb04efd3b83c90741a992b6b73b71f78101e",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.8333333333333334
+      },
+      "detail_minus_baseline_mae": 0.33333333333333337,
+      "annotation_margin": 0.8999999999999999,
+      "predicted_margin": {
+        "baseline": 0.0,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    }
+  ],
+  "review_record_sha256": "851ceb52ea23b16b8434e3792b35e0f1f0dbb65f308dd6779242081b3ef97986",
+  "media_in_git": false
+}
