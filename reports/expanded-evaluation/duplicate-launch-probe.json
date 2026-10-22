@@ -1,0 +1,5 @@
+{
+  "duplicate_launch_rejected_before_model_load": true,
+  "returncode": 1,
+  "mechanism": "Windows mandatory byte-range lock denied reading the existing active lock; second process exited before engine initialization"
+}

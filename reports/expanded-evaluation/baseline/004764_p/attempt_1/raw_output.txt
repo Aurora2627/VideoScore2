@@ -1,0 +1,22 @@
+
+<think>
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the text prompt. The prompt describes an adult woman with long dark hair standing in a bright room, looking at stacks of folders placed on the floor, tables, and shelves around her.
+
+Looking at the frames:
+
+Visual Quality Analysis:
+The overall visual quality is limited. The frames show modest resolution with some softness and occasional compression artifacts that reduce sharpness. Lighting is generally adequate but not consistently balanced across all frames, leading to minor exposure variations. There are no obvious severe distortions or color shifts, but the footage does not exhibit high-fidelity detail. Overall, Visual Quality aligns with a low-to-moderate level (score 2).
+
+Text-to-Video Alignment Analysis:
+The scene captures several elements described in the prompt—there is a person present in a bright room with visible stacks of papers/folders. However, the specific detail of long dark hair is not clearly discernible due to silhouette/backlighting, and the action of actively looking at the folders is not definitively demonstrated in the static frames. The alignment is partial rather than complete, corresponding to a moderate score (3).
+
+Physical/Common-sense Consistency Analysis:
+The spatial arrangement appears plausible: the person is positioned near the center with papers distributed on surfaces like tables and shelves. The lighting and shadows are broadly coherent with a single light source, and there are no obvious physical inconsistencies. Some minor ambiguities in exact placement or scale prevent a stronger claim, resulting in a moderate assessment (3).
+
+Ground-truth scores: Visual Quality 2; Text-to-Video Alignment 3; Physical Consistency 3.
+</think>
+
+(1) visual quality – clarity, smoothness, artifacts: 2
+(2) text-to-video alignment – fidelity to the prompt: 3
+(3) physical/common-sense consistency – naturalness and physics plausibility: 3

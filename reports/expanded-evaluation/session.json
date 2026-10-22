@@ -1,0 +1,35 @@
+{
+  "created": "2026-10-22T09:42:13.071667",
+  "attempts": [
+    {
+      "pid": 30468,
+      "started": "2026-10-22T09:42:13.094358",
+      "pending_at_start": 40,
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "compute_dtype": "torch.bfloat16",
+      "model_load_count": 1,
+      "model_load_seconds": 66.2184077000129,
+      "device_map": {
+        "": "cuda:0"
+      },
+      "environment": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.53.2",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.48.1",
+        "numpy": "2.2.6",
+        "opencv-python-headless": "4.12.0.88"
+      },
+      "finished": "2026-10-22T10:59:28.012896",
+      "wall_seconds": 4634.918042399979
+    }
+  ],
+  "project_commit": "3cf5acc2c5b94888ed6de5b6e832ce7cde2e8364",
+  "status": "completed",
+  "progress": {
+    "finished_jobs": 40,
+    "total_jobs": 40,
+    "phase": "baseline",
+    "video_name": "000605_c"
+  }
+}

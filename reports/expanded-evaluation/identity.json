@@ -1,0 +1,16 @@
+{
+  "manifest_sha256": "112867416183d5135ceff1e37cde8f2e799341b5f7c43d5c7bd93a8a1e40d2af",
+  "model_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+  "model_path": "D:\\career-projects\\models\\VideoScore2\\09a2732cb64fa566a1f332f978368292ce5c295c",
+  "protocol_sha256": "e8b88d8619dd2012793220b6d956163d094b3416d8434662768ab8dcbffe7775",
+  "policy_sha256": "84dc41ae3e9bd832e3cd60211e300a95bac88835387fc11c4436a671ff5f0886",
+  "sources_sha256": {
+    "run_expanded_evaluation.py": "10f560e53bec3b13b93bb87503f030fedaa92828ae9a3030ce406a4465548921",
+    "expanded_metrics.py": "67eb5b6d896f99f9c71ed641c576ea5c55a1d12eb65f86c97f19aaa3fd4b599c",
+    "quality_metrics.py": "24719557aa970f54654947b4f54947c6dba8f77dbbe946ff0af8e80e084368e6",
+    "run_batch.py": "3bb0f374d11032eb6f7c79650aa77bf8e50b4b4bb36ce63299abe39134f367e4",
+    "selection.py": "228d2e64a4e04ea01443f2960adf3daf5c735d40ecfec92d59f453a1d94e78bb",
+    "infer_cuda.py": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+    "vs2_inference.py": "acf8fdd53b3302d5b7e32babfa915055e468e3f6d8590eb2b7c2ba1058173f75"
+  }
+}

@@ -1,0 +1,13 @@
+
+    You are an expert for evaluating AI-generated videos from three dimensions:
+    (1) visual quality – clarity, smoothness, artifacts;
+    (2) text-to-video alignment – fidelity to the prompt;
+    (3) physical/common-sense consistency – naturalness and physics plausibility.
+
+    Video prompt: A man in a dark suit, white shirt, and blue polka-dot tie speaks confidently in a studio. The blurred background features a wooden desk and decorative elements, creating a warm, orange-toned atmosphere. His facial expressions and minimal body movements convey clarity and engagement as he communicates directly with the camera
+
+    Please output in this format:
+    visual quality: <v_score>; 
+    text-to-video alignment: <t_score>, 
+    physical/common-sense consistency: <p_score>
+    

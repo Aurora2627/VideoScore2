@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\career-projects\VideoScore2\experiments\run_expanded_evaluation.py", line 104, in <module>
+    if __name__=='__main__': raise SystemExit(main())
+                                              ^^^^^^
+  File "D:\career-projects\VideoScore2\experiments\run_expanded_evaluation.py", line 40, in main
+    if not lock.read(1): lock.write(b'0');lock.flush()
+           ^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied

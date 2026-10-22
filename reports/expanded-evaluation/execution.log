@@ -1,0 +1,95 @@
+EXPANDED_PENDING 40 TOTAL 40
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Exception in thread Thread-2 (_readerthread):
+Traceback (most recent call last):
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\career-projects\runtimes\python311\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 7: invalid start byte
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:16<00:48, 16.08s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:35<00:36, 18.27s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:55<00:18, 18.73s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:59<00:00, 13.25s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:59<00:00, 15.00s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 1 40 baseline 000244_m completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 2 40 baseline 000244_h completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 3 40 more_detail 000244_m completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 4 40 more_detail 000244_h completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 5 40 more_detail 004856_b completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 6 40 more_detail 004856_e completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 7 40 baseline 004856_b completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 8 40 baseline 004856_e completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 9 40 baseline 001058_f completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 10 40 baseline 001058_b completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 11 40 more_detail 001058_f completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 12 40 more_detail 001058_b completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 13 40 more_detail 001047_h completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 14 40 more_detail 001047_b completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 15 40 baseline 001047_h completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 16 40 baseline 001047_b completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 17 40 baseline 004067_j completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 18 40 baseline 004067_u completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 19 40 more_detail 004067_j completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 20 40 more_detail 004067_u completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 21 40 more_detail 003028_g completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 22 40 more_detail 003028_a completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 23 40 baseline 003028_g completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 24 40 baseline 003028_a completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 25 40 baseline 003996_c completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 26 40 baseline 003996_u completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 27 40 more_detail 003996_c completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 28 40 more_detail 003996_u completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 29 40 more_detail 000827_c completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 30 40 more_detail 000827_r completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 31 40 baseline 000827_c completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 32 40 baseline 000827_r completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 33 40 baseline 004764_f completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 34 40 baseline 004764_p completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 35 40 more_detail 004764_f completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 36 40 more_detail 004764_p completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 37 40 more_detail 000605_e completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 38 40 more_detail 000605_c completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 39 40 baseline 000605_e completed
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+EXPANDED_CLIP 40 40 baseline 000605_c completed
+EXPANDED_FINISHED D:\career-projects\runs\ClipRank-expanded\20261022_094212 completed

@@ -1,0 +1,136 @@
+{
+  "planned_videos": 20,
+  "planned_prompt_groups": 10,
+  "paired_valid_videos": 20,
+  "complete_prompt_groups": 10,
+  "full_coverage": true,
+  "baseline": {
+    "sample_count": 20,
+    "valid_count": 20,
+    "valid_rate": 1.0,
+    "per_dimension_mae": {
+      "visual quality": 0.8,
+      "text-to-video alignment": 0.9,
+      "physical/common-sense consistency": 0.8
+    },
+    "macro_mae": 0.8333333333333334,
+    "pair_correct": 4,
+    "pair_total": 9,
+    "pair_agreement": 0.4444444444444444
+  },
+  "more_detail": {
+    "sample_count": 20,
+    "valid_count": 20,
+    "valid_rate": 1.0,
+    "per_dimension_mae": {
+      "visual quality": 0.5,
+      "text-to-video alignment": 0.7,
+      "physical/common-sense consistency": 0.75
+    },
+    "macro_mae": 0.65,
+    "pair_correct": 5,
+    "pair_total": 9,
+    "pair_agreement": 0.5555555555555556
+  },
+  "correlations": {
+    "baseline": {
+      "visual quality": {
+        "count": 20,
+        "spearman": 0.1964273393465009,
+        "pearson": 0.2696444210511395
+      },
+      "text-to-video alignment": {
+        "count": 20,
+        "spearman": 0.05573119984758828,
+        "pearson": 0.015337495471844811
+      },
+      "physical/common-sense consistency": {
+        "count": 20,
+        "spearman": 0.11947834313652601,
+        "pearson": 0.054153036107388225
+      }
+    },
+    "more_detail": {
+      "visual quality": {
+        "count": 20,
+        "spearman": 0.4781102599347894,
+        "pearson": 0.5754160919975787
+      },
+      "text-to-video alignment": {
+        "count": 20,
+        "spearman": 0.5530813700863021,
+        "pearson": 0.5650127988261759
+      },
+      "physical/common-sense consistency": {
+        "count": 20,
+        "spearman": 0.324359658186558,
+        "pearson": 0.3794498581231154
+      }
+    }
+  },
+  "paired_baseline": {
+    "sample_count": 20,
+    "valid_count": 20,
+    "valid_rate": 1.0,
+    "per_dimension_mae": {
+      "visual quality": 0.8,
+      "text-to-video alignment": 0.9,
+      "physical/common-sense consistency": 0.8
+    },
+    "macro_mae": 0.8333333333333334,
+    "pair_correct": 4,
+    "pair_total": 9,
+    "pair_agreement": 0.4444444444444444
+  },
+  "paired_more_detail": {
+    "sample_count": 20,
+    "valid_count": 20,
+    "valid_rate": 1.0,
+    "per_dimension_mae": {
+      "visual quality": 0.5,
+      "text-to-video alignment": 0.7,
+      "physical/common-sense consistency": 0.75
+    },
+    "macro_mae": 0.65,
+    "pair_correct": 5,
+    "pair_total": 9,
+    "pair_agreement": 0.5555555555555556
+  },
+  "constant_three_reference": {
+    "sample_count": 20,
+    "valid_count": 20,
+    "valid_rate": 1.0,
+    "per_dimension_mae": {
+      "visual quality": 0.65,
+      "text-to-video alignment": 0.8,
+      "physical/common-sense consistency": 0.8
+    },
+    "macro_mae": 0.75,
+    "pair_correct": 0,
+    "pair_total": 9,
+    "pair_agreement": 0.0
+  },
+  "paired_prompt_bootstrap": {
+    "mean": -0.18333333333333335,
+    "lower_95": -0.4666666666666667,
+    "upper_95": 0.049999999999999996,
+    "prompt_groups": 10,
+    "draws": 5000,
+    "seed": 20261022,
+    "direction": "detail minus baseline; negative means lower error"
+  },
+  "resources": {
+    "baseline": {
+      "attempted": 20,
+      "mean_generation_seconds": 108.77140903000546,
+      "peak_allocated_gib": 5.731353759765625
+    },
+    "more_detail": {
+      "attempted": 20,
+      "mean_generation_seconds": 113.3675879999937,
+      "peak_allocated_gib": 5.810175895690918
+    }
+  },
+  "conclusion": "lower_observed_mae",
+  "scope": "20 fresh videos from 10 prompts is a diagnostic subset. No parameter fitting, online effect or full-benchmark claim."
+}
