@@ -8,6 +8,7 @@ def publish(run):
  assert not subprocess.check_output(['git','status','--porcelain'],cwd=ROOT).strip(),'Uncommitted edits require review before publication'
  out=ROOT/'reports/head-training';out.mkdir(parents=True,exist_ok=False)
  for name in ('sources','heads','test'):shutil.copytree(run/name,out/name)
+ if (run/'recovery').exists():shutil.copytree(run/'recovery',out/'recovery',ignore=shutil.ignore_patterns('*.lock'))
  for name in ('manifest.json','protocol.json','identity.json','status.json','data-provenance.json','split-plan.json'):shutil.copy2(run/name,out/name)
  shutil.copytree(run/'logs',out/'logs')
  features=run/'features';save(out/'feature-audit.json',{'identity':read(features/'identity.json'),'session':read(features/'session.json'),'receipts':{p.parent.name:read(p) for p in features.glob('*/feature.json')},'tensor_cache':'Feature tensors retained in Windows run directory; regenerate with extract_features.py, not included in Git'})

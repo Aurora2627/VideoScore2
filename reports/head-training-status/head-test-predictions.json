@@ -1,0 +1,509 @@
+{
+  "selection_sha256": "e4538802c0c653431af2c0877ce11d3588b91956a201ebd786825f7830ccb77a",
+  "samples": [
+    {
+      "video_name": "004118_j",
+      "scores": {
+        "visual_quality": 1.1315147876739502,
+        "text_alignment": 1.4227185249328613,
+        "physical_consistency": 1.2239967584609985
+      }
+    },
+    {
+      "video_name": "004118_c",
+      "scores": {
+        "visual_quality": 2.6591808795928955,
+        "text_alignment": 2.742622137069702,
+        "physical_consistency": 3.147104263305664
+      }
+    },
+    {
+      "video_name": "001085_b",
+      "scores": {
+        "visual_quality": 2.6923530101776123,
+        "text_alignment": 3.7227354049682617,
+        "physical_consistency": 2.696181535720825
+      }
+    },
+    {
+      "video_name": "001085_m",
+      "scores": {
+        "visual_quality": 2.236166000366211,
+        "text_alignment": 1.5179071426391602,
+        "physical_consistency": 2.2291691303253174
+      }
+    },
+    {
+      "video_name": "004521_f",
+      "scores": {
+        "visual_quality": 3.3146591186523438,
+        "text_alignment": 3.3572161197662354,
+        "physical_consistency": 2.7656593322753906
+      }
+    },
+    {
+      "video_name": "004521_p",
+      "scores": {
+        "visual_quality": 3.7096338272094727,
+        "text_alignment": 4.104143142700195,
+        "physical_consistency": 2.7037413120269775
+      }
+    },
+    {
+      "video_name": "003707_w",
+      "scores": {
+        "visual_quality": 2.859825849533081,
+        "text_alignment": 3.2282228469848633,
+        "physical_consistency": 2.16504168510437
+      }
+    },
+    {
+      "video_name": "003707_c",
+      "scores": {
+        "visual_quality": 3.238258123397827,
+        "text_alignment": 3.2954750061035156,
+        "physical_consistency": 2.5409328937530518
+      }
+    },
+    {
+      "video_name": "000085_h",
+      "scores": {
+        "visual_quality": 3.049497604370117,
+        "text_alignment": 3.0683557987213135,
+        "physical_consistency": 3.0294854640960693
+      }
+    },
+    {
+      "video_name": "000085_q",
+      "scores": {
+        "visual_quality": 2.7428245544433594,
+        "text_alignment": 2.896965742111206,
+        "physical_consistency": 2.9455156326293945
+      }
+    },
+    {
+      "video_name": "002709_b",
+      "scores": {
+        "visual_quality": 2.880713701248169,
+        "text_alignment": 3.1609227657318115,
+        "physical_consistency": 3.271709442138672
+      }
+    },
+    {
+      "video_name": "002709_v",
+      "scores": {
+        "visual_quality": 3.056306838989258,
+        "text_alignment": 3.4798057079315186,
+        "physical_consistency": 3.241834878921509
+      }
+    },
+    {
+      "video_name": "002238_m",
+      "scores": {
+        "visual_quality": 2.7903826236724854,
+        "text_alignment": 2.8737659454345703,
+        "physical_consistency": 2.9279134273529053
+      }
+    },
+    {
+      "video_name": "002238_A",
+      "scores": {
+        "visual_quality": 4.948419570922852,
+        "text_alignment": 1.0024064779281616,
+        "physical_consistency": 4.5641021728515625
+      }
+    },
+    {
+      "video_name": "000796_q",
+      "scores": {
+        "visual_quality": 2.8420181274414062,
+        "text_alignment": 3.537338972091675,
+        "physical_consistency": 2.833421468734741
+      }
+    },
+    {
+      "video_name": "000796_c",
+      "scores": {
+        "visual_quality": 2.01845383644104,
+        "text_alignment": 3.798119306564331,
+        "physical_consistency": 2.391184091567993
+      }
+    },
+    {
+      "video_name": "000209_k",
+      "scores": {
+        "visual_quality": 1.0151814222335815,
+        "text_alignment": 1.029308795928955,
+        "physical_consistency": 1.2550290822982788
+      }
+    },
+    {
+      "video_name": "000209_v",
+      "scores": {
+        "visual_quality": 2.9350292682647705,
+        "text_alignment": 3.576601028442383,
+        "physical_consistency": 3.860433340072632
+      }
+    },
+    {
+      "video_name": "004239_a",
+      "scores": {
+        "visual_quality": 3.6770436763763428,
+        "text_alignment": 3.073716163635254,
+        "physical_consistency": 3.1329116821289062
+      }
+    },
+    {
+      "video_name": "004239_y",
+      "scores": {
+        "visual_quality": 3.6123688220977783,
+        "text_alignment": 2.95874285697937,
+        "physical_consistency": 2.9584436416625977
+      }
+    },
+    {
+      "video_name": "000699_r",
+      "scores": {
+        "visual_quality": 3.778272867202759,
+        "text_alignment": 4.450832843780518,
+        "physical_consistency": 3.504108190536499
+      }
+    },
+    {
+      "video_name": "000699_x",
+      "scores": {
+        "visual_quality": 2.1401045322418213,
+        "text_alignment": 3.010633707046509,
+        "physical_consistency": 2.6033289432525635
+      }
+    },
+    {
+      "video_name": "004983_f",
+      "scores": {
+        "visual_quality": 3.2953708171844482,
+        "text_alignment": 2.9508121013641357,
+        "physical_consistency": 3.032747983932495
+      }
+    },
+    {
+      "video_name": "004983_z",
+      "scores": {
+        "visual_quality": 3.3531970977783203,
+        "text_alignment": 4.097579479217529,
+        "physical_consistency": 3.0684797763824463
+      }
+    },
+    {
+      "video_name": "000012_v",
+      "scores": {
+        "visual_quality": 4.173229694366455,
+        "text_alignment": 4.356882572174072,
+        "physical_consistency": 4.004240989685059
+      }
+    },
+    {
+      "video_name": "000012_e",
+      "scores": {
+        "visual_quality": 4.003789901733398,
+        "text_alignment": 4.626074314117432,
+        "physical_consistency": 3.0695297718048096
+      }
+    },
+    {
+      "video_name": "004583_y",
+      "scores": {
+        "visual_quality": 3.1472694873809814,
+        "text_alignment": 3.2291879653930664,
+        "physical_consistency": 2.5990312099456787
+      }
+    },
+    {
+      "video_name": "004583_f",
+      "scores": {
+        "visual_quality": 2.7803962230682373,
+        "text_alignment": 2.833380937576294,
+        "physical_consistency": 2.2816433906555176
+      }
+    },
+    {
+      "video_name": "002602_d",
+      "scores": {
+        "visual_quality": 1.3463512659072876,
+        "text_alignment": 2.398407220840454,
+        "physical_consistency": 1.2741137742996216
+      }
+    },
+    {
+      "video_name": "002602_p",
+      "scores": {
+        "visual_quality": 2.673091173171997,
+        "text_alignment": 4.520309925079346,
+        "physical_consistency": 2.0530526638031006
+      }
+    },
+    {
+      "video_name": "003856_n",
+      "scores": {
+        "visual_quality": 3.429877996444702,
+        "text_alignment": 4.079214572906494,
+        "physical_consistency": 3.388103723526001
+      }
+    },
+    {
+      "video_name": "004047_h",
+      "scores": {
+        "visual_quality": 2.6550471782684326,
+        "text_alignment": 4.415449142456055,
+        "physical_consistency": 2.6519062519073486
+      }
+    },
+    {
+      "video_name": "003902_n",
+      "scores": {
+        "visual_quality": 3.194516897201538,
+        "text_alignment": 3.047287702560425,
+        "physical_consistency": 3.0027809143066406
+      }
+    },
+    {
+      "video_name": "002779_g",
+      "scores": {
+        "visual_quality": 3.8524086475372314,
+        "text_alignment": 3.9181320667266846,
+        "physical_consistency": 3.2928102016448975
+      }
+    },
+    {
+      "video_name": "004673_p",
+      "scores": {
+        "visual_quality": 4.375270843505859,
+        "text_alignment": 2.189960479736328,
+        "physical_consistency": 2.637885808944702
+      }
+    },
+    {
+      "video_name": "001467_h",
+      "scores": {
+        "visual_quality": 3.0768702030181885,
+        "text_alignment": 3.075148582458496,
+        "physical_consistency": 2.9803669452667236
+      }
+    },
+    {
+      "video_name": "003011_f",
+      "scores": {
+        "visual_quality": 4.002954959869385,
+        "text_alignment": 4.053619384765625,
+        "physical_consistency": 3.7475013732910156
+      }
+    },
+    {
+      "video_name": "004815_f",
+      "scores": {
+        "visual_quality": 3.474992036819458,
+        "text_alignment": 3.3385837078094482,
+        "physical_consistency": 2.96406626701355
+      }
+    },
+    {
+      "video_name": "001122_p",
+      "scores": {
+        "visual_quality": 3.304231643676758,
+        "text_alignment": 3.992227792739868,
+        "physical_consistency": 2.813781976699829
+      }
+    },
+    {
+      "video_name": "004872_b",
+      "scores": {
+        "visual_quality": 3.352785348892212,
+        "text_alignment": 2.8561229705810547,
+        "physical_consistency": 2.6354920864105225
+      }
+    },
+    {
+      "video_name": "002376_j",
+      "scores": {
+        "visual_quality": 1.3442550897598267,
+        "text_alignment": 1.4429949522018433,
+        "physical_consistency": 1.7199821472167969
+      }
+    },
+    {
+      "video_name": "004529_a",
+      "scores": {
+        "visual_quality": 2.6815435886383057,
+        "text_alignment": 2.059807538986206,
+        "physical_consistency": 2.3687610626220703
+      }
+    },
+    {
+      "video_name": "000142_m",
+      "scores": {
+        "visual_quality": 2.519568681716919,
+        "text_alignment": 3.865208864212036,
+        "physical_consistency": 2.511577844619751
+      }
+    },
+    {
+      "video_name": "004113_u",
+      "scores": {
+        "visual_quality": 3.619913101196289,
+        "text_alignment": 3.1644136905670166,
+        "physical_consistency": 3.254728078842163
+      }
+    },
+    {
+      "video_name": "002636_n",
+      "scores": {
+        "visual_quality": 3.1096079349517822,
+        "text_alignment": 3.103583574295044,
+        "physical_consistency": 2.6314120292663574
+      }
+    },
+    {
+      "video_name": "004122_a",
+      "scores": {
+        "visual_quality": 1.5043426752090454,
+        "text_alignment": 1.7584075927734375,
+        "physical_consistency": 1.7173395156860352
+      }
+    },
+    {
+      "video_name": "000641_m",
+      "scores": {
+        "visual_quality": 1.9670042991638184,
+        "text_alignment": 3.227938413619995,
+        "physical_consistency": 2.218127489089966
+      }
+    },
+    {
+      "video_name": "004951_y",
+      "scores": {
+        "visual_quality": 3.4173247814178467,
+        "text_alignment": 3.0125856399536133,
+        "physical_consistency": 3.2607526779174805
+      }
+    },
+    {
+      "video_name": "001194_z",
+      "scores": {
+        "visual_quality": 3.060871124267578,
+        "text_alignment": 3.1138575077056885,
+        "physical_consistency": 2.7346112728118896
+      }
+    },
+    {
+      "video_name": "002770_f",
+      "scores": {
+        "visual_quality": 3.398263931274414,
+        "text_alignment": 4.677310943603516,
+        "physical_consistency": 3.3810958862304688
+      }
+    },
+    {
+      "video_name": "003523_b",
+      "scores": {
+        "visual_quality": 2.691279172897339,
+        "text_alignment": 3.4107167720794678,
+        "physical_consistency": 2.753247022628784
+      }
+    },
+    {
+      "video_name": "000404_d",
+      "scores": {
+        "visual_quality": 1.0070381164550781,
+        "text_alignment": 1.0083085298538208,
+        "physical_consistency": 1.0974444150924683
+      }
+    },
+    {
+      "video_name": "001484_h",
+      "scores": {
+        "visual_quality": 3.4974212646484375,
+        "text_alignment": 2.9483680725097656,
+        "physical_consistency": 3.578857421875
+      }
+    },
+    {
+      "video_name": "000645_q",
+      "scores": {
+        "visual_quality": 2.558562994003296,
+        "text_alignment": 3.39266300201416,
+        "physical_consistency": 2.5563042163848877
+      }
+    },
+    {
+      "video_name": "000236_h",
+      "scores": {
+        "visual_quality": 3.025308609008789,
+        "text_alignment": 3.077275276184082,
+        "physical_consistency": 2.6809799671173096
+      }
+    },
+    {
+      "video_name": "001809_z",
+      "scores": {
+        "visual_quality": 2.822922468185425,
+        "text_alignment": 3.0904324054718018,
+        "physical_consistency": 2.40956449508667
+      }
+    },
+    {
+      "video_name": "003747_b",
+      "scores": {
+        "visual_quality": 4.028903484344482,
+        "text_alignment": 1.402732253074646,
+        "physical_consistency": 3.1348206996917725
+      }
+    },
+    {
+      "video_name": "004778_b",
+      "scores": {
+        "visual_quality": 3.0839741230010986,
+        "text_alignment": 3.3324668407440186,
+        "physical_consistency": 3.2176973819732666
+      }
+    },
+    {
+      "video_name": "003960_f",
+      "scores": {
+        "visual_quality": 3.2918918132781982,
+        "text_alignment": 3.824342966079712,
+        "physical_consistency": 3.726395845413208
+      }
+    },
+    {
+      "video_name": "001699_v",
+      "scores": {
+        "visual_quality": 4.502351760864258,
+        "text_alignment": 1.8409801721572876,
+        "physical_consistency": 4.013698101043701
+      }
+    },
+    {
+      "video_name": "000781_c",
+      "scores": {
+        "visual_quality": 4.159339427947998,
+        "text_alignment": 4.560157299041748,
+        "physical_consistency": 4.195346832275391
+      }
+    },
+    {
+      "video_name": "002336_p",
+      "scores": {
+        "visual_quality": 3.271514654159546,
+        "text_alignment": 2.982062578201294,
+        "physical_consistency": 2.3930575847625732
+      }
+    },
+    {
+      "video_name": "004641_f",
+      "scores": {
+        "visual_quality": 3.0688133239746094,
+        "text_alignment": 2.823770761489868,
+        "physical_consistency": 2.5162270069122314
+      }
+    }
+  ]
+}

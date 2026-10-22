@@ -9,6 +9,12 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'application'))
 from run_batch import ResidentScorer
 REV='09a2732cb64fa566a1f332f978368292ce5c295c'
+def original_score_vector(result):
+ keys=('visual quality','text-to-video alignment','physical/common-sense consistency')
+ values=np.asarray([result['scores'][k] for k in keys],dtype=float)
+ if not np.isfinite(values).all() or not ((values>=1)&(values<=5)).all():raise ValueError('Invalid original score range')
+ return values.tolist()
+
 def paired_interval(head,baseline,target,rows):
  errors=np.abs(head-target).mean(1)-np.abs(baseline-target).mean(1);groups=collections.defaultdict(list)
  for i,r in enumerate(rows):groups[canonical(r['prompt'])].append(i)
@@ -16,27 +22,33 @@ def paired_interval(head,baseline,target,rows):
  means=np.array([rng.choice(group_errors,len(group_errors),replace=True).mean() for _ in range(5000)])
  return {'estimand':'Prompt-macro mean MAE difference: head minus original; negative favors head','groups':len(group_errors),'observed':float(group_errors.mean()),'ci95':np.quantile(means,[.025,.975]).tolist(),'bootstrap_samples':5000,'seed':20261022}
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--manifest',type=Path,required=True);ap.add_argument('--features',type=Path,required=True);ap.add_argument('--heads',type=Path,required=True);ap.add_argument('--output-dir',type=Path,required=True);ap.add_argument('--model',default='D:/career-projects/models/VideoScore2/'+REV);ap.add_argument('--revision',default=REV);a=ap.parse_args();assert a.revision==REV
+ ap=argparse.ArgumentParser();ap.add_argument('--manifest',type=Path,required=True);ap.add_argument('--features',type=Path,required=True);ap.add_argument('--heads',type=Path,required=True);ap.add_argument('--output-dir',type=Path,required=True);ap.add_argument('--model',default='D:/career-projects/models/VideoScore2/'+REV);ap.add_argument('--revision',default=REV);ap.add_argument('--resume-baseline-only',action='store_true');a=ap.parse_args();assert a.revision==REV
  a.output_dir.mkdir(parents=True,exist_ok=True);selection=read(a.heads/'selection.json');assert selection['manifest_sha256']==sha(a.manifest) and selection['feature_identity_sha256']==sha(a.features/'identity.json')
  for name,digest in selection['checkpoint_sha256'].items():assert sha(a.heads/name)==digest,'Checkpoint changed after selection'
  rows=[r for r in read(a.manifest)['samples'] if r['split']=='test'];assert rows and all(r['source_split']=='official_test' for r in rows)
- normalization=torch.load(a.heads/'normalization.pt',map_location='cpu',weights_only=True);raw=load_features(rows,a.features);x=((raw-normalization['mean'])/normalization['std']).cuda();predictions=[];states=[]
- for seed in selection['seeds']:
-  checkpoint=torch.load(a.heads/(selection['selected_variant']+'_'+str(seed)+'.pt'),map_location='cpu',weights_only=True);model=ScoreHead(checkpoint['input_dim'],checkpoint['variant']).cuda();model.load_state_dict(checkpoint['state_dict']);model.eval()
-  with torch.inference_mode():predictions.append(model(x).cpu())
-  states.append(checkpoint)
- head=torch.stack(predictions).mean(0).numpy();target=labels(rows).numpy();head_metrics=evaluate(head,target,rows)
- save(a.output_dir/'head-test-predictions.json',{'selection_sha256':sha(a.heads/'selection.json'),'samples':[{'video_name':r['video_name'],'scores':dict(zip(LABELS,p.tolist()))} for r,p in zip(rows,head)]})
- save(a.output_dir/'head-test-metrics.json',head_metrics)
- torch.save({'models':states,'normalization':normalization,'model_revision':REV,'frames':4,'max_side':448,'pooling':'final_non_padding_token_before_answer','selection_sha256':sha(a.heads/'selection.json'),'feature_identity':read(a.features/'identity.json')},a.heads/'selected-ensemble.pt')
- del model,x,raw;torch.cuda.empty_cache()
+ if a.resume_baseline_only:
+  saved=read(a.output_dir/'head-test-predictions.json');assert saved['selection_sha256']==sha(a.heads/'selection.json')
+  assert [r['video_name'] for r in saved['samples']]==[r['video_name'] for r in rows]
+  head=np.asarray([[r['scores'][k] for k in LABELS] for r in saved['samples']],dtype=float);target=labels(rows).numpy();head_metrics=read(a.output_dir/'head-test-metrics.json')
+  assert (a.heads/'selected-ensemble.pt').exists()
+ else:
+  normalization=torch.load(a.heads/'normalization.pt',map_location='cpu',weights_only=True);raw=load_features(rows,a.features);x=((raw-normalization['mean'])/normalization['std']).cuda();predictions=[];states=[]
+  for seed in selection['seeds']:
+   checkpoint=torch.load(a.heads/(selection['selected_variant']+'_'+str(seed)+'.pt'),map_location='cpu',weights_only=True);model=ScoreHead(checkpoint['input_dim'],checkpoint['variant']).cuda();model.load_state_dict(checkpoint['state_dict']);model.eval()
+   with torch.inference_mode():predictions.append(model(x).cpu())
+   states.append(checkpoint)
+  head=torch.stack(predictions).mean(0).numpy();target=labels(rows).numpy();head_metrics=evaluate(head,target,rows)
+  save(a.output_dir/'head-test-predictions.json',{'selection_sha256':sha(a.heads/'selection.json'),'samples':[{'video_name':r['video_name'],'scores':dict(zip(LABELS,p.tolist()))} for r,p in zip(rows,head)]})
+  save(a.output_dir/'head-test-metrics.json',head_metrics)
+  torch.save({'models':states,'normalization':normalization,'model_revision':REV,'frames':4,'max_side':448,'pooling':'final_non_padding_token_before_answer','selection_sha256':sha(a.heads/'selection.json'),'feature_identity':read(a.features/'identity.json')},a.heads/'selected-ensemble.pt')
+  del model,x,raw;torch.cuda.empty_cache()
  a.frames=4;a.max_side=448;a.max_new_tokens=1024;engine=ResidentScorer(a);baseline=[];valid_rows=[];valid_indices=[];failures=[]
  for index,row in enumerate(rows):
   folder=a.output_dir/'original-scorer'/row['video_name'];folder.mkdir(parents=True,exist_ok=True);p=folder/'result.json'
   if p.exists():r=read(p);assert r['video_sha256']==row['video_sha256']
   else:
    safe={k:row[k] for k in ('video_name','video_path','video_sha256','prompt')};r=engine.score(safe,folder);save(p,r)
-  if r.get('valid'):baseline.append([r['scores'][k] for k in LABELS]);valid_rows.append(row);valid_indices.append(index)
+  if r.get('valid'):baseline.append(original_score_vector(r));valid_rows.append(row);valid_indices.append(index)
   else:failures.append({'video_name':row['video_name'],'status':r.get('status'),'reason':r.get('reason')})
   save(a.output_dir/'progress.json',{'stage':'original_scorer_test','finished':index+1,'total':len(rows),'valid':len(baseline)});print('ORIGINAL_TEST_SCORED',index+1,len(rows),bool(r.get('valid')),flush=True)
  metrics={'head_all_test':head_metrics,'selected_variant':selection['selected_variant'],'seeds':selection['seeds'],'test_count':len(rows),'baseline_valid_count':len(baseline),'baseline_failures':failures,'scope':'Project-specific head training; pretrained backbone was already trained on official_train. Test is an unused official_test subset, not a new external dataset.'}
