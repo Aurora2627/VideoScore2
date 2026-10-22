@@ -1,0 +1,283 @@
+{
+  "samples": [
+    {
+      "video_name": "000244_m",
+      "prompt": "A playful puppy dashes in a circle, halts to sniff the ground, then spins excitedly while chasing its own tail",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000244_m.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0000_0499/hotshot_xl/000244_m.mp4",
+      "video_sha256": "26ed8f8385691968e458fdf6140293ff680ca3f112c1d03a0f24f4859bac68be",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "000244_h",
+      "prompt": "A playful puppy dashes in a circle, halts to sniff the ground, then spins excitedly while chasing its own tail",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000244_h.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0000_0499/lavie_base/000244_h.mp4",
+      "video_sha256": "79a2d20832cbb54d5ae20dce41f5bb862e6318765748fea8c8938fd6f6748bcf",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 2
+      }
+    },
+    {
+      "video_name": "004856_b",
+      "prompt": "A farmer in the field planting corn with a hoe, and the corn quickly matures. The farmer wipes off sweat and smiles",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004856_b.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/latte/004856_b.mp4",
+      "video_sha256": "1360b224d4c34a0fa952bb80869b8cfd6d47c6cd78f0d0d567f257b4bcc3bb5a",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 1,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "004856_e",
+      "prompt": "A farmer in the field planting corn with a hoe, and the corn quickly matures. The farmer wipes off sweat and smiles",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004856_e.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/cogvideox_2b/004856_e.mp4",
+      "video_sha256": "4ed6745afa9483264f6ab8ef5275c8b1d3dae46f61766cf80463ccef964d34d2",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 2
+      }
+    },
+    {
+      "video_name": "001058_f",
+      "prompt": "A dog digs a hole in the dirt, uncovers a stick, and happily trots away with it in its mouth",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\001058_f.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/1000_1499/cogvideox_5b/001058_f.mp4",
+      "video_sha256": "e1621735c5e204eecf912497451eba5a3d74bd2ba7c7226a99638f63bb092266",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 2
+      }
+    },
+    {
+      "video_name": "001058_b",
+      "prompt": "A dog digs a hole in the dirt, uncovers a stick, and happily trots away with it in its mouth",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\001058_b.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/1000_1499/latte/001058_b.mp4",
+      "video_sha256": "bc7bd7f2d9cb95cabd504661bc262606046b1c46b06af383e41bb3b9d8c2aec2",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 2
+      }
+    },
+    {
+      "video_name": "001047_h",
+      "prompt": "Imagine an idyllic countryside estate, where rows of Juliet roses bloom in harmony with the landscape. Describe the rolling hills, the gentle rustling of leaves, and the sight of these romantic roses swaying in the gentle breeze",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\001047_h.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/1000_1499/lavie_base/001047_h.mp4",
+      "video_sha256": "b51edd784660cd1175848f5a194e7fc8ccd7be27b5a084ad978806514299c20c",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "001047_b",
+      "prompt": "Imagine an idyllic countryside estate, where rows of Juliet roses bloom in harmony with the landscape. Describe the rolling hills, the gentle rustling of leaves, and the sight of these romantic roses swaying in the gentle breeze",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\001047_b.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/1000_1499/latte/001047_b.mp4",
+      "video_sha256": "b5b435d5200f331955fa26c2c09703cc59044113616eba1ca072e58b3a8db781",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "004067_j",
+      "prompt": "A chicken farm, with lots of chickens eating from the automatic chicken feeder, which is silver and orange in color",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004067_j.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4000_4499/zeroscope/004067_j.mp4",
+      "video_sha256": "a119cb6b58b26413764ad249c314230a1ac9f0d764e6cb174b9326e4983d8203",
+      "ground_truth": {
+        "visual quality": 1,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 1
+      }
+    },
+    {
+      "video_name": "004067_u",
+      "prompt": "A chicken farm, with lots of chickens eating from the automatic chicken feeder, which is silver and orange in color",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004067_u.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4000_4499/opensora_plan_v1_3/004067_u.mp4",
+      "video_sha256": "6368167c991c42c96759934a246cd18f489d674479e9a3652ef8df3212be1622",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "003028_g",
+      "prompt": "The illustration depicts a cozy bedroom at dawn, with soft morning light filtering through partially drawn curtains. The room exudes a serene atmosphere, with a neatly made bed, a wooden nightstand displaying a small Bible, and a cross hanging on the wall. Adam, a young man with a peaceful expression, lies asleep in bed, the subtle outlines of a church visible through the window. His phone, emitting a faint glow, rests on the nightstand, signaling the intrusion of the outside world into his tranquil space",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\003028_g.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/3000_3499/cogvideox15_5b/003028_g.mp4",
+      "video_sha256": "9857e73f0b90139369332ecaade938371ff76d2aca2f55b2b71aea7c4ce58a86",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "003028_a",
+      "prompt": "The illustration depicts a cozy bedroom at dawn, with soft morning light filtering through partially drawn curtains. The room exudes a serene atmosphere, with a neatly made bed, a wooden nightstand displaying a small Bible, and a cross hanging on the wall. Adam, a young man with a peaceful expression, lies asleep in bed, the subtle outlines of a church visible through the window. His phone, emitting a faint glow, rests on the nightstand, signaling the intrusion of the outside world into his tranquil space",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\003028_a.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/3000_3499/anidiff/003028_a.mp4",
+      "video_sha256": "dd138debd743ea06c5db024f277c98c63e0e91cecafef14bd2e992b6139fb8c8",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "003996_c",
+      "prompt": "A man in a dark suit, white shirt, and blue polka-dot tie speaks confidently in a studio. The blurred background features a wooden desk and decorative elements, creating a warm, orange-toned atmosphere. His facial expressions and minimal body movements convey clarity and engagement as he communicates directly with the camera",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\003996_c.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/3500_3999/mochi1_preview/003996_c.mp4",
+      "video_sha256": "4f6307fdeab22c87bf1d469ebe15f63f9d7eba75f8f514e19c7c49c4aaa7a37f",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "003996_u",
+      "prompt": "A man in a dark suit, white shirt, and blue polka-dot tie speaks confidently in a studio. The blurred background features a wooden desk and decorative elements, creating a warm, orange-toned atmosphere. His facial expressions and minimal body movements convey clarity and engagement as he communicates directly with the camera",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\003996_u.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/3500_3999/opensora_plan_v1_3/003996_u.mp4",
+      "video_sha256": "fe9a7f3721298a9c2165f2910993818efbbf059acd3115fc6013ec626fc14558",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "000827_c",
+      "prompt": "A NYC above-ground subway train passes horizontally, with graffiti and deep shadows. The film noir scene features silhouetted faces and flashing distant lights, with stars in the background",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000827_c.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0500_0999/mochi1_preview/000827_c.mp4",
+      "video_sha256": "d3c5ebe52c38d1aea62ac22b11554af02be70e6345f65c9278ae2ea07a98785f",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 5
+      }
+    },
+    {
+      "video_name": "000827_r",
+      "prompt": "A NYC above-ground subway train passes horizontally, with graffiti and deep shadows. The film noir scene features silhouetted faces and flashing distant lights, with stars in the background",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000827_r.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0500_0999/kling/000827_r.mp4",
+      "video_sha256": "3ff5013540e7dff14ddbd732fb40358b1899eab064c7a7c7378beb2f0b1c0bda",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "004764_f",
+      "prompt": "An adult woman with long dark hair stands in the middle of a bright room, looking at stacks of folders placed on the floor, tables, and shelves around her",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004764_f.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/cogvideox_5b/004764_f.mp4",
+      "video_sha256": "3210315d0c7e0babac37e42196e6035d5c0c3b3453d5b0b0d55b1940ef25408b",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "004764_p",
+      "prompt": "An adult woman with long dark hair stands in the middle of a bright room, looking at stacks of folders placed on the floor, tables, and shelves around her",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004764_p.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/vchitect2/004764_p.mp4",
+      "video_sha256": "be53c78145cb9997184a44d34d800375152b0a123a57452bba4ff893f3060759",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "000605_e",
+      "prompt": "Display a detailed 3D model of a human foot, with a pulsating red dot in the heel area to represent a zone of pain or discomfort",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000605_e.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0500_0999/cogvideox_2b/000605_e.mp4",
+      "video_sha256": "ed4ed6e742177e31c27d17662af7cefff40dd08e433702a84aebe125a4be70bf",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 2
+      }
+    },
+    {
+      "video_name": "000605_c",
+      "prompt": "Display a detailed 3D model of a human foot, with a pulsating red dot in the heel area to represent a zone of pain or discomfort",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000605_c.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0500_0999/mochi1_preview/000605_c.mp4",
+      "video_sha256": "aa7c8bea8c8f056d0cebcfec416f7b99d57e1e4d43f42cc6151da1b363c18e3e",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      }
+    }
+  ],
+  "purpose": "Expanded frozen-input comparison; no parameter selection from this evaluation",
+  "selection_plan": {
+    "selection": "First unused multi-candidate prompt groups in pinned metadata order; first two videos per group; no label or prediction filtering",
+    "metadata_provenance": {
+      "dataset": "TIGER-Lab/VideoFeedback2",
+      "revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+      "url": "https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/resolve/99b9935b00a205756c25b0555f2dcdc071281327/data_27k_test%20%28VideoScoreBench-v2%29.json",
+      "sha256": "279a9e5f1bd5a818a2054a5b2079c1eeb217968ccb17310669c70191a1538114"
+    },
+    "excluded_manifests": {
+      "D:\\career-projects\\data\\ClipRank-demo-20261020\\manifest.json": "47abf71fe18c74bca622ce8ef0ccd864f949c233ac533b8697798f80b03785aa",
+      "D:\\career-projects\\data\\ClipRank-quality-20261020\\untouched-check.json": "31d1c22403ea705ddbea1efb996c039bdafd7901fbe3461ededd266f0e995537",
+      "D:\\career-projects\\data\\ClipRank-strict-check-20261020\\manifest.json": "25fbe40cc2571cac807387508bf3fa3329d1e4f741760e31a1da80039e0bc165"
+    },
+    "groups": 10,
+    "video_names": [
+      "000244_m",
+      "000244_h",
+      "004856_b",
+      "004856_e",
+      "001058_f",
+      "001058_b",
+      "001047_h",
+      "001047_b",
+      "004067_j",
+      "004067_u",
+      "003028_g",
+      "003028_a",
+      "003996_c",
+      "003996_u",
+      "000827_c",
+      "000827_r",
+      "004764_f",
+      "004764_p",
+      "000605_e",
+      "000605_c"
+    ]
+  },
+  "video_versioning": "Metadata revision is pinned. External object-storage video URLs are not revision-addressed; downloaded bytes are identified by captured SHA256 receipts."
+}

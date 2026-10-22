@@ -1,0 +1,10 @@
+{
+  "files_sha256": {
+    "input-audit.json": "a54308555d1cec6d8f0f8b7d0169abc60af51b178aaa1ef5e07ef438bdd7efc8",
+    "manifest.json": "112867416183d5135ceff1e37cde8f2e799341b5f7c43d5c7bd93a8a1e40d2af",
+    "protocol.json": "e8b88d8619dd2012793220b6d956163d094b3416d8434662768ab8dcbffe7775",
+    "selection-plan.json": "920e85bb5776616925a9371285f4ebdb718e545500f9fab9d53c46847df298f7"
+  },
+  "prediction_used_for_selection": false,
+  "tests_passed": 6
+}

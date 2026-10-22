@@ -1,0 +1,37 @@
+{
+  "selection": "First unused multi-candidate prompt groups in pinned metadata order; first two videos per group; no label or prediction filtering",
+  "metadata_provenance": {
+    "dataset": "TIGER-Lab/VideoFeedback2",
+    "revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+    "url": "https://huggingface.co/datasets/TIGER-Lab/VideoFeedback2/resolve/99b9935b00a205756c25b0555f2dcdc071281327/data_27k_test%20%28VideoScoreBench-v2%29.json",
+    "sha256": "279a9e5f1bd5a818a2054a5b2079c1eeb217968ccb17310669c70191a1538114"
+  },
+  "excluded_manifests": {
+    "D:\\career-projects\\data\\ClipRank-demo-20261020\\manifest.json": "47abf71fe18c74bca622ce8ef0ccd864f949c233ac533b8697798f80b03785aa",
+    "D:\\career-projects\\data\\ClipRank-quality-20261020\\untouched-check.json": "31d1c22403ea705ddbea1efb996c039bdafd7901fbe3461ededd266f0e995537",
+    "D:\\career-projects\\data\\ClipRank-strict-check-20261020\\manifest.json": "25fbe40cc2571cac807387508bf3fa3329d1e4f741760e31a1da80039e0bc165"
+  },
+  "groups": 10,
+  "video_names": [
+    "000244_m",
+    "000244_h",
+    "004856_b",
+    "004856_e",
+    "001058_f",
+    "001058_b",
+    "001047_h",
+    "001047_b",
+    "004067_j",
+    "004067_u",
+    "003028_g",
+    "003028_a",
+    "003996_c",
+    "003996_u",
+    "000827_c",
+    "000827_r",
+    "004764_f",
+    "004764_p",
+    "000605_e",
+    "000605_c"
+  ]
+}

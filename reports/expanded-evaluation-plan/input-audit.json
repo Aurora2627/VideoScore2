@@ -1,0 +1,162 @@
+[
+  {
+    "video_name": "000244_m",
+    "sha256": "26ed8f8385691968e458fdf6140293ff680ca3f112c1d03a0f24f4859bac68be",
+    "width": 672,
+    "height": 384,
+    "fps": 8.0,
+    "frames": 8
+  },
+  {
+    "video_name": "000244_h",
+    "sha256": "79a2d20832cbb54d5ae20dce41f5bb862e6318765748fea8c8938fd6f6748bcf",
+    "width": 512,
+    "height": 320,
+    "fps": 8.0,
+    "frames": 16
+  },
+  {
+    "video_name": "004856_b",
+    "sha256": "1360b224d4c34a0fa952bb80869b8cfd6d47c6cd78f0d0d567f257b4bcc3bb5a",
+    "width": 512,
+    "height": 512,
+    "fps": 10.0,
+    "frames": 16
+  },
+  {
+    "video_name": "004856_e",
+    "sha256": "4ed6745afa9483264f6ab8ef5275c8b1d3dae46f61766cf80463ccef964d34d2",
+    "width": 720,
+    "height": 480,
+    "fps": 10.0,
+    "frames": 48
+  },
+  {
+    "video_name": "001058_f",
+    "sha256": "e1621735c5e204eecf912497451eba5a3d74bd2ba7c7226a99638f63bb092266",
+    "width": 720,
+    "height": 480,
+    "fps": 10.0,
+    "frames": 40
+  },
+  {
+    "video_name": "001058_b",
+    "sha256": "bc7bd7f2d9cb95cabd504661bc262606046b1c46b06af383e41bb3b9d8c2aec2",
+    "width": 512,
+    "height": 512,
+    "fps": 10.0,
+    "frames": 16
+  },
+  {
+    "video_name": "001047_h",
+    "sha256": "b51edd784660cd1175848f5a194e7fc8ccd7be27b5a084ad978806514299c20c",
+    "width": 512,
+    "height": 320,
+    "fps": 8.0,
+    "frames": 16
+  },
+  {
+    "video_name": "001047_b",
+    "sha256": "b5b435d5200f331955fa26c2c09703cc59044113616eba1ca072e58b3a8db781",
+    "width": 512,
+    "height": 512,
+    "fps": 10.0,
+    "frames": 16
+  },
+  {
+    "video_name": "004067_j",
+    "sha256": "a119cb6b58b26413764ad249c314230a1ac9f0d764e6cb174b9326e4983d8203",
+    "width": 256,
+    "height": 256,
+    "fps": 10.0,
+    "frames": 24
+  },
+  {
+    "video_name": "004067_u",
+    "sha256": "6368167c991c42c96759934a246cd18f489d674479e9a3652ef8df3212be1622",
+    "width": 640,
+    "height": 352,
+    "fps": 18.0,
+    "frames": 93
+  },
+  {
+    "video_name": "003028_g",
+    "sha256": "9857e73f0b90139369332ecaade938371ff76d2aca2f55b2b71aea7c4ce58a86",
+    "width": 1360,
+    "height": 768,
+    "fps": 10.0,
+    "frames": 40
+  },
+  {
+    "video_name": "003028_a",
+    "sha256": "dd138debd743ea06c5db024f277c98c63e0e91cecafef14bd2e992b6139fb8c8",
+    "width": 512,
+    "height": 512,
+    "fps": 10.0,
+    "frames": 16
+  },
+  {
+    "video_name": "003996_c",
+    "sha256": "4f6307fdeab22c87bf1d469ebe15f63f9d7eba75f8f514e19c7c49c4aaa7a37f",
+    "width": 848,
+    "height": 480,
+    "fps": 10.0,
+    "frames": 19
+  },
+  {
+    "video_name": "003996_u",
+    "sha256": "fe9a7f3721298a9c2165f2910993818efbbf059acd3115fc6013ec626fc14558",
+    "width": 640,
+    "height": 352,
+    "fps": 18.0,
+    "frames": 93
+  },
+  {
+    "video_name": "000827_c",
+    "sha256": "d3c5ebe52c38d1aea62ac22b11554af02be70e6345f65c9278ae2ea07a98785f",
+    "width": 848,
+    "height": 480,
+    "fps": 10.0,
+    "frames": 19
+  },
+  {
+    "video_name": "000827_r",
+    "sha256": "3ff5013540e7dff14ddbd732fb40358b1899eab064c7a7c7378beb2f0b1c0bda",
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "frames": 121
+  },
+  {
+    "video_name": "004764_f",
+    "sha256": "3210315d0c7e0babac37e42196e6035d5c0c3b3453d5b0b0d55b1940ef25408b",
+    "width": 720,
+    "height": 480,
+    "fps": 10.0,
+    "frames": 40
+  },
+  {
+    "video_name": "004764_p",
+    "sha256": "be53c78145cb9997184a44d34d800375152b0a123a57452bba4ff893f3060759",
+    "width": 768,
+    "height": 432,
+    "fps": 8.0,
+    "frames": 40
+  },
+  {
+    "video_name": "000605_e",
+    "sha256": "ed4ed6e742177e31c27d17662af7cefff40dd08e433702a84aebe125a4be70bf",
+    "width": 720,
+    "height": 480,
+    "fps": 10.0,
+    "frames": 48
+  },
+  {
+    "video_name": "000605_c",
+    "sha256": "aa7c8bea8c8f056d0cebcfec416f7b99d57e1e4d43f42cc6151da1b363c18e3e",
+    "width": 848,
+    "height": 480,
+    "fps": 10.0,
+    "frames": 19
+  }
+]

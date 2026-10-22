@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "purpose": "Evaluate frozen 224px and 448px inputs beyond the initial diagnostic examples",
+  "selection": "First 10 unused multi-candidate prompt groups in pinned metadata order; first 2 videos per group; no annotation or prediction filtering",
+  "model_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+  "configurations": [
+    {
+      "name": "baseline",
+      "frames": 4,
+      "max_side": 224
+    },
+    {
+      "name": "more_detail",
+      "frames": 4,
+      "max_side": 448
+    }
+  ],
+  "fixed": {
+    "seed": 42,
+    "max_new_tokens": 1024,
+    "do_sample": false,
+    "quantization": "NF4 double 4-bit",
+    "attention": "SDPA",
+    "weights": {
+      "visual quality": 0.3,
+      "text-to-video alignment": 0.4,
+      "physical/common-sense consistency": 0.3
+    }
+  },
+  "execution_order": "Alternate configuration order by prompt group, score both candidates per configuration",
+  "resume": "Exclusive process lock; identical manifest, protocol, model, policy and source hashes required; completed jobs are never automatically retried",
+  "metrics": [
+    "dimension MAE",
+    "macro MAE",
+    "non-tied annotation pair agreement; predicted ties incorrect",
+    "valid/EOS coverage",
+    "generation time",
+    "peak allocated VRAM",
+    "paired prompt-cluster bootstrap of MAE difference, 5000 resamples, seed 20261022",
+    "Per-dimension paired Spearman/Pearson; undefined constant-score correlations reported as null"
+  ],
+  "failure_policy": "Preserve every failed or truncated output; report paired coverage and all-input coverage; no successful-only result claim",
+  "decision": "No parameter tuning or automatic default changes from this evaluation. Report all outcomes and uncertainty. Any later tuning needs a separate split.",
+  "scope": "20 videos, 10 prompts; diagnostic subset, not a full benchmark or online experiment"
+}
