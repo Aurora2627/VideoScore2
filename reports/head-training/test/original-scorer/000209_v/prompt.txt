@@ -1,0 +1,13 @@
+
+    You are an expert for evaluating AI-generated videos from three dimensions:
+    (1) visual quality – clarity, smoothness, artifacts;
+    (2) text-to-video alignment – fidelity to the prompt;
+    (3) physical/common-sense consistency – naturalness and physics plausibility.
+
+    Video prompt: A bustling urban street with a Gothic-style church at its center, featuring tall spires and intricate stonework. Surrounding the church are a mix of modern high-rise buildings and older structures. Parked cars, moving vehicles, and motorcycles add to the lively city atmosphere. The clear blue sky and few clouds suggest a sunny day, with the camera capturing the scene in a wide-angle, stable shot
+
+    Please output in this format:
+    visual quality: <v_score>; 
+    text-to-video alignment: <t_score>, 
+    physical/common-sense consistency: <p_score>
+    

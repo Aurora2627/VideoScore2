@@ -1,0 +1,25 @@
+{
+  "reason": "Original scorer uses human-readable dimension keys; head uses snake_case. Repair only schema conversion and resume cached original-scorer comparison. No retraining, checkpoint selection or repeated head test inference.",
+  "command": [
+    "D:\\career-projects\\envs\\videoscore2\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "D:\\career-projects\\VideoScore2\\training\\cliprank\\evaluate_test.py",
+    "--manifest",
+    "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\manifest.json",
+    "--features",
+    "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\features",
+    "--heads",
+    "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\heads",
+    "--output-dir",
+    "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\test",
+    "--resume-baseline-only"
+  ],
+  "started": "2026-10-22T15:19:50.715535+08:00",
+  "source_sha256": {
+    "evaluate_test.py": "c43918d1225aac74b7429c527657c1ab7ffdbc28ffb91686144b270334ed9adf",
+    "resume_test.py": "36c866f935180b4ddab4576153c276caacd2cbe2642e88f54396f8b4d6431845",
+    "run_pipeline.py": "8e51ad974e5adce344d4e6c1ec60bf4d042ad0f1d9928534621a7c14d898821b",
+    "test_score_adapter.py": "c3e364c695883ce94a79e2c2aab74510d6eb128c089d6d0801a0be71937530ad"
+  }
+}

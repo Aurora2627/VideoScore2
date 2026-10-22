@@ -1,0 +1,21 @@
+{
+  "source_sha256": {
+    "training/cliprank/check_download.py": "c580c31a82f753f75388aa861e634425f7821419560848541c06af4d1a7f7142",
+    "training/cliprank/evaluate_test.py": "d56bd81de3288aeec9ad1fc2a46972810413161bbb2f4d07fe00461930d284d1",
+    "training/cliprank/extract_features.py": "dffd1a62ff80525f7ab9f3806b36df2015728e3d6776f94db3fc5354434e7ff0",
+    "training/cliprank/inspect_dataset.py": "2a5130038518a790e63f627e6a450cad84aef8268752de637af60a94603e03a4",
+    "training/cliprank/inspect_interfaces.py": "facdf61a43757f9ec28032fd6077ef21ee7452fa4337142c71358a24e4d3edd2",
+    "training/cliprank/predict.py": "ffa607b61657f292b3f44a238ca6227ad0de2747269c810f7f61f0122c0b9d0f",
+    "training/cliprank/prepare_data.py": "183b40292aa7385306c94480c1118116729c1483cfce097b4294773708ab7d11",
+    "training/cliprank/run_pipeline.py": "51dbbc08082906713d5641e7d562b21cf20f836f5d711da4583a86f29c9b55c9",
+    "training/cliprank/test_training.py": "9858840b817a125371e7134818d6eb0930728ec08d409851cc0c92f125fb163a",
+    "training/cliprank/train_heads.py": "99891dd0effcd56d27e6276bb0406b08da00d9691f52c1c30396e4b540246834",
+    "training/cliprank/protocol.json": "5f076d7b33e9f2ac886659d5050ef0d1f8d2b600476ec06dc6aca8cf56b6a4cb",
+    "application/run_batch.py": "3bb0f374d11032eb6f7c79650aa77bf8e50b4b4bb36ce63299abe39134f367e4",
+    "application/selection.py": "228d2e64a4e04ea01443f2960adf3daf5c735d40ecfec92d59f453a1d94e78bb",
+    "reproduction/infer_cuda.py": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+    "vs2_inference.py": "acf8fdd53b3302d5b7e32babfa915055e468e3f6d8590eb2b7c2ba1058173f75"
+  },
+  "manifest_sha256": "9b5df85416b1508c5fc2136aab697d1bb8ed72cc7a0f11fbdad285d5d29ecaf2",
+  "project_commit": "d6e12a0912f82f4ebc928d6b15af0c5fc5a2f552"
+}

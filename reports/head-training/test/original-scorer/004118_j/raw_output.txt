@@ -1,0 +1,18 @@
+
+<think>
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the text prompt. The prompt describes a cold night with a girl selling matches, appearing hungry and tired but hopeful.
+
+Visual Quality Analysis:
+The overall visual quality is very poor. The frames exhibit pronounced artifacts, heavy compression noise, and noticeable blur that obscure details. Color and lighting are inconsistent across shots, and there are frequent distortions around edges and in the background geometry. The subject's features are not clearly defined due to these issues, resulting in a low-fidelity presentation of the scene.
+
+Text-to-Video Alignment Analysis:
+Alignment with the prompt is partial. A girl is present and some elements suggest a cold setting, but key aspects such as selling matches, visible hunger or fatigue, and the belief that things will improve are not convincingly depicted. The narrative cues are weak and do not consistently map to the described scenario, yielding only moderate alignment.
+
+Physical/Common-sense Consistency:
+There are notable inconsistencies in physical realism. The environment shows warped architectural details and unstable perspective, and the interaction between the subject and surroundings lacks coherent spatial grounding. These factors undermine plausible physical behavior and common-sense reasoning about the scene.
+</think>
+
+(1) visual quality – clarity, smoothness, artifacts: 1
+(2) text-to-video alignment – fidelity to the prompt: 2
+(3) physical/common-sense consistency – naturalness and physics plausibility: 1

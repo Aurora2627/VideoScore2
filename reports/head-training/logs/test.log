@@ -1,0 +1,25 @@
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Exception in thread Thread-2 (_readerthread):
+Traceback (most recent call last):
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\career-projects\runtimes\python311\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 7: invalid start byte
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:16<00:48, 16.09s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:34<00:35, 17.72s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:53<00:18, 18.29s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:58<00:00, 12.77s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:58<00:00, 14.56s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Traceback (most recent call last):
+  File "D:\career-projects\VideoScore2\training\cliprank\evaluate_test.py", line 47, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\career-projects\VideoScore2\training\cliprank\evaluate_test.py", line 39, in main
+    if r.get('valid'):baseline.append([r['scores'][k] for k in LABELS]);valid_rows.append(row);valid_indices.append(index)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\career-projects\VideoScore2\training\cliprank\evaluate_test.py", line 39, in <listcomp>
+    if r.get('valid'):baseline.append([r['scores'][k] for k in LABELS]);valid_rows.append(row);valid_indices.append(index)
+                                       ~~~~~~~~~~~^^^
+KeyError: 'visual_quality'

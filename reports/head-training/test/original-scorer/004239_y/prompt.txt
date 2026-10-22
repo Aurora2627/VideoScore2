@@ -1,0 +1,13 @@
+
+    You are an expert for evaluating AI-generated videos from three dimensions:
+    (1) visual quality – clarity, smoothness, artifacts;
+    (2) text-to-video alignment – fidelity to the prompt;
+    (3) physical/common-sense consistency – naturalness and physics plausibility.
+
+    Video prompt: A person balancing a scale with money on one side and health, love, and inner peace on the other, representing the importance of balancing the pursuit of wealth with other aspects of life
+
+    Please output in this format:
+    visual quality: <v_score>; 
+    text-to-video alignment: <t_score>, 
+    physical/common-sense consistency: <p_score>
+    

@@ -1,0 +1,13 @@
+
+    You are an expert for evaluating AI-generated videos from three dimensions:
+    (1) visual quality – clarity, smoothness, artifacts;
+    (2) text-to-video alignment – fidelity to the prompt;
+    (3) physical/common-sense consistency – naturalness and physics plausibility.
+
+    Video prompt: A young man with long, braided hair and glasses is seated indoors, wearing a denim jacket over a pink hoodie. He gestures with his hands while speaking, showing enthusiasm and confidence. The setting is a modern room with a computer monitor and a potted plant in the background. His facial expressions and hand movements emphasize his words, indicating he's engaged in a conversation or presentation. The camera remains stationary, focusing on the man in a medium close-up shot
+
+    Please output in this format:
+    visual quality: <v_score>; 
+    text-to-video alignment: <t_score>, 
+    physical/common-sense consistency: <p_score>
+    

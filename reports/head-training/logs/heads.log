@@ -1,0 +1,10 @@
+HEAD_TRAINED linear 42 epoch 4 validation_mae 0.69344
+HEAD_TRAINED linear 43 epoch 7 validation_mae 0.69074
+HEAD_TRAINED linear 44 epoch 7 validation_mae 0.70836
+HEAD_TRAINED mlp 42 epoch 4 validation_mae 0.68412
+HEAD_TRAINED mlp 43 epoch 7 validation_mae 0.68715
+HEAD_TRAINED mlp 44 epoch 2 validation_mae 0.68438
+HEAD_TRAINED mlp_rank 42 epoch 4 validation_mae 0.68471
+HEAD_TRAINED mlp_rank 43 epoch 5 validation_mae 0.68507
+HEAD_TRAINED mlp_rank 44 epoch 2 validation_mae 0.68547
+MODEL_SELECTED mlp

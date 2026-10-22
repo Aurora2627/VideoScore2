@@ -1,0 +1,22 @@
+
+<think>
+multi-dimensional analysis:
+Let me analyze this video based on the provided frames and the text prompt. The prompt describes a cold night with a girl who is trying to sell matches, hungry and tired, but optimistic that things will improve.
+
+Looking at the frames:
+
+Visual Quality Analysis:
+The frames show moderate darkness with some noise and limited detail due to low lighting. The resolution is acceptable, but the dim lighting reduces clarity. There are no obvious distortions or artifacts beyond the low visibility. Overall, Visual Quality is moderate (score 3).
+
+Text-to-Video Alignment Analysis:
+The scene conveys a cold-night mood and features a girl-like figure in dark clothing. However, there is no clear evidence of match selling, and the explicit states of hunger, fatigue, or hope are not clearly depicted. The alignment captures the general atmosphere but misses key narrative specifics. Overall alignment is moderate (score 3).
+
+Physical/Common-sense Consistency Analysis:
+The posture and environment appear plausible given the low light; no obvious physical inconsistencies are detected. The limited visibility makes detailed assessment difficult, but overall coherence is maintained. Overall, Physical Consistency is moderate (score 3).
+
+Ground-truth scores: Visual Quality 3; Text-to-Video Alignment 3; Physical Consistency 3.
+</think>
+
+(1) visual quality – clarity, smoothness, artifacts: 3
+(2) text-to-video alignment – fidelity to the prompt: 3
+(3) physical/common-sense consistency – naturalness and physics plausibility: 3

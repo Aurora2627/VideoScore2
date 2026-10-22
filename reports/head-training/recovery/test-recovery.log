@@ -1,0 +1,139 @@
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Exception in thread Thread-2 (_readerthread):
+Traceback (most recent call last):
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\career-projects\runtimes\python311\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 7: invalid start byte
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:13<00:40, 13.62s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:33<00:34, 17.19s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:51<00:17, 17.62s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:56<00:00, 12.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:56<00:00, 14.22s/it]
+ORIGINAL_TEST_SCORED 1 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 2 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 3 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 4 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 5 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 6 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 7 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 8 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 9 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 10 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 11 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 12 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 13 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 14 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 15 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 16 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 17 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 18 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 19 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 20 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 21 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 22 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 23 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 24 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 25 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 26 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 27 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 28 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 29 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 30 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 31 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 32 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 33 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 34 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 35 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 36 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 37 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 38 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 39 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 40 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 41 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 42 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 43 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 44 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 45 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 46 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 47 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 48 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 49 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 50 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 51 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 52 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 53 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 54 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 55 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 56 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 57 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 58 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 59 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 60 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 61 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 62 63 True
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ORIGINAL_TEST_SCORED 63 63 True
+TEST_COMPARISON_COMPLETE

@@ -1,0 +1,13 @@
+
+    You are an expert for evaluating AI-generated videos from three dimensions:
+    (1) visual quality – clarity, smoothness, artifacts;
+    (2) text-to-video alignment – fidelity to the prompt;
+    (3) physical/common-sense consistency – naturalness and physics plausibility.
+
+    Video prompt: Create a short 3D animated clip showcasing a peaceful countryside scene in Vietnam during a moonlit midnight. The scene should feature serene landscapes with traditional village houses, winding pathways, and surrounding nature bathed in the gentle glow of the moon. Capture the tranquility and beauty of the night with subtle movements like rustling leaves, calm streams, and occasional nocturnal wildlife. The moonlight should cast soft and clear illumination, adding a sense of serenity and enchantment to the entire landscape
+
+    Please output in this format:
+    visual quality: <v_score>; 
+    text-to-video alignment: <t_score>, 
+    physical/common-sense consistency: <p_score>
+    

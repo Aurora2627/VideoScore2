@@ -1,0 +1,13 @@
+
+    You are an expert for evaluating AI-generated videos from three dimensions:
+    (1) visual quality – clarity, smoothness, artifacts;
+    (2) text-to-video alignment – fidelity to the prompt;
+    (3) physical/common-sense consistency – naturalness and physics plausibility.
+
+    Video prompt: Illustrate and animate Jake and Max in their room, sitting at a desk with homework scattered around. Capture the excitement on their faces as they discuss their ninja adventure plans
+
+    Please output in this format:
+    visual quality: <v_score>; 
+    text-to-video alignment: <t_score>, 
+    physical/common-sense consistency: <p_score>
+    

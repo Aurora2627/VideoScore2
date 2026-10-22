@@ -1,0 +1,67 @@
+{
+  "status": "needs_attention",
+  "started": "2026-10-22T14:16:47.687326+08:00",
+  "pid": 35988,
+  "stages": [
+    {
+      "name": "features",
+      "started": "2026-10-22T14:16:47.741598+08:00",
+      "command": [
+        "D:\\career-projects\\envs\\videoscore2\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\career-projects\\VideoScore2\\training\\cliprank\\extract_features.py",
+        "--manifest",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\manifest.json",
+        "--output-dir",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\features"
+      ],
+      "pid": 33660,
+      "finished": "2026-10-22T14:46:55.549464+08:00",
+      "exit_code": 0
+    },
+    {
+      "name": "heads",
+      "started": "2026-10-22T14:46:55.555052+08:00",
+      "command": [
+        "D:\\career-projects\\envs\\videoscore2\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\career-projects\\VideoScore2\\training\\cliprank\\train_heads.py",
+        "--manifest",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\manifest.json",
+        "--features",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\features",
+        "--output-dir",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\heads"
+      ],
+      "pid": 13976,
+      "finished": "2026-10-22T14:48:06.359800+08:00",
+      "exit_code": 0
+    },
+    {
+      "name": "test",
+      "started": "2026-10-22T14:48:06.369970+08:00",
+      "command": [
+        "D:\\career-projects\\envs\\videoscore2\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\career-projects\\VideoScore2\\training\\cliprank\\evaluate_test.py",
+        "--manifest",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\manifest.json",
+        "--features",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\features",
+        "--heads",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\heads",
+        "--output-dir",
+        "D:\\career-projects\\runs\\ClipRank-head-training\\20261022_first-training\\test"
+      ],
+      "pid": 16768,
+      "finished": "2026-10-22T14:50:55.391788+08:00",
+      "exit_code": 1
+    }
+  ],
+  "stage": "test",
+  "error": "test failed; see stage log",
+  "stopped": "2026-10-22T14:50:55.394788+08:00"
+}
