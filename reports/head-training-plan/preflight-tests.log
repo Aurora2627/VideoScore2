@@ -1,0 +1,13 @@
+test_annotation_tie_excluded_and_prediction_tie_wrong (test_training.TrainingTests.test_annotation_tie_excluded_and_prediction_tie_wrong) ... ok
+test_cuda_head_really_learns_and_checkpoint_restores (test_training.TrainingTests.test_cuda_head_really_learns_and_checkpoint_restores) ... ok
+test_duplicate_prompt_across_ids_stays_together (test_training.TrainingTests.test_duplicate_prompt_across_ids_stays_together) ... ok
+test_normalization_finite_for_constant_dimensions (test_training.TrainingTests.test_normalization_finite_for_constant_dimensions) ... ok
+test_previously_seen_prompt_not_test (test_training.TrainingTests.test_previously_seen_prompt_not_test) ... ok
+test_prompt_disjoint_and_benchmark_exclusion (test_training.TrainingTests.test_prompt_disjoint_and_benchmark_exclusion) ... ok
+test_ranking_objective_and_no_cross_prompt_pairs (test_training.TrainingTests.test_ranking_objective_and_no_cross_prompt_pairs) ... ok
+test_split_independent_of_labels (test_training.TrainingTests.test_split_independent_of_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.542s
+
+OK

@@ -1,0 +1,24 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "compute_dtype": "torch.bfloat16",
+  "model_load_count": 1,
+  "model_load_seconds": 67.59855799999787,
+  "device_map": {
+    "": "cuda:0"
+  },
+  "environment": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.2",
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.48.1",
+    "numpy": "2.2.6",
+    "opencv-python-headless": "4.12.0.88"
+  },
+  "frozen_parameters": 4692257792,
+  "trainable_backbone_parameters": 0,
+  "total": 1,
+  "finished": 1,
+  "last_video": "001066_k",
+  "last_seconds": 4.057947300025262,
+  "status": "completed"
+}

@@ -8,3 +8,4 @@
 
 /reports/error-review/** -text -whitespace
 /reports/pairwise-development/** -text -whitespace
+reports/head-training/** -text -whitespace

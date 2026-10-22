@@ -1,0 +1,60 @@
+{
+  "version": "0.7.0",
+  "backbone_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+  "dataset_revision": "99b9935b00a205756c25b0555f2dcdc071281327",
+  "split_counts": {
+    "train": 755,
+    "validation": 188,
+    "test": 63
+  },
+  "feature": {
+    "frames": 4,
+    "max_side": 448,
+    "pooling": "last valid token before any answer",
+    "quantization": "NF4 double quant",
+    "compute_dtype": "bfloat16",
+    "backbone_trainable": false
+  },
+  "variants": [
+    "linear",
+    "mlp",
+    "mlp_rank"
+  ],
+  "hidden_dim": 64,
+  "dropout": 0.1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "loss": {
+    "regression": "SmoothL1",
+    "beta": 0.5,
+    "ranking": "same-prompt per-dimension logistic, exclude annotation ties",
+    "rank_weight": 0.1
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "clip_grad_norm": 1.0
+  },
+  "max_epochs": 100,
+  "early_stop_patience": 15,
+  "batch_prompt_groups": 8,
+  "selection": "Minimum three-seed ensemble validation mean MAE; test not used for tuning",
+  "test_baselines": [
+    "original VideoScore2 four frames 448 greedy 1024 tokens",
+    "train label mean",
+    "constant 3"
+  ],
+  "primary_metric": "mean MAE over three dimensions",
+  "secondary": [
+    "Spearman",
+    "Pearson",
+    "same-prompt ranking with fixed .3/.4/.3 weights",
+    "5000 prompt-cluster bootstrap"
+  ],
+  "promotion": "No automatic default replacement; report regressions and failure coverage",
+  "pretraining_exposure": "Backbone already trained on official training data; project validation is held out for the new head, not unseen to pretrained backbone"
+}

@@ -1,0 +1,76 @@
+{
+  "folders": [
+    {
+      "path": "../.."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "ClipRank: prepare split",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/training/cliprank/prepare_data.py",
+        "python": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "args": [],
+        "env": {
+          "PYTHONUTF8": "1",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1"
+        }
+      },
+      {
+        "name": "ClipRank: extract cached features",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/training/cliprank/extract_features.py",
+        "python": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "args": [
+          "--manifest",
+          "D:/career-projects/runs/ClipRank-head-training/20261022_first-training/manifest.json",
+          "--output-dir",
+          "D:/career-projects/runs/ClipRank-head-training/20261022_first-training/features"
+        ],
+        "env": {
+          "PYTHONUTF8": "1",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1"
+        }
+      },
+      {
+        "name": "ClipRank: train heads (new debug directory)",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/training/cliprank/train_heads.py",
+        "python": "D:/career-projects/envs/videoscore2/Scripts/python.exe",
+        "cwd": "${workspaceFolder}",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "args": [
+          "--manifest",
+          "D:/career-projects/runs/ClipRank-head-training/20261022_first-training/manifest.json",
+          "--features",
+          "D:/career-projects/runs/ClipRank-head-training/20261022_first-training/features",
+          "--output-dir",
+          "D:/career-projects/runs/ClipRank-head-training/20261022_first-training/heads-debug"
+        ],
+        "env": {
+          "PYTHONUTF8": "1",
+          "HF_HUB_OFFLINE": "1",
+          "TRANSFORMERS_OFFLINE": "1"
+        }
+      }
+    ]
+  }
+}

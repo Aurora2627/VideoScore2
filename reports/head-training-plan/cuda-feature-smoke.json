@@ -1,0 +1,49 @@
+{
+  "video_name": "001066_k",
+  "video_sha256": "95dabe2d9a35ace2d320ec25e06005fa551457b5679887b94d7972e97af291c1",
+  "generation_prompt_sha256": "ae42bd60bbdea53bc7891bf7cf5c83cfd7ec60c6f197a26a821d44bc0ea4168e",
+  "feature_dim": 3584,
+  "pooling": "final non-padding token before any assistant answer; no labels or rationales provided",
+  "sampling": {
+    "frame_indices": [
+      0,
+      2,
+      4,
+      7
+    ],
+    "source_fps": 10.0,
+    "total_frames": 8,
+    "effective_fps": 4.285714285714286
+  },
+  "video_grid_thw": [
+    [
+      2,
+      18,
+      18
+    ]
+  ],
+  "input_shapes": {
+    "input_ids": [
+      1,
+      327
+    ],
+    "attention_mask": [
+      1,
+      327
+    ],
+    "pixel_values_videos": [
+      648,
+      1176
+    ],
+    "video_grid_thw": [
+      1,
+      3
+    ],
+    "second_per_grid_ts": [
+      1
+    ]
+  },
+  "seconds": 4.057947300025262,
+  "peak_allocated_bytes": 6132236288,
+  "feature_sha256": "4a557d1f3c2483482240d176a8fd47cd5dda200a2f50c112fd4d7ccf628bc251"
+}
