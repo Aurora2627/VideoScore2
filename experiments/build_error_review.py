@@ -27,7 +27,9 @@ def main():
     metadata_root=Path('D:/career-projects/data/VideoScoreBench-v2');provenance=read(metadata_root/'metadata-provenance.json')
     assert sha(metadata_root/'metadata.json')==provenance['sha256']
     metadata={x['video_name']:x for x in read(metadata_root/'metadata.json')}
-    out=ROOT/'reports/error-review';out.mkdir(exist_ok=False);media=out/'media';media.mkdir()
+    out=ROOT/'reports/error-review';out.mkdir(parents=True,exist_ok=True);media=out/'media'
+    if media.exists():raise FileExistsError('Review media already exists; retain it or choose a new checkout to rebuild without overwriting evidence')
+    media.mkdir()
     intro='<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>ClipRank 排序错误复核</title><style>body{font:16px system-ui;margin:24px;max-width:1500px;color:#182438}article{border:1px solid #ccd5e3;padding:18px;margin:20px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}img{width:100%;height:auto}video{width:100%;max-height:280px}pre{white-space:pre-wrap;font:14px system-ui}h1,h2,h3{margin:12px 0}a{color:#235bb9}</style>'
     documents=[];records=[]
     for index,group in enumerate(failed,1):
