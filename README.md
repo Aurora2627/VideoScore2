@@ -24,11 +24,33 @@
 
 这些权重和阈值是可配置的初始业务规则，尚未经过业务数据校准，不代表真实采用率、概率或最优方案。调整前应建立独立验证集；最终测试集不用于选择规则。
 
-## Windows 与 VS Code
+## 运行环境
 
-使用 videoscore2-cuda 独立虚拟环境。打开根目录 VideoScore2.code-workspace，新建 VideoScore2 CUDA 终端。调试选择 ClipRank | videoscore2-cuda | batch evaluation，输出目录必须尚不存在。首次运行前须准备本地模型和候选清单。
+以下为实际完成 CUDA 推理、特征提取、评分头训练和测试对照所使用的配置。
 
-命令行入口为 application/run_batch.py，必填参数是 --manifest、--model、--revision 和 --output-dir；可通过 --frames、--max-side、--max-new-tokens、--policy 配置输入与策略。
+| 项目 | 配置 |
+|---|---|
+| 系统 | Windows |
+| Python | 3.11.9 |
+| PyTorch | 2.6.0+cu124 |
+| PyTorch CUDA 运行时 | 12.4 |
+| GPU | NVIDIA GeForce RTX 4060 Laptop GPU，8 GB 显存 |
+| Transformers | 4.53.2 |
+| Accelerate | 1.10.1 |
+| bitsandbytes | 0.48.1 |
+| OpenCV / NumPy | 4.12.0 / 2.2.6 |
+
+CUDA 版本指 PyTorch 构建所使用的运行时，显卡驱动显示的 CUDA 支持版本可能不同。推理采用 NF4 4-bit 双重量化、BF16 和 SDPA；训练仅更新轻量评分头，骨干参数冻结。
+
+## 运行入口
+
+使用根目录 VideoScore2.code-workspace 中的调试配置，或从命令行执行。首次运行需准备本地模型和候选清单，输出目录必须不存在。
+
+~~~powershell
+python application/run_batch.py --manifest <候选清单.json> --model <本地模型目录> --revision <模型版本> --output-dir <新建结果目录>
+~~~
+
+支持 --frames、--max-side、--max-new-tokens 和 --policy。训练入口与冻结协议见 [训练实验报告](reports/head-training/RESULTS.zh-CN.md)及 training/cliprank/。
 
 ## 报告与源码
 
@@ -47,7 +69,7 @@
 模型后端使用 VideoScore2 公开权重，基础架构为 Qwen2.5-VL。模型、数据和依赖来源见 [MODEL_SOURCES.md](MODEL_SOURCES.md)，保留原项目许可与引用。
 
 
-## 本轮验证结果
+## 初始应用验证（5 段视频）
 
 五个视频全部完整输出，覆盖四组提示词，其中一组含两个真实候选；模型加载一次，加载约 66.6 秒，整批约 682.4 秒，峰值已分配显存约 5.72 GiB。原三个样本的分数及生成 token 与历史记录完全一致。
 
@@ -60,7 +82,7 @@
 
 随后使用 application/run_batch.py 进行评估。完成后用 application/export_run.py --run-dir 实验目录 --output-dir 新的报告目录，导出中文评审页面；--previous-report 仅在需要历史诊断对照时提供。失败或无标签的素材也可导出，失败项进入人工复核。输出目录必须尚不存在。
 
-使用 python application/serve_review.py --directory 报告目录，在本机打开终端显示的地址。Mac 通过 VS Code Remote SSH 使用 Windows 时，需要保持对应端口转发；Windows 环境负责实际推理，浏览器只查看结果。
+使用 python application/serve_review.py --directory 报告目录，打开终端显示的地址即可查看报告；远程访问时需转发相应端口。推理在 CUDA 设备执行，浏览器负责结果查看。
 
 ## 评分输入改进实验
 
@@ -72,3 +94,19 @@
 
 已按预先固定的方案评测 20 段新视频、10 个新提示词，比较 224 与 448 像素配置。
 MAE：0.833 → 0.650；两种配置均有效的视频 20/20。完整排序、相关性、不确定性及失败记录见 [扩大评测报告](reports/expanded-evaluation/RESULTS.md)。
+
+## 冻结骨干的评分头训练与独立测试
+
+在 VideoFeedback2 中选取 1,006 段视频，按提示词隔离 755 条训练、188 条验证和 63 条测试样本；排除先前调试过的测试组。读取回答生成前最后一个非 padding token 的隐藏状态，输入不含人工评分和解释，标准化参数只在训练集拟合。
+
+使用 PyTorch 对比线性头、MLP 和加入同提示词排序损失的 MLP，各运行三个随机种子，共 9 次训练。仅按验证 MAE 选择三种子集成，最终选中 MLP。骨干此前使用过官方训练划分，验证集隔离针对本项目评分头，不意味着骨干从未见过这些样本。
+
+| 方法 | 测试视频 | 平均 MAE ↓ | 候选对判对 |
+|---|---:|---:|---:|
+| 原模型 | 63 | 0.68254 | 7/13 |
+| MLP 评分头集成 | 63 | 0.69112 | 6/13 |
+| 训练集均值基线 | 63 | 0.89619 | 0/13 |
+
+本轮评分头没有超过原模型，应用默认评分器继续使用原模型。按提示词组 bootstrap 的 MAE 差异区间跨零，尚无稳定提升证据；提示词组宏平均与视频样本平均的权重不同，不能混用两者差值。20 段视频的输入配置实验与此处 63 段训练实验测试子集不同，不做跨子集的提升比较。
+
+训练曲线、模型选择、预测、原模型回答、校验与恢复过程见 [完整训练报告](reports/head-training/RESULTS.zh-CN.md)和 [原始比较指标](reports/head-training/test/comparison.json)。本项目只训练轻量评分头，未对完整 VLM 执行 LoRA、SFT、DPO 或 GRPO，也未训练视频生成模型。

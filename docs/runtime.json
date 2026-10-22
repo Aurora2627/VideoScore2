@@ -1,0 +1,13 @@
+{
+  "os": "Windows",
+  "python": "3.11.9",
+  "pytorch": "2.6.0+cu124",
+  "cuda_runtime": "12.4",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpu_vram_gib": 8.0,
+  "transformers": "4.53.2",
+  "accelerate": "1.10.1",
+  "bitsandbytes": "0.48.1",
+  "opencv": "4.12.0",
+  "numpy": "2.2.6"
+}
