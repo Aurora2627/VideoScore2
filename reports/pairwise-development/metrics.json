@@ -1,0 +1,17 @@
+{
+  "scope": "Development on 4 selected known failures; cannot claim held-out improvement",
+  "planned_pairs": 4,
+  "attempted_pairs": 1,
+  "valid_order_outputs": 0,
+  "order_outputs": 2,
+  "selected_pairs": 0,
+  "coverage": 0.0,
+  "correct_pairs": 0,
+  "correct_over_all_planned_pairs": 0.0,
+  "selected_pair_accuracy": null,
+  "abstention_reasons": {
+    "invalid_output": 1
+  },
+  "mean_generation_seconds": 93.69557890002034,
+  "peak_allocated_gib": 5.873822212219238
+}

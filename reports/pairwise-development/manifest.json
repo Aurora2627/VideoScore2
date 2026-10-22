@@ -1,0 +1,187 @@
+{
+  "samples": [
+    {
+      "video_name": "000244_m",
+      "prompt": "A playful puppy dashes in a circle, halts to sniff the ground, then spins excitedly while chasing its own tail",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000244_m.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0000_0499/hotshot_xl/000244_m.mp4",
+      "video_sha256": "26ed8f8385691968e458fdf6140293ff680ca3f112c1d03a0f24f4859bac68be",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "000244_h",
+      "prompt": "A playful puppy dashes in a circle, halts to sniff the ground, then spins excitedly while chasing its own tail",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000244_h.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0000_0499/lavie_base/000244_h.mp4",
+      "video_sha256": "79a2d20832cbb54d5ae20dce41f5bb862e6318765748fea8c8938fd6f6748bcf",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 2,
+        "physical/common-sense consistency": 2
+      }
+    },
+    {
+      "video_name": "003996_c",
+      "prompt": "A man in a dark suit, white shirt, and blue polka-dot tie speaks confidently in a studio. The blurred background features a wooden desk and decorative elements, creating a warm, orange-toned atmosphere. His facial expressions and minimal body movements convey clarity and engagement as he communicates directly with the camera",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\003996_c.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/3500_3999/mochi1_preview/003996_c.mp4",
+      "video_sha256": "4f6307fdeab22c87bf1d469ebe15f63f9d7eba75f8f514e19c7c49c4aaa7a37f",
+      "ground_truth": {
+        "visual quality": 3,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      }
+    },
+    {
+      "video_name": "003996_u",
+      "prompt": "A man in a dark suit, white shirt, and blue polka-dot tie speaks confidently in a studio. The blurred background features a wooden desk and decorative elements, creating a warm, orange-toned atmosphere. His facial expressions and minimal body movements convey clarity and engagement as he communicates directly with the camera",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\003996_u.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/3500_3999/opensora_plan_v1_3/003996_u.mp4",
+      "video_sha256": "fe9a7f3721298a9c2165f2910993818efbbf059acd3115fc6013ec626fc14558",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 4,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "000827_c",
+      "prompt": "A NYC above-ground subway train passes horizontally, with graffiti and deep shadows. The film noir scene features silhouetted faces and flashing distant lights, with stars in the background",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000827_c.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0500_0999/mochi1_preview/000827_c.mp4",
+      "video_sha256": "d3c5ebe52c38d1aea62ac22b11554af02be70e6345f65c9278ae2ea07a98785f",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 5
+      }
+    },
+    {
+      "video_name": "000827_r",
+      "prompt": "A NYC above-ground subway train passes horizontally, with graffiti and deep shadows. The film noir scene features silhouetted faces and flashing distant lights, with stars in the background",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\000827_r.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/0500_0999/kling/000827_r.mp4",
+      "video_sha256": "3ff5013540e7dff14ddbd732fb40358b1899eab064c7a7c7378beb2f0b1c0bda",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 5,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "004764_f",
+      "prompt": "An adult woman with long dark hair stands in the middle of a bright room, looking at stacks of folders placed on the floor, tables, and shelves around her",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004764_f.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/cogvideox_5b/004764_f.mp4",
+      "video_sha256": "3210315d0c7e0babac37e42196e6035d5c0c3b3453d5b0b0d55b1940ef25408b",
+      "ground_truth": {
+        "visual quality": 4,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 4
+      }
+    },
+    {
+      "video_name": "004764_p",
+      "prompt": "An adult woman with long dark hair stands in the middle of a bright room, looking at stacks of folders placed on the floor, tables, and shelves around her",
+      "video_path": "D:\\career-projects\\data\\ClipRank-expanded-20261022\\videos\\004764_p.mp4",
+      "video_url": "https://molar-public.oss-cn-hangzhou.aliyuncs.com/VideoScore/4500_4999/vchitect2/004764_p.mp4",
+      "video_sha256": "be53c78145cb9997184a44d34d800375152b0a123a57452bba4ff893f3060759",
+      "ground_truth": {
+        "visual quality": 2,
+        "text-to-video alignment": 3,
+        "physical/common-sense consistency": 3
+      }
+    }
+  ],
+  "groups": [
+    {
+      "videos": [
+        "000244_m",
+        "000244_h"
+      ],
+      "prompt_sha256": "7f6e802f4cec98151ebf36ae02e81c97fa6088e04b4bf1fef82f64557a595155",
+      "mae": {
+        "baseline": 0.6666666666666666,
+        "more_detail": 0.6666666666666666
+      },
+      "detail_minus_baseline_mae": 0.0,
+      "annotation_margin": 0.8999999999999999,
+      "predicted_margin": {
+        "baseline": -0.4,
+        "more_detail": -0.4
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "003996_c",
+        "003996_u"
+      ],
+      "prompt_sha256": "4ebf6707db4d56be5d1279e7d88e3420d4232fdaac957dff3009411e23b27317",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.5
+      },
+      "detail_minus_baseline_mae": 0.0,
+      "annotation_margin": -1.0,
+      "predicted_margin": {
+        "baseline": 0.0,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "000827_c",
+        "000827_r"
+      ],
+      "prompt_sha256": "32ce3aedc7d9d778b1823d743d468ad554b0548dd627ec4a48545a6e44a6b7ed",
+      "mae": {
+        "baseline": 2.3333333333333335,
+        "more_detail": 1.1666666666666667
+      },
+      "detail_minus_baseline_mae": -1.1666666666666667,
+      "annotation_margin": -1.0999999999999999,
+      "predicted_margin": {
+        "baseline": 0.3,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    },
+    {
+      "videos": [
+        "004764_f",
+        "004764_p"
+      ],
+      "prompt_sha256": "5fe89f301a6eb6a2f7ac08709cadfb04efd3b83c90741a992b6b73b71f78101e",
+      "mae": {
+        "baseline": 0.5,
+        "more_detail": 0.8333333333333334
+      },
+      "detail_minus_baseline_mae": 0.33333333333333337,
+      "annotation_margin": 0.8999999999999999,
+      "predicted_margin": {
+        "baseline": 0.0,
+        "more_detail": 0.0
+      },
+      "direction_correct": {
+        "baseline": false,
+        "more_detail": false
+      }
+    }
+  ],
+  "scope": "Selected prior failures: development only"
+}

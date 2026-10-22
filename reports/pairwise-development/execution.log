@@ -1,0 +1,18 @@
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Exception in thread Thread-2 (_readerthread):
+Traceback (most recent call last):
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "D:\career-projects\runtimes\python311\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\career-projects\runtimes\python311\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 7: invalid start byte
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:15<00:47, 15.87s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:36<00:37, 18.66s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:56<00:19, 19.28s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:01<00:00, 13.67s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:01<00:00, 15.39s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+PAIRWISE_ORDER 1 8 1 AB completed False
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+PAIRWISE_ORDER 2 8 1 BA completed False
+PAIRWISE_FINISHED D:\career-projects\runs\ClipRank-pairwise-development\20261022_113930 stopped_invalid_format

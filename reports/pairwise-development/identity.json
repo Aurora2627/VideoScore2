@@ -1,0 +1,60 @@
+{
+  "model_path": "D:\\career-projects\\models\\VideoScore2\\09a2732cb64fa566a1f332f978368292ce5c295c",
+  "model_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+  "source_sha256": {
+    "run_pairwise_development.py": "9da67a4a59cf5c9e5b5ef5029ba420084bf475264a6c67697c4ce08cdaef64ce",
+    "pairwise.py": "fc7d558a1d24fff8541aaf3bc6daa16ee4b12481d0978c02dc249b4e9a560d78",
+    "run_batch.py": "3bb0f374d11032eb6f7c79650aa77bf8e50b4b4bb36ce63299abe39134f367e4",
+    "selection.py": "228d2e64a4e04ea01443f2960adf3daf5c735d40ecfec92d59f453a1d94e78bb",
+    "infer_cuda.py": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+    "vs2_inference.py": "acf8fdd53b3302d5b7e32babfa915055e468e3f6d8590eb2b7c2ba1058173f75"
+  },
+  "manifest_sha256": "112867416183d5135ceff1e37cde8f2e799341b5f7c43d5c7bd93a8a1e40d2af",
+  "audit_sha256": "43dc6ada56df28157247afdccbec7acc317415ed8b99ab7b36f4d5425a7aeb7f",
+  "protocol": {
+    "version": 1,
+    "model_revision": "09a2732cb64fa566a1f332f978368292ce5c295c",
+    "scope": "4 previously observed failed pairs, 8 clips: development-only feasibility trial",
+    "configuration": {
+      "frames_per_video": 4,
+      "max_side": 448,
+      "max_new_tokens": 1024,
+      "seed": 42,
+      "do_sample": false,
+      "quantization": "NF4 double 4-bit"
+    },
+    "comparison": "Two videos in the same context; new comparison instructions; this changes context and prompt together, not a single-factor ablation",
+    "order_check": "AB and BA; every dimension must agree after canonical video mapping. Uncertain, disagreements, invalid output and weighted ties abstain.",
+    "weights": {
+      "visual quality": 0.3,
+      "text-to-video alignment": 0.4,
+      "physical/common-sense consistency": 0.3
+    },
+    "early_stop": "Stop after first pair if neither order gives a valid final comparison; retain both raw outputs",
+    "metrics": [
+      "valid outputs",
+      "coverage",
+      "correct over all 4 planned pairs; abstentions are not correct",
+      "accuracy among selected pairs with denominator shown",
+      "abstention reasons",
+      "latency",
+      "peak allocated VRAM"
+    ],
+    "decision": "No automatic promotion. Fresh prompts and regression cases must be tested before integration; development gains cannot be treated as holdout results.",
+    "labels": "Only used after inference for scoring, never included in model messages"
+  },
+  "policy": {
+    "weights": {
+      "visual quality": 0.3,
+      "text-to-video alignment": 0.4,
+      "physical/common-sense consistency": 0.3
+    },
+    "minimum_scores": {
+      "visual quality": 3,
+      "text-to-video alignment": 3,
+      "physical/common-sense consistency": 3
+    },
+    "top_k": 1,
+    "policy_status": "heuristic_not_calibrated"
+  }
+}

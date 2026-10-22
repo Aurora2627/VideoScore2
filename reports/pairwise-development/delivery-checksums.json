@@ -1,0 +1,27 @@
+{
+  "files_sha256": {
+    "execution.log": "32751d9faad48717241f833f59e37eb39351cbdfc17ef71f77acf29e1b7af098",
+    "identity.json": "03eacfc84583b33183093597713c77dd9cf9a117a1e1744e03df7b0244543537",
+    "launch-command.json": "b27ca2f4cb630497926d762e1f4f445d961aedf83017c20174211c1690bb09a7",
+    "manifest.json": "453e658e655776be676189ece4653d6109624c9b9e4b399c9d81fad7990e15c4",
+    "metrics.json": "8554aa3ef9b5b040bd1014dcdfa4546e77eb91d3c251b0af6cc433fa086fb350",
+    "pair-summary.json": "de5bbc312b0d66ec59d04a60b657a9b505f8690a384fff194d956d5b56f5990a",
+    "protocol.json": "d3f4c17266c0394c5bf591065cc68eeb3f51f806e91ca555340488847bd77e5a",
+    "RESULTS.md": "100dd709803de052cd1202475b8708cb11a14e0854c1f04b4129f66318ddd3a1",
+    "session.json": "a6de27392279ffda35ef34031313e4dd442607120d6be73245c8c8b09a701e07",
+    "pair_1\\consensus.json": "0bef0e318961762c52fcda09a05215306c1d4d63ec0f8bfef3b19ed5aadc6840",
+    "pair_1\\AB\\result.json": "d5896701706b594e5afd3482cbf5d7fe5ac35657232da2a96726abefc819450a",
+    "pair_1\\AB\\attempt_1\\prompt.txt": "df821246084faf35f555077e97118e89ed47884e90e61e1c513782078308d4f5",
+    "pair_1\\AB\\attempt_1\\raw_output.txt": "2d91ff605a0188acb84171fdba80dccbe97564068b625a6dcf9b9bb072b3c839",
+    "pair_1\\BA\\result.json": "11d460c7594fc9724adb2e18e0ee5424b241328fcf8ad30ce528e965b60751b6",
+    "pair_1\\BA\\attempt_1\\prompt.txt": "df821246084faf35f555077e97118e89ed47884e90e61e1c513782078308d4f5",
+    "pair_1\\BA\\attempt_1\\raw_output.txt": "f8103836cd165e4b36020b5b746957b2fde2e26e3ffdc552b613bf1c44ddb557",
+    "sources\\finish_pairwise_development.py": "c9ec7315c2e318ff1409ff14ab3762a61568f00c7b44ab113f96c145b325b5b7",
+    "sources\\infer_cuda.py": "6d65b2358d6758f471ae79d16379cc631c37a5f760897538665246d4a4277ac7",
+    "sources\\pairwise.py": "fc7d558a1d24fff8541aaf3bc6daa16ee4b12481d0978c02dc249b4e9a560d78",
+    "sources\\run_batch.py": "3bb0f374d11032eb6f7c79650aa77bf8e50b4b4bb36ce63299abe39134f367e4",
+    "sources\\run_pairwise_development.py": "9da67a4a59cf5c9e5b5ef5029ba420084bf475264a6c67697c4ce08cdaef64ce",
+    "sources\\selection.py": "228d2e64a4e04ea01443f2960adf3daf5c735d40ecfec92d59f453a1d94e78bb",
+    "sources\\vs2_inference.py": "acf8fdd53b3302d5b7e32babfa915055e468e3f6d8590eb2b7c2ba1058173f75"
+  }
+}

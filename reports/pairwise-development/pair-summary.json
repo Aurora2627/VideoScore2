@@ -1,0 +1,17 @@
+[
+  {
+    "pair": 1,
+    "videos": [
+      "000244_m",
+      "000244_h"
+    ],
+    "consensus": {
+      "selected": null,
+      "reason": "invalid_output",
+      "coverage": false
+    },
+    "expected_from_annotation": "000244_m",
+    "correct": false,
+    "baseline_correct": false
+  }
+]
